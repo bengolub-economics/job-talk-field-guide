@@ -1,0 +1,91 @@
+{
+  "_framework-jMw_Iro_.js": {
+    "file": "job-talk-field-guide/_next/static/chunks/framework-jMw_Iro_.js",
+    "name": "framework",
+    "imports": [
+      "_rolldown-runtime-DKindhIo.js"
+    ]
+  },
+  "_rolldown-runtime-DKindhIo.js": {
+    "file": "job-talk-field-guide/_next/static/chunks/rolldown-runtime-DKindhIo.js",
+    "name": "rolldown-runtime"
+  },
+  "_select-BVyDKa9i.js": {
+    "file": "job-talk-field-guide/_next/static/chunks/select-BVyDKa9i.js",
+    "name": "select",
+    "imports": [
+      "_rolldown-runtime-DKindhIo.js",
+      "_framework-jMw_Iro_.js"
+    ]
+  },
+  "components/case-detail.tsx": {
+    "file": "job-talk-field-guide/_next/static/chunks/case-detail-C7A9MQOH.js",
+    "name": "case-detail",
+    "src": "components/case-detail.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-DKindhIo.js",
+      "_select-BVyDKa9i.js",
+      "_framework-jMw_Iro_.js"
+    ]
+  },
+  "components/gallery.tsx": {
+    "file": "job-talk-field-guide/_next/static/chunks/gallery-CgICR3aT.js",
+    "name": "gallery",
+    "src": "components/gallery.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-DKindhIo.js",
+      "_select-BVyDKa9i.js",
+      "_framework-jMw_Iro_.js"
+    ]
+  },
+  "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js": {
+    "file": "job-talk-field-guide/_next/static/chunks/app-route-prefetch-policy-DSoZTQF9.js",
+    "name": "app-route-prefetch-policy",
+    "src": "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "virtual:vinext-app-browser-entry"
+    ]
+  },
+  "node_modules/vinext/dist/shims/layout-segment-context.js": {
+    "file": "job-talk-field-guide/_next/static/chunks/layout-segment-context-BGJYbH9X.js",
+    "name": "layout-segment-context",
+    "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-DKindhIo.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-jMw_Iro_.js"
+    ]
+  },
+  "node_modules/vinext/dist/shims/streamed-icons.js": {
+    "file": "job-talk-field-guide/_next/static/chunks/streamed-icons-fXtbIbfi.js",
+    "name": "streamed-icons",
+    "src": "node_modules/vinext/dist/shims/streamed-icons.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-DKindhIo.js",
+      "_framework-jMw_Iro_.js"
+    ]
+  },
+  "virtual:vinext-app-browser-entry": {
+    "file": "job-talk-field-guide/_next/static/chunks/index-DIjbvBAU.js",
+    "name": "index",
+    "src": "virtual:vinext-app-browser-entry",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-DKindhIo.js",
+      "_framework-jMw_Iro_.js"
+    ],
+    "dynamicImports": [
+      "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
+      "virtual:vinext-app-browser-entry",
+      "components/case-detail.tsx",
+      "node_modules/vinext/dist/shims/layout-segment-context.js",
+      "components/gallery.tsx",
+      "node_modules/vinext/dist/shims/streamed-icons.js"
+    ]
+  }
+}
