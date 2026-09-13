@@ -5,18 +5,20 @@
   font-variant-numeric: tabular-nums;
 }
 .slide-art.after-art > * { flex-shrink: 0; }
-.slide-art.after-art .slide-eyebrow {
-  margin-bottom: 1.8cqw;
-  font-size: 1.65cqw;
-  letter-spacing: .06em;
-  color: #61727a;
-}
 .slide-art.after-art h3 {
   font-size: 3.6cqw;
   line-height: 1.17;
   letter-spacing: -.015em;
   margin: 0 0 2.8cqw;
   max-width: 100%;
+}
+.slide-art.after-art .slide-subtitle {
+  margin: -1.6cqw 0 2.8cqw;
+  font-size: 2.1cqw;
+  line-height: 1.35;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #61727a;
 }
 .slide-art.after-art .formula {
   background: transparent;
@@ -43,6 +45,17 @@
 }
 .slide-art.after-art .slide-terms dt { text-align: right; color: #21675f; }
 .slide-art.after-art .slide-terms dd { margin: 0; min-width: 0; }
+.slide-art.after-art .slide-terms.terms-columns {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.6cqw 4cqw;
+}
+.slide-art.after-art .slide-terms.terms-columns > div {
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 1.6cqw;
+  min-width: 0;
+}
+.slide-art.after-art .slide-terms.terms-columns dt { text-align: left; }
+.slide-art.after-art .slide-terms.terms-columns > .term-full-width { grid-column: 1 / -1; }
 .slide-art.after-art .slide-facts,
 .slide-art.after-art .slide-conditions {
   display: grid;
@@ -120,6 +133,5 @@
 .slide-art.after-art .aid-table :is(th,td) { padding-top: .6cqw; padding-bottom: .6cqw; }
 
 .slide-art.after-art.kind-insurance-linearization h3 { font-size: 3.35cqw; }
-.slide-art.after-art.kind-insurance-linearization .slide-terms { grid-template-columns: 1fr 1fr; column-gap: 3cqw; }
 
 .slide-art.after-art .aid-footnote { margin: 1.2cqw 0 0; }
