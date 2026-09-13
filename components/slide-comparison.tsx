@@ -4,7 +4,7 @@ import {PanelViewer} from './panel-viewer';
 import type {ViewerPanel} from '@/lib/cases';
 
 export function SlideComparison({before,after,sourceUrl,outline=false}:{before:ViewerPanel[];after:ViewerPanel[];sourceUrl?:string;outline?:boolean}){
- const [beforeStep,setBeforeStep]=useState(()=>Math.max(0,before.findIndex(p=>p.id===after[0].revises?.[0])));
+ const [beforeStep,setBeforeStep]=useState(0);
  const [afterStep,setAfterStep]=useState(0);
  const chooseBefore=(id:string)=>{
   const index=before.findIndex(p=>p.id===id);
