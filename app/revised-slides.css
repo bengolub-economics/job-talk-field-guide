@@ -136,3 +136,7 @@
 .slide-art.after-art.kind-insurance-linearization h3 { font-size: 3.35cqw; }
 
 .slide-art.after-art .aid-footnote { margin: 1.2cqw 0 0; }
+
+/* Identical typography on both sides isolates the mnemonic source labels. */
+.slide-art.after-art.kind-mnemonic .formula { font-size: 4cqw; margin: 2cqw 0 4cqw; }
+.slide-art.after-art.kind-mnemonic .slide-terms { margin-top: 1cqw; }

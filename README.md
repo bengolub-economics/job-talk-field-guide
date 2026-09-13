@@ -1,6 +1,6 @@
 # The Job Talk Field Guide
 
-A companion to Benjamin Golub’s advice on giving a better job talk. Nine cases from public research presentations pair original slides with newly rendered revisions.
+A companion to Benjamin Golub’s advice on giving a better job talk. Ten cases pair before slides with newly rendered revisions: nine from public research presentations and one constructed example of mnemonic notation.
 
 [Open the public gallery](https://bengolub-economics.github.io/job-talk-field-guide/)
 
