@@ -11,7 +11,7 @@ let count = 0;
 let comparisons = 0;
 function validate(value, key = '') {
   if (typeof value === 'string') {
-    if (key === 'formula') { katex.renderToString(value, { ...options, displayMode: true }); count++; }
+    if (key === 'formula' || key === 'symbol') { katex.renderToString(value, { ...options, displayMode: true }); count++; }
     else for (const match of value.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g)) {
       katex.renderToString(match[1] ?? match[2], { ...options, displayMode: match[2] !== undefined }); count++;
     }

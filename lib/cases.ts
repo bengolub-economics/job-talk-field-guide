@@ -1,5 +1,5 @@
 import content from './gallery-data.json';
-export type Panel = {id?:string;revises?:string[];provenance?:string;kind?:string;title:string;sourcePage?:string;label?:string;lines?:string[];formula?:string;note?:string;image?:string;alt?:string;stage?:number;cue?:string;items?:{title:string;text:string}[]};
+export type Panel = {id?:string;revises?:string[];provenance?:string;kind?:string;title:string;sourcePage?:string;label?:string;lines?:string[];formula?:string;note?:string;terms?:{symbol:string;meaning:string}[];facts?:{label:string;text:string}[];conditions?:{label:string;text:string}[];image?:string;alt?:string;stage?:number;cue?:string;items?:{title:string;text:string}[]};
 export type ViewerPanel = Panel & {pages?:string};
 export type OutlineStage = {id?:string;revises?:string[];label:string;title:string;content:string;shortTitle?:string;schema?:{title:string;text:string}[];panels?:Panel[];pages?:string;takeaway?:string;role?:'setup'|'result'|'bridge'|'reserve'};
 export type DeckOutline = {title:string;overviewTitle?:string;description:string;before:OutlineStage[];after:OutlineStage[];change:string;branches?:{fromStage:number;returnToStage:number;title:string;pages:string;content:string}[]};

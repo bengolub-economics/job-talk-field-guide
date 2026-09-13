@@ -1,0 +1,123 @@
+/* Revised slides: shared edges, explicit row associations, and quiet structure. */
+.slide-art.after-art {
+  padding: 3.8cqw 4.8cqw;
+  color: #1c3138;
+  font-variant-numeric: tabular-nums;
+}
+.slide-art.after-art > * { flex-shrink: 0; }
+.slide-art.after-art .slide-eyebrow {
+  margin-bottom: 1.8cqw;
+  font-size: 1.65cqw;
+  letter-spacing: .06em;
+  color: #61727a;
+}
+.slide-art.after-art h3 {
+  font-size: 3.6cqw;
+  line-height: 1.17;
+  letter-spacing: -.015em;
+  margin: 0 0 2.8cqw;
+  max-width: 100%;
+}
+.slide-art.after-art .formula {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: .8cqw 0 3cqw;
+  color: #1c3138;
+  font-size: 3.65cqw;
+  text-align: left;
+}
+.slide-art.after-art .formula .katex-display > .katex { text-align: left; }
+.slide-art.after-art .slide-terms {
+  display: grid;
+  gap: 1.4cqw;
+  margin: 0;
+  font-size: 2.4cqw;
+  line-height: 1.4;
+}
+.slide-art.after-art .slide-terms > div {
+  display: grid;
+  grid-template-columns: 13cqw minmax(0,1fr);
+  gap: 2.8cqw;
+  align-items: baseline;
+}
+.slide-art.after-art .slide-terms dt { text-align: right; color: #21675f; }
+.slide-art.after-art .slide-terms dd { margin: 0; min-width: 0; }
+.slide-art.after-art .slide-facts,
+.slide-art.after-art .slide-conditions {
+  display: grid;
+  gap: .8cqw;
+  margin: 0 0 2cqw;
+  font-size: 2cqw;
+  line-height: 1.35;
+}
+.slide-art.after-art .slide-facts > div,
+.slide-art.after-art .slide-conditions > div {
+  display: grid;
+  grid-template-columns: 16cqw minmax(0,1fr);
+  gap: 2.8cqw;
+  align-items: baseline;
+}
+.slide-art.after-art .slide-facts strong,
+.slide-art.after-art .slide-conditions strong { font-weight: 500; color: #61727a; }
+.slide-art.after-art .diagram { display: block; height: auto; aspect-ratio: auto; overflow: visible; }
+.slide-art.after-art .chart-context { font-size: 1.85cqw; line-height: 1.35; margin: 0 0 1.7cqw; color: #61727a; }
+.slide-art.after-art.kind-equation .formula { margin: 1.4cqw 0 4cqw; }
+.slide-art.after-art.kind-equation .slide-conditions { margin: -1.5cqw 0 2.6cqw; }
+.slide-art.after-art.kind-regions .diagram { aspect-ratio: 800 / 270; }
+.slide-art.after-art .region-context { width: 100%; border-collapse: collapse; margin-top: 1.5cqw; font-size: 1.85cqw; line-height: 1.4; }
+.slide-art.after-art .region-context th { text-align: left; font-weight: 400; }
+.slide-art.after-art .region-context th:first-child { width: 47%; }
+.slide-art.after-art .region-context :is(td,th):not(:first-child) { text-align: right; }
+.slide-art.after-art .region-context thead th { padding-bottom: .65cqw; color: #61727a; }
+.slide-art.after-art .region-context tbody :is(td,th) { padding: .5cqw 0; }
+.slide-art.after-art .bank-funding { font-size: 2.4cqw; }
+.slide-art.after-art .funding-time { font-size: 2cqw; margin: 1cqw 0 1.5cqw; }
+.slide-art.after-art .funding-deposits,
+.slide-art.after-art .funding-chain { display: grid; grid-template-columns: 1fr 8cqw 1fr 7cqw .75fr; gap: 1.2cqw; align-items: start; }
+.slide-art.after-art .funding-deposits { padding: 1.2cqw 0 3.2cqw; margin-bottom: 3.2cqw; border-bottom: 1px solid #d8e1dd; }
+.slide-art.after-art .funding-chain > div { border: 0; padding: 0; }
+.slide-art.after-art .funding-chain strong { min-height: 7cqw; font-size: 2.35cqw; font-weight: 600; line-height: 1.35; }
+.slide-art.after-art .funding-chain > b { display: flex; flex-direction: column; gap: .8cqw; align-items: center; padding-top: .2cqw; }
+.slide-art.after-art .funding-chain small { font-size: 1.55cqw; }
+.slide-art.after-art .funding-chain > div > span { font-size: 2cqw; margin-top: 1.2cqw; }
+.slide-art.after-art.kind-insurance-linearization .formula { font-size: 3.2cqw; margin: .5cqw 0 1.5cqw; }
+.slide-art.after-art.kind-insurance-linearization .diagram { aspect-ratio: 800 / 255; max-height: none; }
+.slide-art.after-art.kind-insurance-linearization .slide-terms { font-size: 2cqw; gap: .65cqw; margin-top: 1.6cqw; }
+.slide-art.after-art.kind-insurance-linearization .slide-terms > div { grid-template-columns: 4cqw 1fr; gap: 2cqw; }
+.slide-art.after-art .insurance-budgets { table-layout: fixed; margin: .7cqw 0 1.5cqw; }
+.slide-art.after-art .insurance-budgets th:first-child { width: 44%; }
+.slide-art.after-art .insurance-budgets th,
+.slide-art.after-art .insurance-budgets td { padding: 2cqw 0; text-align: left; font-size: 2.5cqw; }
+.slide-art.after-art .insurance-budgets thead th { font-size: 2.05cqw; }
+.slide-art.after-art.kind-network .diagram { aspect-ratio: 800 / 250; height: 23cqw; margin: 0 0 2cqw; }
+.slide-art.after-art.kind-network .formula { font-size: 3.05cqw; margin-bottom: 2cqw; }
+.slide-art.after-art.kind-network .slide-terms { font-size: 2.1cqw; }
+.slide-art.after-art.kind-feedback .diagram { aspect-ratio: 800 / 270; }
+.slide-art.after-art.kind-feedback .formula { font-size: 3.1cqw; margin-top: 2cqw; }
+.slide-art.after-art .rebuilt-table thead th { border-top: 0; border-bottom: 1px solid #aabbB4; }
+.slide-art.after-art .slide-items.claim { margin: .3cqw 0 0; gap: 0; }
+.slide-art.after-art .slide-items.claim > div { grid-template-columns: 23cqw 1fr; align-items: baseline; gap: 3cqw; border-top: 1px solid #d8e1dd; padding: 1.8cqw 0; }
+.slide-art.after-art .slide-items.claim .item-index { display: none; }
+.slide-art.after-art .slide-items.claim strong { font-size: 2.35cqw; line-height: 1.35; margin: 0; }
+.slide-art.after-art .slide-items.claim p { font-size: 2.25cqw; line-height: 1.4; }
+.slide-art.after-art .aid-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 2.2cqw; line-height: 1.3; }
+.slide-art.after-art .aid-table th { text-align: left; font-weight: 400; }
+.slide-art.after-art .aid-table th:first-child { width: 32%; }
+.slide-art.after-art .aid-table :is(th,td) { padding: .8cqw 0; }
+.slide-art.after-art .aid-table thead th { vertical-align: bottom; border-bottom: 1px solid #aabbb4; font-size: 2cqw; padding-bottom: 1.2cqw; }
+.slide-art.after-art .aid-table :is(th,td):not(:first-child) { text-align: right; padding-right: 2.2cqw; }
+.slide-art.after-art .aid-table .aid-key { background: transparent; }
+.slide-art.after-art .aid-table .aid-key :is(th,td) { color: #21675f; font-weight: 600; }
+.slide-art.after-art .aid-table .coefficient { display: block; position: relative; }
+.slide-art.after-art .aid-table sup { position: absolute; left: 100%; top: 0; font-size: 1.4cqw; margin-left: .15cqw; }
+.slide-art.after-art .aid-table .standard-error { display: block; position: relative; font-size: inherit; font-weight: 400; color: #61727a; margin-top: .35cqw; }
+.slide-art.after-art .aid-table .aid-controls > * { border-top: 1px solid #d8e1dd; padding-top: 1.6cqw; }
+
+.slide-art.after-art .aid-table .closing-parenthesis { position: absolute; left: 100%; }
+.slide-art.after-art .aid-table tbody th { vertical-align: top; }
+.slide-art.after-art .aid-table { font-size: 2.1cqw; }
+.slide-art.after-art .aid-table :is(th,td) { padding-top: .6cqw; padding-bottom: .6cqw; }
+
+.slide-art.after-art.kind-insurance-linearization h3 { font-size: 3.35cqw; }
+.slide-art.after-art.kind-insurance-linearization .slide-terms { grid-template-columns: 1fr 1fr; column-gap: 3cqw; }
