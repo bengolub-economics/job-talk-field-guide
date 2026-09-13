@@ -980,7 +980,7 @@
             "text": "Inverse error variance; positive and finite"
           }
         ],
-        "formula": "\\widehat y=\\frac{\\tau_{\\mathrm{M}} f_{\\mathrm{M}}+\\tau_{\\mathrm{S}} f_{\\mathrm{S}}}{\\tau_{\\mathrm{M}}+\\tau_{\\mathrm{S}}}",
+        "formula": "\\widehat y=\\frac{\\pi_{\\mathrm{M}} f_{\\mathrm{M}}+\\pi_{\\mathrm{S}} f_{\\mathrm{S}}}{\\pi_{\\mathrm{M}}+\\pi_{\\mathrm{S}}}",
         "terms": [
           {
             "symbol": "f_{\\mathrm{M}}",
@@ -991,11 +991,11 @@
             "meaning": "Survey forecast"
           },
           {
-            "symbol": "\\tau_{\\mathrm{M}}",
+            "symbol": "\\pi_{\\mathrm{M}}",
             "meaning": "Market precision"
           },
           {
-            "symbol": "\\tau_{\\mathrm{S}}",
+            "symbol": "\\pi_{\\mathrm{S}}",
             "meaning": "Survey precision"
           },
           {
@@ -1018,11 +1018,11 @@
             "text": "Both forecasts and survey precision"
           }
         ],
-        "formula": "\\frac{\\partial\\widehat y}{\\partial\\tau_{\\mathrm{M}}}=\\frac{\\tau_{\\mathrm{S}}(f_{\\mathrm{M}}-f_{\\mathrm{S}})}{(\\tau_{\\mathrm{M}}+\\tau_{\\mathrm{S}})^2}<0",
+        "formula": "\\frac{\\partial\\widehat y}{\\partial\\pi_{\\mathrm{M}}}=\\frac{\\pi_{\\mathrm{S}}(f_{\\mathrm{M}}-f_{\\mathrm{S}})}{(\\pi_{\\mathrm{M}}+\\pi_{\\mathrm{S}})^2}<0",
         "conditions": [
           {
             "label": "When",
-            "text": "\\(f_{\\mathrm{M}}<f_{\\mathrm{S}}\\) and \\(\\tau_{\\mathrm{M}},\\tau_{\\mathrm{S}}>0\\)"
+            "text": "\\(f_{\\mathrm{M}}<f_{\\mathrm{S}}\\) and \\(\\pi_{\\mathrm{M}},\\pi_{\\mathrm{S}}>0\\)"
           }
         ],
         "terms": [
@@ -1035,11 +1035,11 @@
             "meaning": "Survey forecast"
           },
           {
-            "symbol": "\\tau_{\\mathrm{M}}",
+            "symbol": "\\pi_{\\mathrm{M}}",
             "meaning": "Market precision"
           },
           {
-            "symbol": "\\tau_{\\mathrm{S}}",
+            "symbol": "\\pi_{\\mathrm{S}}",
             "meaning": "Survey precision"
           },
           {
@@ -1053,24 +1053,24 @@
         ]
       }
     ],
-    "diagnosis": "The numbered subscripts are conventional and fully defined. But the listener must remember which source is 1 and which is 2 each time the forecasts and their precisions reappear. In the second slide, that translation gets in the way of seeing which information changes and why the combined forecast falls.",
+    "diagnosis": "The numbered subscripts are conventional and fully defined. But the listener must remember which source is 1 and which is 2 each time the forecasts and their precisions reappear. In the second slide, that translation gets in the way of seeing which information changes and why the combined forecast falls. Neither the source labels nor τ offer a direct reminder of their meanings.",
     "changes": [
       "Use M for the market source and S for the survey source.",
-      "Apply each source label to both its forecast and its precision, including in the derivative.",
+      "Use π for precision, with the same source labels in the averaging formula and its derivative.",
       "Preserve every definition, assumption, equation, and layout so the comparison isolates the notation."
     ],
-    "preserved": "The same precision-weighted average, comparative static, definitions, assumptions, and slide design. The revision changes only source subscripts: 1 to M and 2 to S.",
+    "preserved": "The same precision-weighted average, comparative static, definitions, assumptions, and slide design. The revision changes τ to π for precision and the source subscripts from 1, 2 to M, S.",
     "deferred": "No content is deferred. Both versions define every symbol on both slides.",
     "practice": "Choose a label that recalls each recurring object’s role. Use that label consistently across its levels, weights, and derivatives.",
     "principle": "Give people a way back in",
     "context": "Synthetic two-source forecasting example. The source identities are market and survey. Forecast errors are unbiased and independent, with positive finite variances. Precision means inverse error variance. The second slide differentiates the displayed averaging rule with both forecasts and survey precision fixed.",
     "beforeCaption": "Ordinary numbered subscripts, with every symbol defined.",
-    "afterCaption": "The same two slides, with M for market and S for survey.",
-    "point": "A listener can follow the calculation yet forget whether 1 means market or survey. Subscripts M and S keep that distinction visible in both the averaging formula and the later derivative. Attach the same label to a source’s forecast and its precision, and retain familiar notation such as τ. The definitions still belong on the slide. Both versions here use the same content and layout; the change is the choice of subscripts.",
+    "afterCaption": "The same two slides, with π for precision, M for market, and S for survey.",
+    "point": "A listener can follow the calculation yet forget whether 1 means market or survey. Subscripts M and S keep that distinction visible in both the averaging formula and the later derivative; π provides a reminder of precision. Attach the same source label to its forecast and its precision, and keep the definitions on the slide. Both versions here use the same content and layout; the change is the choice of symbols.",
     "values": [
       "Constructed teaching example; no source talk or empirical estimates.",
       "Both versions use the same two-source precision-weighted averaging rule. Under independent unbiased errors, it minimizes variance among unbiased linear combinations.",
-      "Only the source labels change: 1 ↔ M (market), 2 ↔ S (survey).",
+      "Only the notation changes: τ ↔ π (precision), 1 ↔ M (market), 2 ↔ S (survey).",
       "The derivative holds both realized forecasts and survey precision fixed. Its sign is the sign of the market forecast minus the survey forecast.",
       "Numbered indices remain natural when presenting a general collection of sources. This example concerns two economically distinct sources that recur through a talk."
     ]
