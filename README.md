@@ -1,20 +1,33 @@
 # The Job Talk Field Guide
 
-A companion to Benjamin Golub’s job-talk advice. Twelve complete before/better cases: six verified public-source examples and six constructed teaching examples. Source baseline: September 13, 2026.
+A companion to Benjamin Golub’s advice on giving a better job talk. Twelve cases from public research presentations pair original slides with newly rendered revisions. Three cases provide browsable original and revised outlines of complete talks.
 
-## Structure
-- `lib/gallery-data.json`: editable case content, source attribution, and fidelity notes.
-- `components/slide.tsx`: semantic slide layouts and teaching diagrams.
-- `components/case-detail.tsx`: independent build controls, enlargement, text equivalents, printing.
-- `components/timing-lab.tsx`: two explicit rehearsal scenarios.
-- `public/originals`: original source-page renders, with attribution in case data.
-- `public/essay.html` and `public/talk.pdf`: supplied companion material.
-- `public/project-plan.md`: full project plan.
+[Open the public gallery](https://bengolub-economics.github.io/job-talk-field-guide/)
 
-The public originals are selected critical excerpts, not open-license assets. The alternatives are this project’s work and do not imply author endorsement. Constructed examples and data must retain their labels.
+## Build for GitHub Pages
 
-## Development
-Use the package manager represented by the lockfile. `npm run dev` serves the site; `npm run build` prepares the deployment. The site follows the scaffold’s Sites/Vinext architecture. `.openai/hosting.json` identifies its existing Site; reuse it for future publications.
+```sh
+npm ci
+npm run build:pages
+```
 
-## Editorial maintenance
-Preserve numerical values, uncertainty, units, assumptions, and context. Add a source record and verify the physical PDF page before adding a public case. Do not infer oral delivery or timing from a static PDF. Keep source content and public downloadable data synchronized.
+The static website is written to `dist/client/`. Publish that directory, including `.nojekyll`, to the root of the `gh-pages` branch. GitHub Pages uses that branch as its source.
+
+The default project path is `/job-talk-field-guide`. Set `PAGES_BASE_PATH` when building for a differently named repository. The export checks every HTML page, internal link, image, stylesheet, and font target. It retains interactive filters, slide controls, enlargement, and local KaTeX fonts.
+
+The installed vinext beta exporter needs two adaptations for project-path hosting: its local prerender requests need the configured path and trailing slash, and its prefixed asset directory needs flattening to match the GitHub Pages mount. The build script handles both without changing the dependency package.
+
+## Edit the gallery
+
+- `lib/gallery-data.json`: case content, source attribution, and outline sequences.
+- `components/slide.tsx`, `research-examples.tsx`, and `rebuilt-results.tsx`: revised slide layouts and diagrams.
+- `components/panel-viewer.tsx`: slide navigation and enlargement.
+- `components/deck-outline.tsx`: whole-talk schematic sequences.
+- `public/originals/`: selected original slide renders, attributed in each case.
+- `content/essay.html` and `public/talk.pdf`: companion essay and talk.
+
+All revised panels use HTML, SVG, and typeset mathematics. The build rejects an original slide image on the revised side. Numerical reconstruction notes record any calculated or digitized values.
+
+## Other deployment target
+
+`npm run dev` and `npm run build` retain the original Sites/Vinext deployment. The GitHub Pages build is a separate static target; application content and styling are shared.

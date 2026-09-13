@@ -28,6 +28,7 @@ for (const row of [...reconstruction.hankBlocks, ...reconstruction.hankTargets])
 }
 const decode = s => s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"');
 let essay = await readFile(path.join(root, 'content/essay.html'), 'utf8');
+if (process.env.NEXT_PUBLIC_BASE_PATH) essay = essay.replace(/(href|src)="\/(?!\/)/g, `$1="${process.env.NEXT_PUBLIC_BASE_PATH}/`);
 let essayCount = 0;
 essay = essay.replace(/<math\b[^>]*>[\s\S]*?<\/math>/g, original => {
   const source = original.match(/<annotation encoding="application\/x-tex">([\s\S]*?)<\/annotation>/);
@@ -36,7 +37,7 @@ essay = essay.replace(/<math\b[^>]*>[\s\S]*?<\/math>/g, original => {
   return katex.renderToString(decode(source[1]).trim(), { ...options, displayMode: original.includes('display="block"') });
 });
 if (essayCount !== 11) throw new Error(`Expected 11 essay expressions, found ${essayCount}`);
-essay = essay.replace('</head>', `<link rel="stylesheet" href="/math/katex.min.css">
+essay = essay.replace('</head>', `<link rel="stylesheet" href="${process.env.NEXT_PUBLIC_BASE_PATH || ''}/math/katex.min.css">
 <style>
 .katex { font-size:1.06em; }
 .katex-display { margin:28px 0; padding:16px 4px; overflow-x:auto; overflow-y:hidden; }

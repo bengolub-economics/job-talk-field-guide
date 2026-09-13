@@ -12,7 +12,8 @@
     "lint": "oxlint",
     "format": "oxfmt",
     "prebuild": "node scripts/prepare-math.mjs",
-    "predev": "node scripts/prepare-math.mjs"
+    "predev": "node scripts/prepare-math.mjs",
+    "build:pages": "node scripts/build-pages.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",
