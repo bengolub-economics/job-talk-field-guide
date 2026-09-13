@@ -41,7 +41,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js": {
-    "file": "job-talk-field-guide/_next/static/chunks/app-route-prefetch-policy-vDDf_Rip.js",
+    "file": "job-talk-field-guide/_next/static/chunks/app-route-prefetch-policy-Br15EQP2.js",
     "name": "app-route-prefetch-policy",
     "src": "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
     "isDynamicEntry": true,
@@ -50,7 +50,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "job-talk-field-guide/_next/static/chunks/layout-segment-context-CfHlteWa.js",
+    "file": "job-talk-field-guide/_next/static/chunks/layout-segment-context-Bg7OgBWG.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -71,7 +71,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "job-talk-field-guide/_next/static/chunks/index-CKXZKd4h.js",
+    "file": "job-talk-field-guide/_next/static/chunks/index-D9BiBWMR.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
