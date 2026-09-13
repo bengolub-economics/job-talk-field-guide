@@ -1,6 +1,6 @@
 {
   "../../../Users/benjamingolub/Documents/ChatGPT/JM wisdom/talk-gallery/node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js": {
-    "file": "job-talk-field-guide/_next/static/chunks/app-route-prefetch-policy-DhIVrsET.js",
+    "file": "job-talk-field-guide/_next/static/chunks/app-route-prefetch-policy-Dvd9DvSN.js",
     "name": "app-route-prefetch-policy",
     "src": "../../../Users/benjamingolub/Documents/ChatGPT/JM wisdom/talk-gallery/node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
     "isDynamicEntry": true,
@@ -9,7 +9,7 @@
     ]
   },
   "../../../Users/benjamingolub/Documents/ChatGPT/JM wisdom/talk-gallery/node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "job-talk-field-guide/_next/static/chunks/layout-segment-context-ClQ8bSbb.js",
+    "file": "job-talk-field-guide/_next/static/chunks/layout-segment-context-VtIw5uzE.js",
     "name": "layout-segment-context",
     "src": "../../../Users/benjamingolub/Documents/ChatGPT/JM wisdom/talk-gallery/node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -49,7 +49,7 @@
     ]
   },
   "components/case-detail.tsx": {
-    "file": "job-talk-field-guide/_next/static/chunks/case-detail-Bj5FJV9p.js",
+    "file": "job-talk-field-guide/_next/static/chunks/case-detail-DcxpiQS5.js",
     "name": "case-detail",
     "src": "components/case-detail.tsx",
     "isDynamicEntry": true,
@@ -60,7 +60,7 @@
     ]
   },
   "components/gallery.tsx": {
-    "file": "job-talk-field-guide/_next/static/chunks/gallery-D4k1BU1a.js",
+    "file": "job-talk-field-guide/_next/static/chunks/gallery-BmLU9vhP.js",
     "name": "gallery",
     "src": "components/gallery.tsx",
     "isDynamicEntry": true,
@@ -71,7 +71,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "job-talk-field-guide/_next/static/chunks/index-DbdofuL_.js",
+    "file": "job-talk-field-guide/_next/static/chunks/index-bTIp0B0i.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
