@@ -1,0 +1,166 @@
+/* A default Beamer treatment for reconstructed source slides. */
+@font-face {
+  font-family: 'Beamer Sans';
+  src: url('../public/math/fonts/KaTeX_SansSerif-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Beamer Sans';
+  src: url('../public/math/fonts/KaTeX_SansSerif-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Beamer Sans';
+  src: url('../public/math/fonts/KaTeX_SansSerif-Italic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.slide-art.before-art:not(.image-slide) {
+  --beamer-blue: #333399;
+  --repair: var(--beamer-blue);
+  color: #171717;
+  background: #fff;
+  font-family: 'Beamer Sans', Arial, sans-serif;
+  padding: 4cqw 5cqw 3.5cqw;
+}
+.slide-art.before-art:not(.image-slide) h3 {
+  font-family: inherit;
+  font-size: 4.1cqw;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0;
+  color: var(--beamer-blue);
+  border: 0;
+  padding: 0;
+  margin: 0 0 3cqw;
+}
+.slide-art.before-art:not(.image-slide) .slide-eyebrow {
+  font-family: inherit;
+  font-size: 1.8cqw;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: #656575;
+  margin-bottom: 1.5cqw;
+}
+.slide-art.before-art:not(.image-slide) .slide-eyebrow:empty {
+  display: none;
+}
+.slide-art.before-art:not(.image-slide) .formula {
+  flex-shrink: 0;
+  font-size: 3.15cqw;
+  line-height: 1.4;
+  color: #171717;
+  background: transparent;
+  border: 0;
+  padding: .8cqw 0;
+  margin: 1.5cqw 0 2cqw;
+}
+.slide-art.before-art:not(.image-slide) .slide-lines {
+  gap: 1.55cqw;
+  margin: 0 0 1.5cqw;
+}
+.slide-art.before-art:not(.image-slide) .slide-lines p {
+  position: relative;
+  font-size: 2.6cqw;
+  line-height: 1.42;
+  padding-left: 2.6cqw;
+}
+.slide-art.before-art:not(.image-slide) .slide-lines p::before {
+  content: '\2022';
+  color: var(--beamer-blue);
+  position: absolute;
+  left: .3cqw;
+}
+.slide-art.before-art:not(.image-slide) .art-note {
+  font-size: 2cqw;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #444;
+  border: 0;
+  padding-top: 2cqw;
+}
+.slide-art.before-art:not(.image-slide) .slide-items > div {
+  border: 0;
+  padding-top: 1cqw;
+}
+.slide-art.before-art:not(.image-slide) .item-index {
+  font-family: inherit;
+  color: var(--beamer-blue);
+  font-size: 2cqw;
+  letter-spacing: 0;
+}
+.slide-art.before-art:not(.image-slide) .slide-items strong {
+  color: var(--beamer-blue);
+  font-size: 2.75cqw;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.slide-art.before-art:not(.image-slide) .slide-items p {
+  font-size: 2.4cqw;
+  line-height: 1.4;
+}
+.slide-art.before-art:not(.image-slide) .rebuilt-table {
+  color: #171717;
+  font-family: inherit;
+}
+.slide-art.before-art:not(.image-slide) .rebuilt-table th,
+.slide-art.before-art:not(.image-slide) .rebuilt-table td {
+  border-bottom-color: #ddd;
+  font-weight: 400;
+}
+.slide-art.before-art:not(.image-slide) .rebuilt-table thead th {
+  color: var(--beamer-blue);
+  border-top: 0;
+  border-bottom: 1px solid #777;
+}
+.slide-art.before-art:not(.image-slide) .rebuilt-table tbody tr:last-child > * {
+  border-bottom-color: #777;
+}
+.slide-art.before-art:not(.image-slide) .hank-moments td {
+  color: #171717;
+}
+.slide-art.before-art:not(.image-slide) .transmission-track span {
+  color: #171717;
+  background: #c8c8e7;
+}
+.slide-art.before-art:not(.image-slide) .transmission-track span + span {
+  color: white;
+  background: var(--beamer-blue);
+}
+
+/* Keep the existing outline, column, and compact-equation arrangements. */
+.slide-art.before-art.kind-outline:not(.image-slide) h3 {
+  font-size: 3.6cqw;
+}
+.slide-art.before-art.kind-outline:not(.image-slide) .slide-items > div {
+  padding: 1.15cqw 0;
+}
+.slide-art.before-art.kind-outline:not(.image-slide) .slide-items strong {
+  color: #171717;
+  font-size: 2.6cqw;
+}
+.slide-art.before-art.kind-working:not(.image-slide) h3 {
+  font-size: 3.6cqw;
+  margin-bottom: 2cqw;
+}
+.slide-art.before-art.kind-working:not(.image-slide) .formula {
+  font-size: 2.65cqw;
+  padding: .8cqw 0;
+  margin: 1cqw 0 1.5cqw;
+}
+.slide-art.before-art.kind-working:not(.image-slide) .slide-lines p {
+  font-size: 2.3cqw;
+}
+.slide-art.before-art.kind-working:not(.image-slide) .slide-lines {
+  gap: 1.25cqw;
+}
+.slide-art.before-art.kind-divider:not(.image-slide) h3 {
+  font-weight: 400;
+}
