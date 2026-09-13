@@ -92,13 +92,13 @@
       {
         "title": "Now give that question a model.",
         "kind": "equation",
-        "formula": "Wᵢ = aᵢ[bᵢ + β Σⱼ gᵢⱼ aⱼ] − aᵢ²/2",
+        "formula": "W_i=a_i\\left[b_i+\\beta\\sum_j g_{ij}a_j\\right]-\\frac{a_i^2}{2}",
         "lines": [
-          "aᵢ: investment, chosen simultaneously",
-          "bᵢ: own incentive · gᵢⱼ: network link",
-          "β > 0: complements · β < 0: substitutes"
+          "\\(a_i\\): investment, chosen simultaneously",
+          "\\(b_i\\): own incentive · \\(g_{ij}\\): network link",
+          "\\(\\beta>0\\): complements · \\(\\beta<0\\): substitutes"
         ],
-        "note": "The planner changes b at a cost. The full targeting problem follows.",
+        "note": "The planner changes \\(b\\) at a cost. The full targeting problem follows.",
         "cue": "This payoff formalizes the direct incentive and the response to neighbors.",
         "label": "THE POLICY QUESTION"
       }
@@ -145,11 +145,11 @@
       {
         "title": "Use old industry shares to predict local robot exposure.",
         "kind": "equation",
-        "formula": "Exposure(c) = Σᵢ share(c, i) × APR_Europe(i)",
+        "formula": "E_c=\\sum_i \\ell_{ci}\\,\\overline{\\mathrm{APR}}_i",
         "lines": [
-          "share(c, i): industry i’s share of local employment in 1970",
-          "APR_Europe(i): adjusted penetration in Europe",
-          "c: local labor market · i: industry"
+          "\\(E_c\\): predicted exposure in local labor market \\(c\\)",
+          "\\(\\ell_{ci}\\): industry \\(i\\)’s local employment share in 1970",
+          "\\(\\overline{\\mathrm{APR}}_i\\): adjusted robot penetration in Europe"
         ],
         "note": "Instrument for measured US exposure; time indices omitted here.",
         "cue": "Start with the industries a place had before widespread robot adoption, then weight European penetration in those same industries.",
@@ -158,11 +158,11 @@
       {
         "title": "“Adjusted” removes an output-growth component.",
         "kind": "equation",
-        "formula": "APR = (Mₜ − M₀)/L₀ − g^Y M₀/L₀",
+        "formula": "\\mathrm{APR}=\\frac{M_t-M_0}{L_0}-g^Y\\frac{M_0}{L_0}",
         "lines": [
-          "M: robot stock · L₀: initial employment",
-          "g^Y: industry output growth over the period",
-          "0 and t: beginning and end of the period"
+          "\\(M\\): robot stock · \\(L_0\\): initial employment",
+          "\\(g^Y\\): industry output growth over the period",
+          "\\(0\\) and \\(t\\): beginning and end of the period"
         ],
         "note": "Industry indices omitted. Causal interpretation requires instrument-validity assumptions.",
         "cue": "The adjustment separates robot-stock growth per initial worker from the part attributed to industry output growth.",
@@ -254,11 +254,11 @@
       {
         "title": "Balance fit against coefficient size.",
         "kind": "equation",
-        "formula": "minᵦ Σᵢ(Yᵢ − Xᵢβ)² + λ Σⱼ|βⱼ|",
+        "formula": "\\min_{\\beta}\\;\\sum_i (Y_i-X_i\\beta)^2+\\lambda\\sum_j|\\beta_j|",
         "lines": [
           "First sum: fit to the training sample",
           "Second term: penalty on absolute coefficients",
-          "Y: outcome · X: predictors · β: coefficients · λ: weight"
+          "\\(Y\\): outcome · \\(X\\): predictors · \\(\\beta\\): coefficients · \\(\\lambda\\): weight"
         ],
         "note": "Assess prediction on observations outside the training sample.",
         "cue": "Now the objective describes the tradeoff we have just seen.",
@@ -345,8 +345,8 @@
         "title": "The network preserves these patterns up to a multiplier.",
         "kind": "ring",
         "stage": 2,
-        "formula": "g u = λ u",
-        "note": "u: pattern · g: network · λ: multiplier. Intermediate patterns stay in the full source.",
+        "formula": "g u=\\lambda u",
+        "note": "\\(u\\): pattern · \\(g\\): network · \\(\\lambda\\): multiplier. Intermediate patterns stay in the full source.",
         "cue": "These are eigenvectors: applying the network rescales the same pattern.",
         "label": "PATTERNS ON A NETWORK",
         "alt": "The common and alternating patterns, side by side on the same fourteen-node ring. Applying the network rescales each pattern."
@@ -440,7 +440,7 @@
         "kind": "plain",
         "lines": [
           "N = 300; offer assigned at random",
-          "β̂ = 0.18; 95% CI [0.06, 0.30]",
+          "\\(\\widehat{\\beta}=0.18\\); 95% CI \\([0.06,\\,0.30]\\)",
           "Dependent variable: standardized test score"
         ],
         "note": "Fictional tutoring pilot · illustrative numbers",
@@ -487,10 +487,10 @@
       {
         "title": "Equilibrium characterization",
         "kind": "plain",
-        "formula": "a = (I − βG)⁻¹x = Σₖ≥₀(βG)ᵏx",
+        "formula": "\\begin{aligned}a&=(I-\\beta G)^{-1}x\\\\&=\\sum_{k=0}^{\\infty}(\\beta G)^k x\\end{aligned}",
         "lines": [
-          "G ≥ 0; β ≥ 0; spectral radius ρ(βG) < 1",
-          "a = x + βGa",
+          "\\(G\\geq0\\); \\(\\beta\\geq0\\); spectral radius \\(\\rho(\\beta G)<1\\)",
+          "\\(a=x+\\beta Ga\\)",
           "Illustration: two reciprocal links"
         ],
         "note": "Toy network-response model",
@@ -504,7 +504,7 @@
         "stage": 1,
         "lines": [
           "Direct effect: 1 for each person",
-          "Each receives ¼ of the other’s total response"
+          "Each receives \\(\\tfrac14\\) of the other’s total response"
         ],
         "note": "Toy model · symmetric players",
         "cue": "Each starts with one unit. Each also receives one quarter of the other’s response.",
@@ -514,8 +514,8 @@
       {
         "title": "Each round contributes less.",
         "kind": "feedback",
-        "formula": "1 + ¼ + ¹⁄₁₆ + ¹⁄₆₄ + ⋯ = ⁴⁄₃",
-        "note": "For each person: a = 1 + ¼a, hence a = 4/3.",
+        "formula": "1+\\frac14+\\frac1{16}+\\frac1{64}+\\cdots=\\frac43",
+        "note": "For each person: \\(a=1+\\tfrac14a\\), hence \\(a=\\tfrac43\\).",
         "cue": "The first round adds a quarter, the next a sixteenth. The total converges to four thirds.",
         "label": "A NETWORK RESPONSE MODEL",
         "alt": "Successive contributions: direct 1, first round 0.25, second 0.0625, third 0.015625. Cumulative responses approach 4/3."
@@ -523,13 +523,13 @@
       {
         "title": "The general formula counts the same rounds.",
         "kind": "equation",
-        "formula": "a = x + βGx + (βG)²x + ⋯",
+        "formula": "a=x+\\beta Gx+(\\beta G)^2x+\\cdots",
         "lines": [
-          "x: direct effects · βGx: one round",
-          "(βG)²x: two rounds",
-          "Sum = (I − βG)⁻¹x when ρ(βG) < 1"
+          "\\(x\\): direct effects · \\(\\beta Gx\\): one round",
+          "\\((\\beta G)^2x\\): two rounds",
+          "Sum = \\((I-\\beta G)^{-1}x\\) when \\(\\rho(\\beta G)<1\\)"
         ],
-        "note": "Nonnegative G and β. The spectral-radius condition ensures repeated feedback dies out.",
+        "note": "Nonnegative \\(G\\) and \\(\\beta\\). The spectral-radius condition ensures repeated feedback dies out.",
         "cue": "Now each term has a job we recognize. The convergence condition is still essential.",
         "label": "A NETWORK RESPONSE MODEL"
       }
@@ -540,7 +540,7 @@
       "Show the contribution of each round.",
       "Carry the interpretation into the general notation."
     ],
-    "preserved": "The response equation and convergence condition. In the toy case, 1/(1 − 1/4) = 4/3 exactly.",
+    "preserved": "The response equation and convergence condition. In the toy case, \\(\\frac{1}{1-1/4}=\\frac43\\) exactly.",
     "deferred": "Other network structures and parameter values. The convergence condition remains necessary.",
     "practice": "Find the smallest example in which your main force still operates. Teach it, then say exactly what generalizes.",
     "principle": "Choose detail that carries insight",
@@ -576,11 +576,11 @@
       {
         "title": "Moment conditions",
         "kind": "plain",
-        "formula": "E[zᵢ εᵢ(θ)] = 0",
+        "formula": "\\mathbb{E}\\!\\left[z_i\\varepsilon_i(\\theta)\\right]=0",
         "lines": [
           "Rank condition",
           "Orthogonality restrictions",
-          "Identification of θ"
+          "Identification of \\(\\theta\\)"
         ],
         "note": "The transition assumes the audience remembers the model’s purpose.",
         "label": "THE ARGUMENT SO FAR"
