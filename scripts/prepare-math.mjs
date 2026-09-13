@@ -2,11 +2,13 @@ import katex from 'katex';
 import { readFile, writeFile, mkdir, cp } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import {comparisonPanels} from '../lib/comparison-panels.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const options = { output: 'htmlAndMathml', throwOnError: true, strict: 'error', trust: false };
 const cases = JSON.parse(await readFile(path.join(root, 'lib/gallery-data.json'), 'utf8'));
 let count = 0;
+let comparisons = 0;
 function validate(value, key = '') {
   if (typeof value === 'string') {
     if (key === 'formula') { katex.renderToString(value, { ...options, displayMode: true }); count++; }
@@ -17,9 +19,15 @@ function validate(value, key = '') {
   else if (value && typeof value === 'object') Object.entries(value).forEach(([k, v]) => validate(v, k));
 }
 for (const c of cases) {
-  const after = [...c.after, ...(c.outline?.after || []).flatMap(s => s.panels || [])];
+  const {before,after}=comparisonPanels(c);
+  const beforeIds=new Set(before.map(p=>p.id));
+  if (before.some(p=>!p.id)||beforeIds.size!==before.length) throw new Error(`${c.id}: before slides need unique IDs`);
   if (after.some(p => p.kind === 'image' || p.image)) throw new Error(`${c.id}: revised slides must be self-rendered`);
-  for (const p of c.before) if (p.image) await readFile(path.join(root, 'public', p.image));
+  for (const p of before) if (p.image) await readFile(path.join(root, 'public', p.image));
+  for (const p of after) {
+    if (!p.revises?.length||p.revises.some(id=>!beforeIds.has(id))) throw new Error(`${c.id}: ${p.title} must link to visible before content`);
+    comparisons++;
+  }
 }
 validate(cases);
 const reconstruction = JSON.parse(await readFile(path.join(root, 'lib/reconstruction-data.json'), 'utf8'));
@@ -53,4 +61,4 @@ await cp(path.join(dist, '../LICENSE'), path.join(root, 'public/math/LICENSE'));
 await cp(path.join(dist, 'fonts'), path.join(root, 'public/math/fonts'), { recursive: true });
 await writeFile(path.join(root, 'public/essay.html'), essay);
 await writeFile(path.join(root, 'public/gallery-data.json'), JSON.stringify(cases, null, 2)+'\n');
-console.log(`Validated ${count} gallery math expressions; typeset ${essayCount} essay expressions; bundled fonts locally.`);
+console.log(`Validated ${comparisons} before/after links and ${count} gallery math expressions; typeset ${essayCount} essay expressions; bundled fonts locally.`);

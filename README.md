@@ -31,3 +31,5 @@ All revised panels use HTML, SVG, and typeset mathematics. The build rejects an 
 ## Other deployment target
 
 `npm run dev` and `npm run build` retain the original Sites/Vinext deployment. The GitHub Pages build is a separate static target; application content and styling are shared.
+
+Each improved slide links to the visible before slides it reworks. Advancing the improved viewer selects its corresponding before slide, while both viewers remain independently browsable. Whole-talk cards use the same outline overviews as their detail pages. The content validator checks those references, source assets, strict LaTeX, and the rule that improved slides are rendered from code.
