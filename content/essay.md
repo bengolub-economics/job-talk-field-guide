@@ -2,7 +2,7 @@
 
 Benjamin Golub · September 11, 2026
 
-[Slides handout (PDF)](slides_handout.pdf){.handout-link} [Gallery of before-and-betters](https://bengolub-economics.github.io/job-talk-field-guide/){.gallery-link} [Presentation resources](resources.html){.resources-link}
+[Slides handout (PDF)](deck_handout.pdf){.handout-link} [Gallery of before-and-betters](https://bengolub-economics.github.io/job-talk-field-guide/){.gallery-link} [Presentation resources](resources.html){.resources-link}
 
 In these notes we'll cover:
 

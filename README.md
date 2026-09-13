@@ -28,7 +28,7 @@ The installed vinext beta exporter needs two adaptations for project-path hostin
 
 ### Keep the essay synchronized
 
-The essay header links to `public/slides_handout.pdf` and the public gallery of before-and-betters. The essay renderer copies the handout from `slides_handout.pdf` in the parent JM wisdom folder, so the PDF is included in the Pages export. The gallery link uses its full public URL so it also works from the standalone HTML.
+The essay header links to `public/deck_handout.pdf` and the public gallery of before-and-betters. The essay renderer copies the current handout from `deck_handout.pdf` in the parent JM wisdom folder, so the PDF is included in the Pages export. It also updates `public/slides_handout.pdf` with the same bytes to preserve previously shared links. The gallery link uses its full public URL so it also works from the standalone HTML.
 
 The current manuscript is `job-talk-essay-revised.md` in the parent JM wisdom folder. The opening listicle is edited separately in `job-talk-dos-and-donts.md`. From that folder, run:
 

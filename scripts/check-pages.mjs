@@ -31,6 +31,10 @@ const cases=JSON.parse(await readFile(path.join(root,'lib/gallery-data.json'),'u
 for (const c of cases) await check(`${base}/case/${c.id}/`,'index.html');
 if (html.length<cases.length+4) throw new Error('Missing exported pages');
 const essay=await readFile(path.join(out,'essay.html'),'utf8');
+if (!essay.includes('href="deck_handout.pdf"')) throw new Error('The essay must link to the current deck handout');
+const handout=await readFile(path.join(out,'deck_handout.pdf'));
+const handoutAlias=await readFile(path.join(out,'slides_handout.pdf'));
+if (!handout.subarray(0,5).equals(Buffer.from('%PDF-')) || !handout.equals(handoutAlias)) throw new Error('The current and legacy handout URLs must serve the same PDF');
 const essayIds=[...essay.matchAll(/\bid="([^"]+)"/g)].map(match=>match[1]);
 if(new Set(essayIds).size!==essayIds.length) throw new Error('Duplicate IDs in the essay');
 for(const [,anchor] of essay.matchAll(/href="#([^"]+)"/g)) {
