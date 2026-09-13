@@ -1,0 +1,156 @@
+[
+  {
+    "region": "Sioux City, IA-NE-SD",
+    "populationThousands2000": 187.6,
+    "manufacturingEmploymentPct2000": 27.0,
+    "baPctAge18to64_2000": 18.8,
+    "importPenetrationChangePp2000to2012": 6.1
+  },
+  {
+    "region": "Union County, MS",
+    "populationThousands2000": 54.4,
+    "manufacturingEmploymentPct2000": 50.1,
+    "baPctAge18to64_2000": 15.2,
+    "importPenetrationChangePp2000to2012": 5.41
+  },
+  {
+    "region": "Meridian, MS",
+    "populationThousands2000": 156.9,
+    "manufacturingEmploymentPct2000": 26.5,
+    "baPctAge18to64_2000": 13.3,
+    "importPenetrationChangePp2000to2012": 5.09
+  },
+  {
+    "region": "Hutchinson, MN",
+    "populationThousands2000": 73.0,
+    "manufacturingEmploymentPct2000": 41.5,
+    "baPctAge18to64_2000": 16.2,
+    "importPenetrationChangePp2000to2012": 4.43
+  },
+  {
+    "region": "North Hickory, NC",
+    "populationThousands2000": 377.5,
+    "manufacturingEmploymentPct2000": 43.0,
+    "baPctAge18to64_2000": 15.6,
+    "importPenetrationChangePp2000to2012": 4.4
+  },
+  {
+    "region": "Tupelo, MS",
+    "populationThousands2000": 198.1,
+    "manufacturingEmploymentPct2000": 43.7,
+    "baPctAge18to64_2000": 14.4,
+    "importPenetrationChangePp2000to2012": 4.18
+  },
+  {
+    "region": "Martinsville, VA",
+    "populationThousands2000": 19.4,
+    "manufacturingEmploymentPct2000": 47.4,
+    "baPctAge18to64_2000": 11.6,
+    "importPenetrationChangePp2000to2012": 3.94
+  },
+  {
+    "region": "Carroll County, VA",
+    "populationThousands2000": 27.5,
+    "manufacturingEmploymentPct2000": 45.1,
+    "baPctAge18to64_2000": 10.4,
+    "importPenetrationChangePp2000to2012": 3.8
+  },
+  {
+    "region": "Lynchburg, VA",
+    "populationThousands2000": 112.4,
+    "manufacturingEmploymentPct2000": 26.9,
+    "baPctAge18to64_2000": 18.5,
+    "importPenetrationChangePp2000to2012": 3.74
+  },
+  {
+    "region": "West Hickory, NC",
+    "populationThousands2000": 165.1,
+    "manufacturingEmploymentPct2000": 49.9,
+    "baPctAge18to64_2000": 12.9,
+    "importPenetrationChangePp2000to2012": 3.7
+  },
+  {
+    "region": "Henderson County, TN",
+    "populationThousands2000": 44.9,
+    "manufacturingEmploymentPct2000": 45.9,
+    "baPctAge18to64_2000": 9.7,
+    "importPenetrationChangePp2000to2012": 3.58
+  },
+  {
+    "region": "Crossville, TN",
+    "populationThousands2000": 104.5,
+    "manufacturingEmploymentPct2000": 35.6,
+    "baPctAge18to64_2000": 11.5,
+    "importPenetrationChangePp2000to2012": 3.45
+  },
+  {
+    "region": "Raleigh-Cary, NC",
+    "populationThousands2000": 1420.0,
+    "manufacturingEmploymentPct2000": 17.0,
+    "baPctAge18to64_2000": 34.2,
+    "importPenetrationChangePp2000to2012": 3.42
+  },
+  {
+    "region": "Cleveland, TN",
+    "populationThousands2000": 203.7,
+    "manufacturingEmploymentPct2000": 39.9,
+    "baPctAge18to64_2000": 12.4,
+    "importPenetrationChangePp2000to2012": 3.2
+  },
+  {
+    "region": "McMinnville, TN",
+    "populationThousands2000": 84.5,
+    "manufacturingEmploymentPct2000": 48.9,
+    "baPctAge18to64_2000": 10.4,
+    "importPenetrationChangePp2000to2012": 3.19
+  },
+  {
+    "region": "Faribault-Northfield, MN",
+    "populationThousands2000": 110.1,
+    "manufacturingEmploymentPct2000": 32.9,
+    "baPctAge18to64_2000": 20.2,
+    "importPenetrationChangePp2000to2012": 3.16
+  },
+  {
+    "region": "St. Marys, PA",
+    "populationThousands2000": 41.0,
+    "manufacturingEmploymentPct2000": 54.7,
+    "baPctAge18to64_2000": 13.2,
+    "importPenetrationChangePp2000to2012": 3.13
+  },
+  {
+    "region": "Danville, KY",
+    "populationThousands2000": 86.7,
+    "manufacturingEmploymentPct2000": 38.3,
+    "baPctAge18to64_2000": 16.6,
+    "importPenetrationChangePp2000to2012": 3.01
+  },
+  {
+    "region": "Quincy, IL-MO",
+    "populationThousands2000": 152.3,
+    "manufacturingEmploymentPct2000": 23.8,
+    "baPctAge18to64_2000": 16.1,
+    "importPenetrationChangePp2000to2012": 2.97
+  },
+  {
+    "region": "Greene County, GA",
+    "populationThousands2000": 35.5,
+    "manufacturingEmploymentPct2000": 41.1,
+    "baPctAge18to64_2000": 13.4,
+    "importPenetrationChangePp2000to2012": 2.84
+  },
+  {
+    "region": "Fort Wayne, IN",
+    "populationThousands2000": 558.4,
+    "manufacturingEmploymentPct2000": 29.2,
+    "baPctAge18to64_2000": 18.4,
+    "importPenetrationChangePp2000to2012": 2.83
+  },
+  {
+    "region": "Huntsville, AL",
+    "populationThousands2000": 521.4,
+    "manufacturingEmploymentPct2000": 25.5,
+    "baPctAge18to64_2000": 24.6,
+    "importPenetrationChangePp2000to2012": 2.75
+  }
+]

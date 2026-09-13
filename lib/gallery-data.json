@@ -1,0 +1,858 @@
+[
+  {
+    "id": "show-the-comparison",
+    "number": "01",
+    "title": "Make the comparison visible.",
+    "mode": "Table search",
+    "scale": "slide",
+    "dek": "Two highlighted rows still ask the listener to search through a page of numbers.",
+    "before": [
+      {
+        "title": "The full table",
+        "kind": "image",
+        "image": "/originals/china-shock-p20.png",
+        "alt": "Original table with 22 commuting zones and four numeric columns. North Hickory and Raleigh-Cary are highlighted.",
+        "label": "REGIONAL COMPARISON · 2000"
+      }
+    ],
+    "after": [
+      {
+        "title": "Two exposed regions had very different workforces.",
+        "kind": "regions",
+        "note": "Year 2000 · descriptive comparison",
+        "cue": "These two places both faced import competition, but their initial workforces looked quite different.",
+        "label": "REGIONAL COMPARISON · 2000",
+        "alt": "Year 2000: North Hickory, NC has manufacturing employment share 43.0%, BA share of ages 18–64 15.6%, population 377.5 thousand. Raleigh-Cary, NC: 17.0%, 34.2%, and 1,420.0 thousand. Import-penetration change, 2000–2012: 4.40 and 3.42 percentage points, respectively."
+      }
+    ],
+    "diagnosis": "The original already tells us which two rows matter. A revision can carry that emphasis through to the comparison itself.",
+    "changes": [
+      "Keep the two highlighted places together.",
+      "Use a common scale for each pair of percentages.",
+      "Keep population and exposure in a separate context line."
+    ],
+    "preserved": "All eight numbers for the highlighted regions, with their dates and units.",
+    "deferred": "The other 20 regions remain in the original and in the complete data download below.",
+    "practice": "Write down the comparison you intend to say aloud. Make that comparison the figure; keep the full table available.",
+    "principle": "Minimize tables with lots of numbers!",
+    "sourceType": "public",
+    "context": "The source highlights these same two regions; the revision develops that comparison.",
+    "beforeCaption": "",
+    "afterCaption": "",
+    "source": {
+      "authors": "David Autor, David Dorn, Gordon Hanson",
+      "title": "On the Persistence of the China Shock",
+      "date": "2021-09-09",
+      "url": "https://www.brookings.edu/wp-content/uploads/2021/08/6a_ADH-BPEA-Slides-Final.pdf",
+      "pages": "20"
+    },
+    "values": [
+      "North Hickory: manufacturing share 43.0%; BA share of population aged 18–64 15.6%; population 377.5 thousand; import-penetration change 4.40 percentage points.",
+      "Raleigh-Cary: manufacturing share 17.0%; BA share 34.2%; population 1,420.0 thousand; import-penetration change 3.42 percentage points.",
+      "Shares and population: 2000. Import-penetration change: 2000–2012."
+    ]
+  },
+  {
+    "id": "question-before-model",
+    "number": "02",
+    "title": "Give the model a reason to exist.",
+    "mode": "Hidden question",
+    "scale": "talk",
+    "dek": "Put the policy question before the payoff function.",
+    "before": [
+      {
+        "title": "First build · PDF p. 2",
+        "kind": "image",
+        "image": "/originals/targeting-p02.png",
+        "alt": "The first content slide presents investment payoffs and a network-dependent marginal return.",
+        "label": "THE POLICY QUESTION"
+      },
+      {
+        "title": "Later build · PDF p. 4",
+        "kind": "image",
+        "image": "/originals/targeting-p04.png",
+        "alt": "The same slide adds a targeting question below the payoff and verbal interpretation.",
+        "label": "THE POLICY QUESTION"
+      }
+    ],
+    "after": [
+      {
+        "title": "Whose incentives should a planner change?",
+        "kind": "network",
+        "stage": 0,
+        "lines": [
+          "An investment changes other people’s incentives.",
+          "A planner changes incentives to raise total welfare within a limited budget."
+        ],
+        "note": "Schematic network · strategic complements",
+        "cue": "Changing one person’s incentives can also change what others do. Whose incentives should the planner change?",
+        "label": "THE POLICY QUESTION",
+        "alt": "Schematic five-person network. B is highlighted as a possible intervention target."
+      },
+      {
+        "title": "Now give that question a model.",
+        "kind": "equation",
+        "formula": "Wᵢ = aᵢ[bᵢ + β Σⱼ gᵢⱼ aⱼ] − aᵢ²/2",
+        "lines": [
+          "aᵢ: investment, chosen simultaneously",
+          "bᵢ: own incentive · gᵢⱼ: network link",
+          "β > 0: complements · β < 0: substitutes"
+        ],
+        "note": "The planner changes b at a cost. The full targeting problem follows.",
+        "cue": "This payoff formalizes the direct incentive and the response to neighbors.",
+        "label": "THE POLICY QUESTION"
+      }
+    ],
+    "diagnosis": "The policy question appears only after the audience has encountered the mathematical setup. A short opening can reverse that dependency.",
+    "changes": [
+      "Name the planner’s decision first.",
+      "Use an illustrative network to give spillovers a meaning.",
+      "Introduce the original payoff once it answers a known question."
+    ],
+    "preserved": "The source’s payoff, simultaneous choices, and distinction between complements and substitutes.",
+    "deferred": "The formal targeting problem, quadratic intervention cost, symmetry, and equilibrium assumptions follow in the model section.",
+    "practice": "Before your first model slide, write one sentence saying what decision the model will help us understand.",
+    "principle": "Give the audience a direction",
+    "sourceType": "public",
+    "context": "The original already builds gradually and labels terms. This repair changes the order. The comparison shows the first and final builds; intermediate PDF page 3 is omitted.",
+    "beforeCaption": "Original first and final builds. PDF pp. 2 and 4; p. 3 omitted.",
+    "afterCaption": "",
+    "source": {
+      "authors": "Andrea Galeotti, Benjamin Golub, Sanjeev Goyal",
+      "title": "Targeting interventions in networks",
+      "date": "2019",
+      "url": "https://bengolub.net/wp-content/uploads/2020/09/TIN_slides.pdf",
+      "pages": "2–4"
+    }
+  },
+  {
+    "id": "define-at-use",
+    "number": "03",
+    "title": "Put the meaning next to the symbol.",
+    "mode": "Notation overload",
+    "scale": "slide",
+    "dek": "A notation key should be where the listener needs it.",
+    "before": [
+      {
+        "title": "Exposure equation · PDF p. 17",
+        "kind": "image",
+        "image": "/originals/robots-jobs-p17.png",
+        "alt": "Three exposure formulas with time subscripts and no adjacent key for M, L, or output growth.",
+        "label": "LOCAL ROBOT EXPOSURE"
+      }
+    ],
+    "after": [
+      {
+        "title": "Use old industry shares to predict local robot exposure.",
+        "kind": "equation",
+        "formula": "Exposure(c) = Σᵢ share(c, i) × APR_Europe(i)",
+        "lines": [
+          "share(c, i): industry i’s share of local employment in 1970",
+          "APR_Europe(i): adjusted penetration in Europe",
+          "c: local labor market · i: industry"
+        ],
+        "note": "Instrument for measured US exposure; time indices omitted here.",
+        "cue": "Start with the industries a place had before widespread robot adoption, then weight European penetration in those same industries.",
+        "label": "LOCAL ROBOT EXPOSURE"
+      },
+      {
+        "title": "“Adjusted” removes an output-growth component.",
+        "kind": "equation",
+        "formula": "APR = (Mₜ − M₀)/L₀ − g^Y M₀/L₀",
+        "lines": [
+          "M: robot stock · L₀: initial employment",
+          "g^Y: industry output growth over the period",
+          "0 and t: beginning and end of the period"
+        ],
+        "note": "Industry indices omitted. Causal interpretation requires instrument-validity assumptions.",
+        "cue": "The adjustment separates robot-stock growth per initial worker from the part attributed to industry output growth.",
+        "label": "LOCAL ROBOT EXPOSURE"
+      }
+    ],
+    "diagnosis": "The page already explains European adoption and the 1970 weights. Its formulas still ask the audience to retrieve several symbols from elsewhere.",
+    "changes": [
+      "Teach the weighted sum in words.",
+      "Attach a local key to the same expression.",
+      "Explain the adjustment on a second build."
+    ],
+    "preserved": "The weighted exposure construction, 1970 baseline, European instrument, and output-growth adjustment.",
+    "deferred": "The US exposure formula stays in the source. Suppressing indices is disclosed; validity is not inferred from the instrument’s construction.",
+    "practice": "Cover every slide except the one on screen. Can a listener recover what each load-bearing symbol means?",
+    "principle": "Takeaways before details",
+    "sourceType": "public",
+    "context": "The source defines the European comparison and 1970 weights. The revision adds a local notation key.",
+    "beforeCaption": "",
+    "afterCaption": "",
+    "source": {
+      "authors": "Daron Acemoglu, Pascual Restrepo",
+      "title": "Robots and Jobs",
+      "date": "2019-04",
+      "url": "https://www.yjs.fi/wp-content/uploads/daron-acemoglu_robots-and-jobs_part-1.pdf",
+      "pages": "17"
+    }
+  },
+  {
+    "id": "example-before-method",
+    "number": "04",
+    "title": "Give the method a job before its formula.",
+    "mode": "Generality first",
+    "scale": "talk",
+    "dek": "An example gives the audience a question for the method to answer.",
+    "before": [
+      {
+        "title": "Objective · PDF p. 17",
+        "kind": "image",
+        "image": "/originals/nber-2015-p17.png",
+        "alt": "LASSO objective followed by a general norm definition.",
+        "label": "EARNINGS PREDICTION"
+      },
+      {
+        "title": "Mechanism · PDF p. 23",
+        "kind": "image",
+        "image": "/originals/nber-2015-p23.png",
+        "alt": "LASSO selection and shrinkage explanation.",
+        "label": "EARNINGS PREDICTION"
+      },
+      {
+        "title": "Example · PDF p. 33",
+        "kind": "image",
+        "image": "/originals/nber-2015-p33.png",
+        "alt": "Earnings prediction example with OLS and LASSO test errors.",
+        "label": "EARNINGS PREDICTION"
+      }
+    ],
+    "after": [
+      {
+        "title": "LASSO has lower test error in this earnings example.",
+        "kind": "rmse",
+        "note": "1978 earnings · 15,992 people · 7,996 training. Outcome units are not specified on the example slide.",
+        "cue": "Here is a concrete prediction problem. Why might a penalized fit do better on new observations?",
+        "label": "EARNINGS PREDICTION",
+        "alt": "Test root-mean-squared prediction error, lower is better: OLS 1.4093; LASSO 0.7379. Both bars start at zero."
+      },
+      {
+        "title": "A penalty can leave fewer predictors.",
+        "kind": "flow",
+        "items": [
+          {
+            "title": "121",
+            "text": "candidate features"
+          },
+          {
+            "title": "Penalty",
+            "text": "on coefficient size"
+          },
+          {
+            "title": "15",
+            "text": "selected in this fit"
+          }
+        ],
+        "note": "Selection is about prediction; it does not identify causal effects.",
+        "cue": "The penalty can set some coefficients to zero. These counts describe this particular fit.",
+        "label": "EARNINGS PREDICTION"
+      },
+      {
+        "title": "Balance fit against coefficient size.",
+        "kind": "equation",
+        "formula": "minᵦ Σᵢ(Yᵢ − Xᵢβ)² + λ Σⱼ|βⱼ|",
+        "lines": [
+          "First sum: fit to the training sample",
+          "Second term: penalty on absolute coefficients",
+          "Y: outcome · X: predictors · β: coefficients · λ: weight"
+        ],
+        "note": "Assess prediction on observations outside the training sample.",
+        "cue": "Now the objective describes the tradeoff we have just seen.",
+        "label": "EARNINGS PREDICTION"
+      }
+    ],
+    "diagnosis": "Within this subsection, the concrete example follows the formula. Moving it forward gives a broader audience a specific problem to think about.",
+    "changes": [
+      "Preview the observed comparison.",
+      "Explain what the penalty does.",
+      "Show the objective with labels."
+    ],
+    "preserved": "The two reported test errors, feature counts, and L1-penalized objective.",
+    "deferred": "Intervening lecture material remains in the source. The example reports prediction errors without uncertainty estimates.",
+    "practice": "Find one honest example that makes your first formula worth understanding. Put it before the formula.",
+    "principle": "Choose detail that carries insight",
+    "sourceType": "public",
+    "context": "NBER lecture. Earlier slides motivate prediction and regularization; this revision changes the order within the LASSO subsection.",
+    "beforeCaption": "Selected milestones in source order; intervening slides omitted.",
+    "afterCaption": "",
+    "source": {
+      "authors": "Susan Athey and Guido Imbens",
+      "title": "NBER Lectures on Machine Learning",
+      "date": "18 July 2015",
+      "url": "https://conference.nber.org/confer/2015/SI2015/ML/nber_slides.pdf",
+      "pages": "17, 23, 33"
+    },
+    "values": [
+      "Reported test root-mean-squared error: OLS 1.4093; LASSO 0.7379. Lower is better.",
+      "The source’s outcome scale is retained. The original example does not specify units or report uncertainty."
+    ]
+  },
+  {
+    "id": "teach-the-picture",
+    "number": "05",
+    "title": "Teach the visual alphabet first.",
+    "mode": "Visual overload",
+    "scale": "slide",
+    "dek": "Six unfamiliar diagrams are easier to read after one has been explained.",
+    "before": [
+      {
+        "title": "Matrix first · PDF p. 11",
+        "kind": "image",
+        "image": "/originals/targeting-p11.png",
+        "alt": "The source introduces the eigenvalue decomposition.",
+        "label": "PATTERNS ON A NETWORK"
+      },
+      {
+        "title": "Six patterns · PDF p. 12",
+        "kind": "image",
+        "image": "/originals/targeting-p12.png",
+        "alt": "Six ring-network patterns appear together; signs and sizes have no written key on this page.",
+        "label": "PATTERNS ON A NETWORK"
+      }
+    ],
+    "after": [
+      {
+        "title": "Begin with a pattern everyone can read.",
+        "kind": "ring",
+        "stage": 0,
+        "lines": [
+          "Each dot is one node on the ring.",
+          "The + sign denotes a positive entry."
+        ],
+        "note": "Equal dot sizes mean equal magnitudes; sign and size encode vector entries.",
+        "cue": "Read the entries as a pattern across the same network.",
+        "label": "PATTERNS ON A NETWORK",
+        "alt": "A fourteen-node ring. All entries are positive and equal in magnitude."
+      },
+      {
+        "title": "Neighbors can move in opposite directions.",
+        "kind": "ring",
+        "stage": 1,
+        "lines": [
+          "+ and − alternate around the ring.",
+          "Every entry has the same magnitude."
+        ],
+        "note": "The source’s two extreme patterns; same ring, different entries.",
+        "cue": "Now the pattern alternates. The network has not changed; the entries have.",
+        "label": "PATTERNS ON A NETWORK",
+        "alt": "The same fourteen-node ring. Plus and minus entries alternate; all magnitudes are equal."
+      },
+      {
+        "title": "The network preserves these patterns up to a multiplier.",
+        "kind": "ring",
+        "stage": 2,
+        "formula": "g u = λ u",
+        "note": "u: pattern · g: network · λ: multiplier. Intermediate patterns stay in the full source.",
+        "cue": "These are eigenvectors: applying the network rescales the same pattern.",
+        "label": "PATTERNS ON A NETWORK",
+        "alt": "The common and alternating patterns, side by side on the same fourteen-node ring. Applying the network rescales each pattern."
+      }
+    ],
+    "diagnosis": "The source stages the matrix before the pictures. The next build adds six patterns without a written key for the visual encoding.",
+    "changes": [
+      "Explain one pattern before comparing several.",
+      "Use signs as well as color.",
+      "Name the mathematical object after its operation is visible."
+    ],
+    "preserved": "The ring and its two extreme patterns. The simplification changes the teaching sequence, not the decomposition.",
+    "deferred": "Intermediate patterns and the full matrix identity remain in the original.",
+    "practice": "Introduce the meaning of one mark before asking your audience to compare a whole collection of marks.",
+    "principle": "Let the slide unfold",
+    "sourceType": "public",
+    "context": "The original has animation builds. This revision extends that approach by staging the newly introduced patterns and adding a visible key.",
+    "beforeCaption": "Actual source page; original aspect ratio preserved.",
+    "afterCaption": "",
+    "source": {
+      "authors": "Andrea Galeotti, Benjamin Golub, Sanjeev Goyal",
+      "title": "Targeting interventions in networks",
+      "date": "2019",
+      "url": "https://bengolub.net/wp-content/uploads/2020/09/TIN_slides.pdf",
+      "pages": "11–12"
+    }
+  },
+  {
+    "id": "keep-the-uncertainty",
+    "number": "06",
+    "title": "Draw the estimates—and the uncertainty.",
+    "mode": "Table search",
+    "scale": "slide",
+    "dek": "A coefficient plot should preserve the inconvenient results too.",
+    "before": [
+      {
+        "title": "Regression table · PDF p. 76",
+        "kind": "image",
+        "image": "/originals/autor-trade-p76.png",
+        "alt": "A six-column table reports current-exposure estimates and pre-period placebo estimates with standard errors.",
+        "label": "TRADE & EMPLOYMENT"
+      }
+    ],
+    "after": [
+      {
+        "title": "Show current and future exposure separately.",
+        "kind": "coefficients",
+        "note": "10-year-equivalent manufacturing employment / population change. Approx. 95% intervals; state-clustered SE; population-weighted.",
+        "cue": "Read the upper three as current-exposure estimates, and the lower three as placebo comparisons using future exposure.",
+        "label": "TRADE & EMPLOYMENT",
+        "alt": "Current exposure, estimate [approximate 95% CI]: 1990–2000 −0.89 [−1.2428, −0.5372]; 2000–2007 −0.72 [−0.8376, −0.6024]; pooled −0.75 [−0.8872, −0.6128]. Future exposure / placebo: 1970–1980 +0.43 [+0.1360, +0.7240]; 1980–1990 −0.13 [−0.3848, +0.1248]; pooled +0.15 [−0.0264, +0.3264]."
+      }
+    ],
+    "diagnosis": "The highlighted table contains two different comparisons. A single plot can preserve all six estimates while making the grouping and precision easier to see.",
+    "changes": [
+      "Keep current-exposure and future-exposure rows separate.",
+      "Reconstruct intervals transparently from the reported standard errors.",
+      "Retain the positive 1970–80 placebo coefficient."
+    ],
+    "preserved": "All six coefficients and standard errors. Outcome: ten times the annual change in manufacturing employment / working-age population, in percentage points; exposure: $1,000 per worker.",
+    "deferred": "Full table notes remain in the original. N = 722 per period, 1,444 in pooled columns; state-clustered SE and population weights apply. Normal-approximation intervals are a new display, not reported intervals.",
+    "practice": "Decide which coefficients answer your claim. Plot every one needed for that claim, including the awkward ones.",
+    "principle": "Minimize tables with lots of numbers!",
+    "sourceType": "public",
+    "context": "A 2026 graduate lecture reproducing a table from Autor, Dorn, and Hanson (2013). The positive 1970–80 placebo coefficient is retained.",
+    "beforeCaption": "",
+    "afterCaption": "",
+    "source": {
+      "authors": "David Autor",
+      "title": "Trade and (Local) Labor Markets",
+      "date": "2026-03-16",
+      "url": "https://economics.mit.edu/sites/default/files/inline-files/14.662-Spring-2026-Lectures-Slides-12-Trade-and-Labor-Canvas.pdf",
+      "pages": "76 (exposure units: p. 69)"
+    },
+    "values": [
+      "Current exposure: 1990–2000 −0.89 (SE 0.18); 2000–2007 −0.72 (0.06); pooled 1990–2007 −0.75 (0.07).",
+      "Future exposure / placebo: 1970–1980 +0.43 (0.15); 1980–1990 −0.13 (0.13); pooled 1970–1990 +0.15 (0.09).",
+      "Intervals use estimate ± 1.96 × SE. Axis units: outcome percentage points per $1,000 exposure per worker."
+    ]
+  },
+  {
+    "id": "title-the-finding",
+    "number": "07",
+    "title": "Let the title carry the finding.",
+    "mode": "Buried takeaway",
+    "scale": "slide",
+    "dek": "“Results” names a section. It does not tell the room what happened.",
+    "before": [
+      {
+        "title": "Results",
+        "kind": "plain",
+        "lines": [
+          "N = 300; offer assigned at random",
+          "β̂ = 0.18; 95% CI [0.06, 0.30]",
+          "Dependent variable: standardized test score"
+        ],
+        "note": "Fictional tutoring pilot · illustrative numbers",
+        "label": "TUTORING PILOT"
+      }
+    ],
+    "after": [
+      {
+        "title": "Pupils offered tutoring scored higher.",
+        "kind": "interval",
+        "note": "Illustrative randomized pilot · 300 pupils · 95% CI",
+        "cue": "This is the effect of being offered tutoring in this pilot. The estimate is 0.18 standard deviations, not an attendance effect.",
+        "label": "TUTORING PILOT",
+        "alt": "Effect of a tutoring offer: +0.18 standard deviations; illustrative 95% confidence interval +0.06 to +0.30. Zero is marked on the axis."
+      }
+    ],
+    "diagnosis": "The original contains the answer, but asks the listener to translate notation into a finding while also reading the design details.",
+    "changes": [
+      "State the finding in ordinary words.",
+      "Give the estimate a labeled scale and interval.",
+      "Keep “offered” in the claim to preserve the estimand."
+    ],
+    "preserved": "The invented offer effect, confidence interval, randomized design, sample size, and outcome units.",
+    "deferred": "Design and estimation details follow. The estimate concerns an offer in this pilot; attendance and generalization require further evidence.",
+    "practice": "Read your slide titles aloud without their bodies. Do they say what your audience should remember?",
+    "principle": "Takeaways before details",
+    "sourceType": "constructed",
+    "context": "Fictional randomized tutoring pilot, also used in case 12.",
+    "beforeCaption": "",
+    "afterCaption": "",
+    "values": [
+      "Illustrative offer effect: 0.18 standard deviations; illustrative 95% CI [0.06, 0.30].",
+      "Fictional design: 150 pupils offered tutoring, 150 not offered; 300 in total."
+    ]
+  },
+  {
+    "id": "start-with-two",
+    "number": "08",
+    "title": "Let two people teach the general case.",
+    "mode": "Generality first",
+    "scale": "slide",
+    "dek": "A listener should see what the matrix counts before seeing its inverse.",
+    "before": [
+      {
+        "title": "Equilibrium characterization",
+        "kind": "plain",
+        "formula": "a = (I − βG)⁻¹x = Σₖ≥₀(βG)ᵏx",
+        "lines": [
+          "G ≥ 0; β ≥ 0; spectral radius ρ(βG) < 1",
+          "a = x + βGa",
+          "Illustration: two reciprocal links"
+        ],
+        "note": "Toy network-response model",
+        "label": "A NETWORK RESPONSE MODEL"
+      }
+    ],
+    "after": [
+      {
+        "title": "Each response feeds back to the other.",
+        "kind": "network",
+        "stage": 1,
+        "lines": [
+          "Direct effect: 1 for each person",
+          "Each receives ¼ of the other’s total response"
+        ],
+        "note": "Toy model · symmetric players",
+        "cue": "Each starts with one unit. Each also receives one quarter of the other’s response.",
+        "label": "A NETWORK RESPONSE MODEL",
+        "alt": "Two people A and B, each with a direct effect of 1. Each total includes one quarter of the other person’s total response."
+      },
+      {
+        "title": "Each round contributes less.",
+        "kind": "feedback",
+        "formula": "1 + ¼ + ¹⁄₁₆ + ¹⁄₆₄ + ⋯ = ⁴⁄₃",
+        "note": "For each person: a = 1 + ¼a, hence a = 4/3.",
+        "cue": "The first round adds a quarter, the next a sixteenth. The total converges to four thirds.",
+        "label": "A NETWORK RESPONSE MODEL",
+        "alt": "Successive contributions: direct 1, first round 0.25, second 0.0625, third 0.015625. Cumulative responses approach 4/3."
+      },
+      {
+        "title": "The general formula counts the same rounds.",
+        "kind": "equation",
+        "formula": "a = x + βGx + (βG)²x + ⋯",
+        "lines": [
+          "x: direct effects · βGx: one round",
+          "(βG)²x: two rounds",
+          "Sum = (I − βG)⁻¹x when ρ(βG) < 1"
+        ],
+        "note": "Nonnegative G and β. The spectral-radius condition ensures repeated feedback dies out.",
+        "cue": "Now each term has a job we recognize. The convergence condition is still essential.",
+        "label": "A NETWORK RESPONSE MODEL"
+      }
+    ],
+    "diagnosis": "The original starts with the answer in its most general form. The listener has to specialize it before understanding the mechanism.",
+    "changes": [
+      "Solve a small case with the mechanism intact.",
+      "Show the contribution of each round.",
+      "Carry the interpretation into the general notation."
+    ],
+    "preserved": "The response equation and convergence condition. In the toy case, 1/(1 − 1/4) = 4/3 exactly.",
+    "deferred": "Other network structures and parameter values. The convergence condition remains necessary.",
+    "practice": "Find the smallest example in which your main force still operates. Teach it, then say exactly what generalizes.",
+    "principle": "Choose detail that carries insight",
+    "sourceType": "constructed",
+    "context": "Constructed model: two people, direct effect 1, reciprocal spillover ¼.",
+    "beforeCaption": "",
+    "afterCaption": "",
+    "values": [
+      "Per-person cumulative responses: 1, 1.25, 1.3125, 1.328125, tending to 4/3."
+    ]
+  },
+  {
+    "id": "give-a-way-back-in",
+    "number": "09",
+    "title": "Replace the section break with a bridge.",
+    "mode": "No re-entry",
+    "scale": "talk",
+    "dek": "Help the person who missed the last five slides rejoin the argument.",
+    "before": [
+      {
+        "title": "Outline",
+        "kind": "plain",
+        "lines": [
+          "1. Introduction",
+          "2. Model",
+          "3. IDENTIFICATION",
+          "4. Estimation",
+          "5. Counterfactuals"
+        ],
+        "note": "Constructed electricity-demand talk",
+        "label": "THE ARGUMENT SO FAR"
+      },
+      {
+        "title": "Moment conditions",
+        "kind": "plain",
+        "formula": "E[zᵢ εᵢ(θ)] = 0",
+        "lines": [
+          "Rank condition",
+          "Orthogonality restrictions",
+          "Identification of θ"
+        ],
+        "note": "The transition assumes the audience remembers the model’s purpose.",
+        "label": "THE ARGUMENT SO FAR"
+      }
+    ],
+    "after": [
+      {
+        "title": "The model gives us one demand equation.",
+        "kind": "flow",
+        "items": [
+          {
+            "title": "Behavior",
+            "text": "household decisions"
+          },
+          {
+            "title": "Equation",
+            "text": "prices and attention"
+          },
+          {
+            "title": "Data",
+            "text": "the next step"
+          }
+        ],
+        "lines": [
+          "Now we need to separate low price sensitivity from limited attention to price changes."
+        ],
+        "note": "Electricity-demand example from the essay",
+        "cue": "We have finished the model. The one thing we carry forward is a demand equation. Now we need to separate price sensitivity from attention.",
+        "label": "THE ARGUMENT SO FAR"
+      },
+      {
+        "title": "Keep returning to the main argument.",
+        "kind": "route",
+        "items": [
+          {
+            "title": "Question",
+            "text": "Prices or attention?"
+          },
+          {
+            "title": "Model",
+            "text": "One demand equation"
+          },
+          {
+            "title": "Measurement",
+            "text": "Separate the explanations"
+          },
+          {
+            "title": "Evidence",
+            "text": "Estimate the response"
+          },
+          {
+            "title": "Implication",
+            "text": "Policy predictions use both"
+          }
+        ],
+        "note": "Five re-entry points distributed through the talk.",
+        "cue": "At each stop, repeat what the details have established and what we will use next.",
+        "label": "THE ARGUMENT SO FAR"
+      }
+    ],
+    "diagnosis": "A highlighted outline locates the speaker without restoring the argument. The next technical slide still depends on uninterrupted attention.",
+    "changes": [
+      "Say what the last section produced.",
+      "Name the one object carried forward.",
+      "Explain the next obstacle before its technical treatment."
+    ],
+    "preserved": "The move from behavior to a demand equation and then estimation. The bridge supplements the technical section.",
+    "deferred": "The moment conditions follow with definitions at use.",
+    "practice": "After each technical block, write two sentences for someone returning to the room: what we have, and why the next step matters.",
+    "principle": "Give people a way back in",
+    "sourceType": "constructed",
+    "context": "Based on the essay’s fictional electricity-demand example.",
+    "beforeCaption": "",
+    "afterCaption": ""
+  },
+  {
+    "id": "protect-the-result",
+    "number": "10",
+    "title": "Build the short route before you need it.",
+    "mode": "Rigid timing",
+    "scale": "talk",
+    "dek": "Questions should change the amount of detail, not whether the room hears the result.",
+    "before": [
+      {
+        "title": "A fixed route has no room to contract.",
+        "kind": "timing",
+        "stage": 0,
+        "note": "Rehearsal plan · 68 speaking minutes before questions.",
+        "label": "A 75-MINUTE SEMINAR",
+        "alt": "Introduction 8, model 15, data 12, results 20, implications 8, conclusion 5 speaking minutes; total 68."
+      }
+    ],
+    "after": [
+      {
+        "title": "Prepare two routes to the same result.",
+        "kind": "timing",
+        "stage": 1,
+        "note": "Normal route: 53 minutes · short route: 47 minutes.",
+        "cue": "I will give the model and data at a high level, then show the main result. The details are available for discussion.",
+        "label": "A 75-MINUTE SEMINAR",
+        "alt": "Normal route: 8, 9, 6, 17, 8, 5 minutes, total 53. Short route: 8, 6, 3, 17, 8, 5, total 47."
+      },
+      {
+        "title": "A short version must still say something.",
+        "kind": "flow",
+        "items": [
+          {
+            "title": "Inputs",
+            "text": "Prices + consumption + attention"
+          },
+          {
+            "title": "Model",
+            "text": "How noticed prices affect use"
+          },
+          {
+            "title": "Output",
+            "text": "One demand equation"
+          }
+        ],
+        "note": "Policy predictions rely on the model’s assumed attention rule remaining applicable.",
+        "cue": "Keep the input, output, and relevant limitation visible when the intervening machinery contracts.",
+        "label": "A 75-MINUTE SEMINAR"
+      }
+    ],
+    "diagnosis": "The fixed plan makes every setup slide mandatory. Twelve minutes of early questions then push the first result to minute 47.",
+    "changes": [
+      "Protect time for the result and implications.",
+      "Rehearse actual shorter model and data explanations.",
+      "Use a contingency appropriate to the time already spent."
+    ],
+    "preserved": "The core contribution and the essay’s approximate 35- and 60-minute landmarks for a long job talk.",
+    "deferred": "Detailed model and data exposition contracts. The scenarios assume all added question time occurs before results; later interruptions would require more choices.",
+    "practice": "Build a core of roughly twenty distinct displays, with optional branches. Count animation builds as one display. Rehearse both routes aloud.",
+    "principle": "Set deadlines and adjust as you go",
+    "sourceType": "constructed",
+    "context": "Constructed rehearsal plan; early-question time is added before the main results.",
+    "beforeCaption": "",
+    "afterCaption": "",
+    "values": [
+      "Fixed speaking minutes: introduction 8, model 15, data 12, results 20, implications 8, conclusion 5 = 68.",
+      "Normal route: 8 + 9 + 6 + 17 + 8 + 5 = 53. Short route: 8 + 6 + 3 + 17 + 8 + 5 = 47.",
+      "With 12 minutes of early questions, normal results start at 35; with 18, short-route results start at 35. Both finish implications at 60 and conclusion at 65."
+    ]
+  },
+  {
+    "id": "build-the-diagram",
+    "number": "11",
+    "title": "Give the audience the axes first.",
+    "mode": "Visual overload",
+    "scale": "slide",
+    "dek": "A complete diagram can be the destination rather than the starting point.",
+    "before": [
+      {
+        "title": "Comparative statics",
+        "kind": "market",
+        "stage": 3,
+        "note": "Schematic supply and demand",
+        "label": "A DEMAND INCREASE",
+        "alt": "The new intersection is above and to the right of the original. Price rises from P0 to P1 and quantity from Q0 to Q1."
+      }
+    ],
+    "after": [
+      {
+        "title": "First, say what the axes measure.",
+        "kind": "market",
+        "stage": 0,
+        "note": "Schematic market: price vertically; quantity horizontally.",
+        "cue": "The vertical axis is price, and the horizontal axis is quantity.",
+        "label": "A DEMAND INCREASE",
+        "alt": "Price on the vertical axis; quantity on the horizontal axis."
+      },
+      {
+        "title": "Locate the initial market outcome.",
+        "kind": "market",
+        "stage": 1,
+        "note": "Supply rises; initial demand falls. Their intersection is the initial outcome.",
+        "cue": "Begin with supply and the original demand curve. Their intersection gives our starting point.",
+        "label": "A DEMAND INCREASE",
+        "alt": "Upward supply and downward initial demand meet at the starting equilibrium."
+      },
+      {
+        "title": "Now shift demand.",
+        "kind": "market",
+        "stage": 2,
+        "note": "Higher demand at every price; supply held fixed. Illustrative shift only.",
+        "cue": "The new curve means buyers demand more at any given price. Supply has not changed.",
+        "label": "A DEMAND INCREASE",
+        "alt": "Demand shifts outward while supply stays fixed."
+      },
+      {
+        "title": "Trace the change back to the axes.",
+        "kind": "market",
+        "stage": 3,
+        "note": "In this schematic, both equilibrium price and quantity rise.",
+        "cue": "The new intersection is up and to the right, so price and quantity both rise.",
+        "label": "A DEMAND INCREASE",
+        "alt": "The new intersection is above and to the right of the original. Price rises from P0 to P1 and quantity from Q0 to Q1."
+      }
+    ],
+    "diagnosis": "When the axes, curves, shift, and projections appear together, the listener has to decide where to start while the speaker is already interpreting the outcome.",
+    "changes": [
+      "Explain the axes before adding curves.",
+      "Establish the baseline before changing it.",
+      "Only then trace the implication."
+    ],
+    "preserved": "The same final diagram and comparative-static reasoning. The improvement is the route through it, not fewer final marks.",
+    "deferred": "The final diagram stays intact. The sequence gives each part an explanation.",
+    "practice": "Put up only the axes. Explain them. Add one economically meaningful object at a time.",
+    "principle": "Let the slide unfold",
+    "sourceType": "constructed",
+    "context": "Constructed supply-and-demand diagram.",
+    "beforeCaption": "",
+    "afterCaption": ""
+  },
+  {
+    "id": "claim-and-boundary",
+    "number": "12",
+    "title": "Give the claim a boundary, not an apology.",
+    "mode": "Caveats first",
+    "scale": "slide",
+    "dek": "A credible limitation should help the audience understand the result’s scope.",
+    "before": [
+      {
+        "title": "Caveats",
+        "kind": "plain",
+        "lines": [
+          "Only one district",
+          "Short-run outcome only",
+          "Offer ≠ participation",
+          "External validity uncertain",
+          "Attendance is endogenous"
+        ],
+        "note": "Fictional tutoring pilot; the result itself is not on this slide.",
+        "label": "FINDING & SCOPE"
+      }
+    ],
+    "after": [
+      {
+        "title": "The offer helped in this pilot. Scaling is a separate question.",
+        "kind": "claim",
+        "items": [
+          {
+            "title": "What we learn",
+            "text": "An offer raised short-run scores by 0.18 SD in this fictional district; 95% CI 0.06–0.30."
+          },
+          {
+            "title": "What we do not learn",
+            "text": "Attendance effects, persistence, or effects in other districts and at national scale."
+          },
+          {
+            "title": "What comes next",
+            "text": "Test whether staffing and participation change at larger scale."
+          }
+        ],
+        "note": "Fictional tutoring pilot · randomized offers · 300 pupils",
+        "cue": "This design answers the offer question here. A larger rollout could change staffing and participation, and would need new evidence.",
+        "label": "FINDING & SCOPE"
+      }
+    ],
+    "diagnosis": "The caveats are sensible, but without the finding there is no claim for them to qualify. The audience hears reservations before it knows what was accomplished.",
+    "changes": [
+      "State one proportionate finding.",
+      "Name a concrete limit to its interpretation.",
+      "Explain the next research task without claiming to have done it."
+    ],
+    "preserved": "The same illustrative offer effect and uncertainty, with limits on attendance and generalization.",
+    "deferred": "The limitations remain on the slide, after the finding they qualify.",
+    "practice": "Write “What this establishes” and “What it leaves open” in equally plain language. Check both with your advisor.",
+    "principle": "Be bigger than your paper",
+    "sourceType": "constructed",
+    "context": "The same fictional tutoring pilot as case 07.",
+    "beforeCaption": "",
+    "afterCaption": ""
+  }
+]
