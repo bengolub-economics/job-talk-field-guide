@@ -30,4 +30,16 @@ for (const file of files.filter(f=>f.endsWith('.css'))){
 const cases=JSON.parse(await readFile(path.join(root,'lib/gallery-data.json'),'utf8'));
 for (const c of cases) await check(`${base}/case/${c.id}/`,'index.html');
 if (html.length<cases.length+4) throw new Error('Missing exported pages');
+const essay=await readFile(path.join(out,'essay.html'),'utf8');
+const essayIds=[...essay.matchAll(/\bid="([^"]+)"/g)].map(match=>match[1]);
+if(new Set(essayIds).size!==essayIds.length) throw new Error('Duplicate IDs in the essay');
+for(const [,anchor] of essay.matchAll(/href="#([^"]+)"/g)) {
+ if(!essayIds.includes(anchor)) throw new Error(`Essay link has no target: #${anchor}`);
+}
+const adviceLinks=[...essay.matchAll(/href="#(essay-(?:do|dont)-\d{2})"/g)].map(match=>match[1]);
+if(adviceLinks.length!==20||new Set(adviceLinks).size!==20) throw new Error('Expected 20 distinct listicle paragraph links');
+for(const anchor of adviceLinks) {
+ if(!essay.includes(`<p id="${anchor}"`)) throw new Error(`Listicle target is not a paragraph: ${anchor}`);
+}
+console.log('Verified all 20 listicle links land on distinct supporting paragraphs.');
 console.log(`Verified ${html.length} HTML pages and ${checked.size} local link/asset targets.`);

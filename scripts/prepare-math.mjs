@@ -37,17 +37,22 @@ for (const row of [...reconstruction.hankBlocks, ...reconstruction.hankTargets])
 }
 const decode = s => s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"');
 let essay = await readFile(path.join(root, 'content/essay.html'), 'utf8');
-const essaySource = await readFile(path.join(root, 'content/essay.md'));
-const sourceHash = createHash('sha256').update(essaySource).digest('hex');
-const htmlSourceHash = essay.match(/<meta name="source-sha256" content="([a-f0-9]{64})">/)?.[1];
-if (sourceHash !== htmlSourceHash) throw new Error('Essay Markdown and HTML are out of sync. Run python3 scripts/build_essay_html.py from the parent JM wisdom folder.');
 // A standalone site checkout uses its committed source snapshot. In the writing
 // workspace, also reject a build if the author's latest Markdown has changed.
-const latestSource = await readFile(path.join(root, '../job-talk-essay-revised.md')).catch(error => {
-  if (error.code === 'ENOENT') return null;
-  throw error;
-});
-if (latestSource && !latestSource.equals(essaySource)) throw new Error('The field guide essay is older than job-talk-essay-revised.md. Run python3 scripts/build_essay_html.py from the parent JM wisdom folder.');
+async function verifySource(snapshot, manuscript, metaName) {
+  const source = await readFile(path.join(root, 'content', snapshot));
+  const hash = createHash('sha256').update(source).digest('hex');
+  const htmlHash = essay.match(new RegExp(`<meta name="${metaName}" content="([a-f0-9]{64})">`))?.[1];
+  const rebuild = 'Run python3 scripts/build_essay_html.py from the parent JM wisdom folder.';
+  if (hash !== htmlHash) throw new Error(`${snapshot} and HTML are out of sync. ${rebuild}`);
+  const latest = await readFile(path.join(root, '..', manuscript)).catch(error => {
+    if (error.code === 'ENOENT') return null;
+    throw error;
+  });
+  if (latest && !latest.equals(source)) throw new Error(`The field guide is older than ${manuscript}. ${rebuild}`);
+}
+await verifySource('essay.md', 'job-talk-essay-revised.md', 'source-sha256');
+await verifySource('essay-listicle.md', 'job-talk-dos-and-donts.md', 'listicle-source-sha256');
 if (process.env.NEXT_PUBLIC_BASE_PATH) essay = essay.replace(/(href|src)="\/(?!\/)/g, `$1="${process.env.NEXT_PUBLIC_BASE_PATH}/`);
 let essayCount = 0;
 essay = essay.replace(/<math\b[^>]*>[\s\S]*?<\/math>/g, original => {

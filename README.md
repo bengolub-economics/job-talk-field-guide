@@ -28,13 +28,13 @@ The installed vinext beta exporter needs two adaptations for project-path hostin
 
 ### Keep the essay synchronized
 
-The current manuscript is `job-talk-essay-revised.md` in the parent JM wisdom folder. From that folder, run:
+The current manuscript is `job-talk-essay-revised.md` in the parent JM wisdom folder. The opening listicle is edited separately in `job-talk-dos-and-donts.md`. From that folder, run:
 
 ```sh
 python3 scripts/build_essay_html.py
 ```
 
-This regenerates the standalone `job-talk-essay.html` and synchronizes `content/essay.md` and `content/essay.html`, retaining the link back to the field guide. Then run `npm run build:pages` in this folder. Every build checks the Markdown snapshot against the source hash embedded in the HTML; in the writing workspace, it also checks against the latest manuscript. The build stops if they differ. Do not edit the generated HTML directly.
+This regenerates the standalone `job-talk-essay.html` and synchronizes `content/essay.md`, `content/essay-listicle.md`, and `content/essay.html`, retaining the link back to the field guide. Listicle headlines link directly to the supporting paragraphs in the same page. Then run `npm run build:pages` in this folder. Every build checks both Markdown snapshots against the source hashes embedded in the HTML; in the writing workspace, it also checks against the latest manuscripts. The build stops if they differ or a paragraph link has no target. Do not edit the generated HTML directly.
 
 All revised panels use HTML, SVG, and typeset mathematics. The build rejects an original slide image on the revised side. Numerical reconstruction notes record any calculated or digitized values.
 
