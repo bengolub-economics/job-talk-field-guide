@@ -57,7 +57,7 @@
     "number": "02",
     "title": "Give the model a reason to exist.",
     "mode": "Hidden question",
-    "scale": "talk",
+    "scale": "slide",
     "dek": "Put the policy question before the payoff function.",
     "before": [
       {
@@ -197,7 +197,7 @@
     "title": "Give the method a job before its formula.",
     "mode": "Generality first",
     "scale": "talk",
-    "dek": "An example gives the audience a question for the method to answer.",
+    "dek": "Give each method a concrete task, then introduce the machinery that solves it.",
     "before": [
       {
         "title": "Objective · PDF p. 17",
@@ -265,7 +265,7 @@
         "label": "EARNINGS PREDICTION"
       }
     ],
-    "diagnosis": "Within this subsection, the concrete example follows the formula. Moving it forward gives a broader audience a specific problem to think about.",
+    "diagnosis": "The lecture supplies concrete prediction examples after explaining the corresponding methods. Use those examples to open the method chapters, then bring back their comparisons as checkpoints.",
     "changes": [
       "Preview the observed comparison.",
       "Explain what the penalty does.",
@@ -276,7 +276,7 @@
     "practice": "Find one honest example that makes your first formula worth understanding. Put it before the formula.",
     "principle": "Choose detail that carries insight",
     "sourceType": "public",
-    "context": "NBER lecture. Earlier slides motivate prediction and regularization; this revision changes the order within the LASSO subsection.",
+    "context": "NBER methods lecture. Earlier slides already motivate prediction, validation, and regularization. The outline preserves the survey’s coverage; the close-up reorders the LASSO subsection.",
     "beforeCaption": "Selected milestones in source order; intervening slides omitted.",
     "afterCaption": "",
     "source": {
@@ -289,7 +289,144 @@
     "values": [
       "Reported test root-mean-squared error: OLS 1.4093; LASSO 0.7379. Lower is better.",
       "The source’s outcome scale is retained. The original example does not specify units or report uncertainty."
-    ]
+    ],
+    "outline": {
+      "title": "Give each method a concrete job",
+      "description": "A 73-page methods lecture, grouped by topic. Keep its coverage and give each chapter a concrete task before its machinery. The LASSO close-up below shows the change in detail.",
+      "before": [
+        {
+          "label": "Source section",
+          "title": "Topic inventory",
+          "content": "Lists the categories and methods covered by the lecture.",
+          "pages": "2–4",
+          "takeaway": "Three stacked contents cards",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Foundations",
+          "content": "Introduces supervised tasks, validation, regularization, and scalability.",
+          "pages": "5–11",
+          "takeaway": "Task definitions and general principles",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Linear methods",
+          "content": "Objectives, geometry, properties, and implementation lead to an earnings example.",
+          "pages": "12–35",
+          "takeaway": "Objective → properties → tuning → example",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Trees",
+          "content": "Construction and pruning precede the fitted tree and error comparison.",
+          "pages": "36–45",
+          "takeaway": "Split rule → prune → tree → test error",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Combining methods",
+          "content": "Introduces several combinations before the comparison checkpoint.",
+          "pages": "46–57",
+          "takeaway": "Method family → method family → comparison",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Unsupervised tasks",
+          "content": "Changes to data without an outcome, then dimension reduction, clustering, and associations.",
+          "pages": "58–67",
+          "takeaway": "New task → methods",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Classification and close",
+          "content": "Introduces support-vector classification and its objective; ends with thanks.",
+          "pages": "68–73",
+          "takeaway": "Boundary → margin objective → close",
+          "role": "setup"
+        }
+      ],
+      "after": [
+        {
+          "label": "Proposed stage",
+          "title": "A fitted rule must work on observations it has not seen.",
+          "content": "Train on observations with known outcomes. Check predictions on observations left out of fitting. The survey covers predicting a number, finding structure, and assigning a category.",
+          "pages": "5–11, 33",
+          "takeaway": "Training data → fitted rule → test observations; three task cards",
+          "role": "setup"
+        },
+        {
+          "label": "Proposed stage",
+          "title": "For many predictors, shrinkage is a candidate to check on held-out data.",
+          "content": "The earnings example reports test RMSE of 1.4093 for OLS and 0.7379 for LASSO. Explain shrinkage, the objective, and penalty tuning after showing the comparison.",
+          "pages": "33 → 23 → 17 → 29–31; context 12–35",
+          "takeaway": "Example → mechanism → labeled equation → validation",
+          "role": "setup"
+        },
+        {
+          "label": "Proposed stage",
+          "title": "A tree makes different predictions for different groups.",
+          "content": "A regression tree partitions the observations into groups with different predictions. Its fitted tree and test error give the split and pruning rules a concrete purpose.",
+          "pages": "43–44 → 36–42; 45",
+          "takeaway": "Partition sketch → fitted tree → test comparison → optional mechanics",
+          "role": "setup"
+        },
+        {
+          "label": "Proposed stage",
+          "title": "Combining fitted rules gives another prediction rule to test.",
+          "content": "Boosting fits residuals; bagging averages resampled fits; random forests vary candidate predictors; ensembles combine fitted rules. Compare their predictions on the same task.",
+          "pages": "57 → 46–56",
+          "takeaway": "Comparison → four mechanism cards",
+          "role": "setup"
+        },
+        {
+          "label": "Proposed stage",
+          "title": "Now we look for structure without an outcome label.",
+          "content": "Without an outcome label, the output changes: lower-dimensional representations, clusters, mixture components, or association rules.",
+          "pages": "58–67",
+          "takeaway": "No outcome label → structure-finding sketches",
+          "role": "setup"
+        },
+        {
+          "label": "Proposed stage",
+          "title": "Classification assigns a category rather than a number.",
+          "content": "Support-vector classification separates labels with a boundary and a margin. This formulation does not directly supply probabilities.",
+          "pages": "68–72",
+          "takeaway": "Labeled points → boundary → margin objective",
+          "role": "setup"
+        },
+        {
+          "label": "Proposed stage",
+          "title": "Choose the task, fit the rule, and check what the evidence supports.",
+          "content": "Choose the task and its output. Check supervised predictions on held-out observations. A useful prediction rule does not by itself identify a causal effect.",
+          "pages": "5–11, 33, 44, 57–58, 68–72",
+          "takeaway": "Task → output → appropriate check",
+          "role": "setup"
+        }
+      ],
+      "change": "Organize each method chapter around a task, example, mechanism, and validation checkpoint.",
+      "branches": [
+        {
+          "fromStage": 2,
+          "returnToStage": 2,
+          "title": "Linear-method depth",
+          "pages": "15–16, 18–22, 27–28, 32",
+          "content": "Alternative formulations, Bayesian interpretations, and asymptotic discussion. Keep caveats essential to the example on the main route."
+        },
+        {
+          "fromStage": 3,
+          "returnToStage": 3,
+          "title": "Tree mechanics",
+          "pages": "37–42",
+          "content": "Full split and pruning derivation after the listener sees the job and output."
+        }
+      ]
+    }
   },
   {
     "id": "teach-the-picture",
@@ -364,7 +501,7 @@
     "principle": "Let the slide unfold",
     "sourceType": "public",
     "context": "The original has animation builds. This revision extends that approach by staging the newly introduced patterns and adding a visible key.",
-    "beforeCaption": "Actual source page; original aspect ratio preserved.",
+    "beforeCaption": "",
     "afterCaption": "",
     "source": {
       "authors": "Andrea Galeotti, Benjamin Golub, Sanjeev Goyal",
@@ -430,51 +567,56 @@
   {
     "id": "title-the-finding",
     "number": "07",
-    "title": "Let the title carry the finding.",
+    "title": "Put the finding in the title.",
     "mode": "Buried takeaway",
     "scale": "slide",
-    "dek": "“Results” names a section. It does not tell the room what happened.",
+    "dek": "“Baseline Results” names the section. A sentence tells the room what the table says.",
     "before": [
       {
-        "title": "Results",
-        "kind": "plain",
-        "lines": [
-          "N = 300; offer assigned at random",
-          "\\(\\widehat{\\beta}=0.18\\); 95% CI \\([0.06,\\,0.30]\\)",
-          "Dependent variable: standardized test score"
-        ],
-        "note": "Fictional tutoring pilot · illustrative numbers",
-        "label": "TUTORING PILOT"
+        "kind": "image",
+        "title": "Baseline Results · PDF p. 39",
+        "image": "/originals/elite-p39.png",
+        "alt": "Baseline Results: aid coefficients 3.391, −1.511, and 4.973 for haven deposits, non-haven deposits, and their ratio. Full table includes standard errors, GDP-growth controls, fixed effects, observations, and R-squared."
       }
     ],
     "after": [
       {
-        "title": "Pupils offered tutoring scored higher.",
-        "kind": "interval",
-        "note": "Illustrative randomized pilot · 300 pupils · 95% CI",
-        "cue": "This is the effect of being offered tutoring in this pilot. The estimate is 0.18 standard deviations, not an attendance effect.",
-        "label": "TUTORING PILOT",
-        "alt": "Effect of a tutoring offer: +0.18 standard deviations; illustrative 95% confidence interval +0.06 to +0.30. Zero is marked on the axis."
+        "kind": "aid-results",
+        "title": "Aid disbursements coincide with rising haven deposits.",
+        "label": "ELITE CAPTURE OF FOREIGN AID",
+        "note": "22 highly aid-dependent countries · 1990–2010",
+        "cue": "The table associates larger aid disbursements with faster growth in haven deposits. The non-haven estimate is negative and imprecise; the ratio also rises.",
+        "alt": "The original regression table with a finding as its title. All coefficients, standard errors, significance marks, controls, observation counts and R-squared values are retained."
       }
     ],
-    "diagnosis": "The original contains the answer, but asks the listener to translate notation into a finding while also reading the design details.",
+    "diagnosis": "A topic title leaves the audience to extract the finding from the table. Naming the observed relationship gives every number a question to answer.",
     "changes": [
-      "State the finding in ordinary words.",
-      "Give the estimate a labeled scale and interval.",
-      "Keep “offered” in the claim to preserve the estimand."
+      "Replace the topic label with a proportionate finding.",
+      "Keep the full table, including the non-haven result.",
+      "Use “coincide” to describe the reported relationship."
     ],
-    "preserved": "The invented offer effect, confidence interval, randomized design, sample size, and outcome units.",
-    "deferred": "Design and estimation details follow. The estimate concerns an offer in this pilot; attendance and generalization require further evidence.",
+    "preserved": "All six coefficients and standard errors, source significance marks, fixed effects, observation counts, R-squared values, and country clustering.",
+    "deferred": "Interpretation and alternative explanations remain in the surrounding talk. The revised title makes no claim that the table alone proves theft.",
     "practice": "Read your slide titles aloud without their bodies. Do they say what your audience should remember?",
     "principle": "Takeaways before details",
-    "sourceType": "constructed",
-    "context": "Fictional randomized tutoring pilot, also used in case 12.",
+    "sourceType": "public",
+    "context": "The authors preview the main findings on PDF pp. 11–12. This is a local title revision to p. 39; p. 40 already uses a substantive title.",
     "beforeCaption": "",
     "afterCaption": "",
     "values": [
-      "Illustrative offer effect: 0.18 standard deviations; illustrative 95% CI [0.06, 0.30].",
-      "Fictional design: 150 pupils offered tutoring, 150 not offered; 300 in total."
-    ]
+      "Aid (% GDP): haven 3.391 (1.154); non-haven −1.511 (1.035); ratio 4.973 (1.715).",
+      "GDP (% growth): haven 0.122 (0.141); non-haven 0.147 (0.063); ratio −0.001 (0.150).",
+      "All columns include country and time fixed effects. Standard errors clustered by country.",
+      "Observations: 1,648 / 1,652 / 1,645. R-squared: 0.101 / 0.092 / 0.076.",
+      "The dependent variable is quarterly growth in log deposits. A one-percentage-point increase in aid/GDP is associated with 3.391 log-percentage-points higher haven-deposit growth, controlling for GDP growth and country and time fixed effects."
+    ],
+    "source": {
+      "authors": "Jørgen Juel Andersen, Niels Johannesen, Bob Rijkers",
+      "title": "Elite Capture of Foreign Aid: Evidence from Offshore Bank Accounts",
+      "date": "2020",
+      "url": "https://thedocs.worldbank.org/en/doc/605901583339487690-0050022020/render/EliteCaptureofForeignAid.pdf",
+      "pages": "39"
+    }
   },
   {
     "id": "start-with-two",
@@ -482,377 +624,716 @@
     "title": "Let two people teach the general case.",
     "mode": "Generality first",
     "scale": "slide",
-    "dek": "A listener should see what the matrix counts before seeing its inverse.",
+    "dek": "Let two players explain the inverse in a real network-game lecture.",
     "before": [
       {
-        "title": "Equilibrium characterization",
-        "kind": "plain",
-        "formula": "\\begin{aligned}a&=(I-\\beta G)^{-1}x\\\\&=\\sum_{k=0}^{\\infty}(\\beta G)^k x\\end{aligned}",
-        "lines": [
-          "\\(G\\geq0\\); \\(\\beta\\geq0\\); spectral radius \\(\\rho(\\beta G)<1\\)",
-          "\\(a=x+\\beta Ga\\)",
-          "Illustration: two reciprocal links"
-        ],
-        "note": "Toy network-response model",
-        "label": "A NETWORK RESPONSE MODEL"
+        "kind": "image",
+        "title": "General equilibrium · PDF p. 14",
+        "image": "/originals/acemoglu-games-p14.png",
+        "alt": "Nash equilibria: the general interior solution is expressed using the inverse of I minus phi over theta times the transposed network matrix."
+      },
+      {
+        "kind": "image",
+        "title": "Power-series expansion · PDF p. 15",
+        "image": "/originals/acemoglu-games-p15.png",
+        "alt": "The next slide defines Bonacich centrality and gives the inverse’s power-series representation; the following page interprets walks through the network."
       }
     ],
     "after": [
       {
-        "title": "Each response feeds back to the other.",
+        "title": "Each player responds to the other.",
         "kind": "network",
         "stage": 1,
         "lines": [
-          "Direct effect: 1 for each person",
-          "Each receives \\(\\tfrac14\\) of the other’s total response"
+          "Each player’s direct incentive is \\(1\\).",
+          "Each adds \\(\\tfrac14\\) of the other’s action to their own best response."
         ],
-        "note": "Toy model · symmetric players",
-        "cue": "Each starts with one unit. Each also receives one quarter of the other’s response.",
-        "label": "A NETWORK RESPONSE MODEL",
-        "alt": "Two people A and B, each with a direct effect of 1. Each total includes one quarter of the other person’s total response."
+        "note": "Source model with \\(\\theta=1\\), \\(\\phi=\\tfrac14\\), \\(\\alpha_A=\\alpha_B=1\\), and zero shocks.",
+        "cue": "Each starts with a direct incentive of one. Each also responds to one quarter of the other player’s action.",
+        "label": "A TWO-PLAYER NETWORK GAME",
+        "alt": "Two reciprocal links between A and B, each with coefficient one quarter. Each direct incentive equals one."
       },
       {
         "title": "Each round contributes less.",
         "kind": "feedback",
         "formula": "1+\\frac14+\\frac1{16}+\\frac1{64}+\\cdots=\\frac43",
-        "note": "For each person: \\(a=1+\\tfrac14a\\), hence \\(a=\\tfrac43\\).",
-        "cue": "The first round adds a quarter, the next a sixteenth. The total converges to four thirds.",
-        "label": "A NETWORK RESPONSE MODEL",
+        "note": "\\(x_A=1+\\tfrac14x_B\\), \\(x_B=1+\\tfrac14x_A\\). Both actions equal \\(\\tfrac43\\).",
+        "cue": "These are terms of the equilibrium expansion: one, then a quarter, then a sixteenth. Their sum is four thirds; the bars are not a timeline.",
+        "label": "A TWO-PLAYER NETWORK GAME",
         "alt": "Successive contributions: direct 1, first round 0.25, second 0.0625, third 0.015625. Cumulative responses approach 4/3."
       },
       {
-        "title": "The general formula counts the same rounds.",
+        "title": "The general formula adds the same rounds.",
         "kind": "equation",
-        "formula": "a=x+\\beta Gx+(\\beta G)^2x+\\cdots",
+        "formula": "x=\\sum_{k=0}^{\\infty}\\left(\\frac{\\phi}{\\theta}G^{\\prime}\\right)^k(\\widetilde{\\alpha}+\\widetilde{\\xi})",
         "lines": [
-          "\\(x\\): direct effects · \\(\\beta Gx\\): one round",
-          "\\((\\beta G)^2x\\): two rounds",
-          "Sum = \\((I-\\beta G)^{-1}x\\) when \\(\\rho(\\beta G)<1\\)"
+          "\\(k=0\\): direct incentives and shocks",
+          "\\(k=1\\): one round of responses · \\(k=2\\): two rounds",
+          "\\(\\widetilde{\\alpha}=\\alpha/\\theta\\), \\(\\widetilde{\\xi}=\\xi/\\theta\\); \\(G^{\\prime}\\) is the transposed network."
         ],
-        "note": "Nonnegative \\(G\\) and \\(\\beta\\). The spectral-radius condition ensures repeated feedback dies out.",
-        "cue": "Now each term has a job we recognize. The convergence condition is still essential.",
-        "label": "A NETWORK RESPONSE MODEL"
+        "note": "Interior solution. This expansion requires \\(\\rho((\\phi/\\theta)G^{\\prime})<1\\).",
+        "cue": "The general formula sums the same rounds across every sequence of links, including repeated links. Its convergence condition still matters.",
+        "label": "BACK TO THE SOURCE MODEL"
       }
     ],
-    "diagnosis": "The original starts with the answer in its most general form. The listener has to specialize it before understanding the mechanism.",
+    "diagnosis": "The general inverse and its expansion arrive before a solved numerical example. A two-player calculation gives the audience something concrete to recognize in both expressions.",
     "changes": [
       "Solve a small case with the mechanism intact.",
       "Show the contribution of each round.",
       "Carry the interpretation into the general notation."
     ],
-    "preserved": "The response equation and convergence condition. In the toy case, \\(\\frac{1}{1-1/4}=\\frac43\\) exactly.",
-    "deferred": "Other network structures and parameter values. The convergence condition remains necessary.",
+    "preserved": "The source’s linear best responses and interior-solution formula. The example sets \\(\\theta=1\\), \\(\\phi=\\tfrac14\\), \\(\\alpha_A=\\alpha_B=1\\), and \\(\\xi_A=\\xi_B=0\\).",
+    "deferred": "The general network, heterogeneous incentives, shocks, and boundary equilibria follow. The geometric-series interpretation requires the spectral-radius condition.",
     "practice": "Find the smallest example in which your main force still operates. Teach it, then say exactly what generalizes.",
     "principle": "Choose detail that carries insight",
-    "sourceType": "constructed",
-    "context": "Constructed model: two people, direct effect 1, reciprocal spillover ¼.",
-    "beforeCaption": "",
+    "sourceType": "public",
+    "context": "PDF pp. 12–13 introduce payoffs and best responses; pp. 14–16 develop the inverse and network interpretation. The revision inserts a solved two-player specialization before that general solution.",
+    "beforeCaption": "Two consecutive source pages.",
     "afterCaption": "",
     "values": [
-      "Per-person cumulative responses: 1, 1.25, 1.3125, 1.328125, tending to 4/3."
-    ]
+      "Source specialization: \\(\\theta=1\\), \\(\\phi=\\tfrac14\\), \\(\\alpha_A=\\alpha_B=1\\), \\(\\xi_A=\\xi_B=0\\); reciprocal links with no self-links.",
+      "Best responses: \\(x_A=\\max\\{1+x_B/4,0\\}\\) and \\(x_B=\\max\\{1+x_A/4,0\\}\\). The positive solution is \\(x_A=x_B=\\tfrac43\\).",
+      "Terms of the equilibrium expansion: \\(1,\\tfrac14,\\tfrac1{16},\\tfrac1{64},\\ldots\\); their sum is \\(\\tfrac43\\)."
+    ],
+    "source": {
+      "authors": "Daron Acemoglu",
+      "title": "Networks: Games over Networks and Peer Effects",
+      "date": "22 July 2014",
+      "url": "https://conference.nber.org/confer/2014/SI2014/ML/Acemoglu1.pdf",
+      "pages": "14–15"
+    }
   },
   {
     "id": "give-a-way-back-in",
     "number": "09",
-    "title": "Replace the section break with a bridge.",
+    "title": "Restore the argument at each stop.",
     "mode": "No re-entry",
     "scale": "talk",
-    "dek": "Help the person who missed the last five slides rejoin the argument.",
+    "dek": "A section name tells listeners where you are. A bridge tells them what they need next.",
     "before": [
       {
-        "title": "Outline",
-        "kind": "plain",
-        "lines": [
-          "1. Introduction",
-          "2. Model",
-          "3. IDENTIFICATION",
-          "4. Estimation",
-          "5. Counterfactuals"
-        ],
-        "note": "Constructed electricity-demand talk",
-        "label": "THE ARGUMENT SO FAR"
+        "kind": "image",
+        "title": "Solution Method · PDF p. 10",
+        "image": "/originals/hank-2017-p10.png",
+        "alt": "A bare divider labeled Solution Method."
       },
       {
-        "title": "Moment conditions",
-        "kind": "plain",
-        "formula": "\\mathbb{E}\\!\\left[z_i\\varepsilon_i(\\theta)\\right]=0",
-        "lines": [
-          "Rank condition",
-          "Orthogonality restrictions",
-          "Identification of \\(\\theta\\)"
-        ],
-        "note": "The transition assumes the audience remembers the model’s purpose.",
-        "label": "THE ARGUMENT SO FAR"
+        "kind": "image",
+        "title": "Parameterization · PDF p. 14",
+        "image": "/originals/hank-2017-p14.png",
+        "alt": "A bare divider labeled Parameterization."
+      },
+      {
+        "kind": "image",
+        "title": "Results · PDF p. 19",
+        "image": "/originals/hank-2017-p19.png",
+        "alt": "A bare divider labeled Results, between external lottery evidence and the monetary-policy experiment."
       }
     ],
     "after": [
       {
-        "title": "The model gives us one demand equation.",
-        "kind": "flow",
+        "kind": "claim",
+        "title": "The model is specified. Now compute its behavior.",
+        "label": "BRIDGE INTO THE SOLUTION",
         "items": [
           {
-            "title": "Behavior",
-            "text": "household decisions"
+            "title": "So far",
+            "text": "Households hold different portfolios and make different spending choices."
           },
           {
-            "title": "Equation",
-            "text": "prices and attention"
+            "title": "Carry forward",
+            "text": "These choices and the distribution of households must be solved together."
           },
           {
-            "title": "Data",
-            "text": "the next step"
+            "title": "Next",
+            "text": "Compute the behavior of the whole economy."
           }
         ],
-        "lines": [
-          "Now we need to separate low price sensitivity from limited attention to price changes."
-        ],
-        "note": "Electricity-demand example from the essay",
-        "cue": "We have finished the model. The one thing we carry forward is a demand equation. Now we need to separate price sensitivity from attention.",
-        "label": "THE ARGUMENT SO FAR"
+        "note": "Model ingredients from pp. 6–9; solution method on pp. 10–13.",
+        "cue": "We have the economic ingredients. Now the numerical method tells us how household choices and their distribution fit together."
       },
       {
-        "title": "Keep returning to the main argument.",
-        "kind": "route",
+        "kind": "claim",
+        "title": "We can solve the model. Does it resemble household data?",
+        "label": "BRIDGE INTO PARAMETERIZATION",
         "items": [
           {
-            "title": "Question",
-            "text": "Prices or attention?"
+            "title": "So far",
+            "text": "We can solve household choices and their distribution."
           },
           {
-            "title": "Model",
-            "text": "One demand equation"
+            "title": "Carry forward",
+            "text": "Portfolios and spending responses matter for monetary transmission."
           },
           {
-            "title": "Measurement",
-            "text": "Separate the explanations"
-          },
-          {
-            "title": "Evidence",
-            "text": "Estimate the response"
-          },
-          {
-            "title": "Implication",
-            "text": "Policy predictions use both"
+            "title": "Next",
+            "text": "Compare wealth patterns and household spending responses with the evidence."
           }
         ],
-        "note": "Five re-entry points distributed through the talk.",
-        "cue": "At each stop, repeat what the details have established and what we will use next.",
-        "label": "THE ARGUMENT SO FAR"
+        "note": "The lottery evidence is shown separately from the model calibration.",
+        "cue": "Before the policy experiment, check whether the model gives a useful account of household wealth and spending responses."
+      },
+      {
+        "kind": "claim",
+        "title": "We have different spending responses. What does a rate cut do?",
+        "label": "BRIDGE INTO RESULTS",
+        "items": [
+          {
+            "title": "So far",
+            "text": "The model matches wealth patterns and produces heterogeneous spending responses."
+          },
+          {
+            "title": "Carry forward",
+            "text": "An interest-rate change reaches households through several channels."
+          },
+          {
+            "title": "Next",
+            "text": "Trace the policy experiment; separate direct and indirect effects."
+          }
+        ],
+        "note": "The spending response’s size and composition depend on calibration and the fiscal response.",
+        "cue": "Now return to the monetary-policy question. Trace the rate cut, then separate its direct and indirect effects."
       }
     ],
-    "diagnosis": "A highlighted outline locates the speaker without restoring the argument. The next technical slide still depends on uninterrupted attention.",
+    "diagnosis": "The dividers name the next section without restoring the argument. A listener returning after several technical slides still has to recover why the solution, calibration, or experiment matters.",
     "changes": [
-      "Say what the last section produced.",
-      "Name the one object carried forward.",
-      "Explain the next obstacle before its technical treatment."
+      "Keep the original sequence and its early result preview.",
+      "Replace each bare divider with a recap and one fact to carry forward.",
+      "Say what the next section will answer."
     ],
-    "preserved": "The move from behavior to a demand equation and then estimation. The bridge supplements the technical section.",
-    "deferred": "The moment conditions follow with definitions at use.",
+    "preserved": "The source’s sequence, model, calibration, policy experiment, and fiscal qualification. The outline groups the progressive decomposition on pp. 21–26 into one stage.",
+    "deferred": "Solver and calibration details stay in their sections. Supporting pages 34–41 remain supporting material.",
     "practice": "After each technical block, write two sentences for someone returning to the room: what we have, and why the next step matters.",
     "principle": "Give people a way back in",
-    "sourceType": "constructed",
-    "context": "Based on the essay’s fictional electricity-demand example.",
-    "beforeCaption": "",
-    "afterCaption": ""
+    "sourceType": "public",
+    "context": "Warwick presentation. PDF p. 4 already previews the main finding. This repair concerns the visible transitions at pp. 10, 14, and 19; pp. 18–20 move from external lottery evidence through the Results divider to a model policy experiment.",
+    "beforeCaption": "Three source dividers, shown in their original order.",
+    "afterCaption": "",
+    "outline": {
+      "title": "Restore the argument at each stop",
+      "description": "A 41-page research deck, with builds grouped and supporting slides separated. Keep the order and replace bare section dividers with an account of what the audience should carry forward.",
+      "before": [
+        {
+          "label": "Source section",
+          "title": "Preview",
+          "content": "Motivates the framework, contrasts transmission mechanisms, and positions the contribution.",
+          "pages": "2–5",
+          "takeaway": "Question → early result preview",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Model",
+          "content": "Specifies households, portfolios, firms, policy, and market clearing.",
+          "pages": "6–9",
+          "takeaway": "Agents and markets",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Solution Method",
+          "content": "A bare divider leads to numerical solution and computational advantages.",
+          "pages": "10–13",
+          "takeaway": "Section name → solver details",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Parameterization",
+          "content": "A bare divider leads to calibration, wealth fit, spending responses, and external lottery evidence.",
+          "pages": "14–18",
+          "takeaway": "Section name → data and model evidence",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Results",
+          "content": "A bare divider leads to the policy experiment, decomposition, and interpretation.",
+          "pages": "19–28",
+          "takeaway": "Section name → shock → decomposition",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Variants",
+          "content": "Explores fiscal responses, persistence, and alternative benchmarks.",
+          "pages": "29–32",
+          "takeaway": "Comparisons",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Synthesis",
+          "content": "Returns to the transmission mechanism; supporting details follow.",
+          "pages": "33; support 34–41",
+          "takeaway": "Main answer → linked supporting material",
+          "role": "setup"
+        }
+      ],
+      "after": [
+        {
+          "label": "Proposed stage",
+          "title": "Household differences can change how monetary policy reaches spending.",
+          "content": "Interest rates affect household spending directly and through the economy-wide response. Fiscal policy changes the composition of transmission.",
+          "pages": "2–5",
+          "takeaway": "Question → direct/indirect distinction",
+          "role": "setup"
+        },
+        {
+          "label": "Proposed stage",
+          "title": "The model links household portfolios to economy-wide spending.",
+          "content": "Households hold different liquid and illiquid portfolios. Prices and incomes connect their individual choices to aggregate spending.",
+          "pages": "6–9",
+          "takeaway": "Households and portfolios → markets → spending",
+          "role": "setup"
+        },
+        {
+          "label": "Proposed stage",
+          "title": "We have the ingredients; now compute their joint behavior.",
+          "content": "Compute household choices and their distribution consistently with aggregate prices. These are the outputs the policy experiment will use.",
+          "pages": "10–13",
+          "takeaway": "Established ingredients → required output → solver",
+          "role": "bridge"
+        },
+        {
+          "label": "Proposed stage",
+          "title": "Now check whether the model resembles household data.",
+          "content": "Compare household wealth patterns and spending responses with the model. The lottery study provides separate external evidence.",
+          "pages": "14–18",
+          "takeaway": "Policy question → household data → disciplined model",
+          "role": "bridge"
+        },
+        {
+          "label": "Proposed stage",
+          "title": "With household behavior disciplined, ask what a rate cut changes.",
+          "content": "Introduce the rate cut. Trace aggregate spending, then separate direct effects from indirect channels through earnings, returns, and transfers.",
+          "pages": "19–28",
+          "takeaway": "So far → carry forward → next question",
+          "role": "bridge"
+        },
+        {
+          "label": "Proposed stage",
+          "title": "The effect depends on the rest of the policy response.",
+          "content": "Change the fiscal response, persistence, or household benchmark. Compare each variant with the baseline and explain which mechanism changes.",
+          "pages": "29–32",
+          "takeaway": "Baseline → one changed element → implication",
+          "role": "bridge"
+        },
+        {
+          "label": "Proposed stage",
+          "title": "State the mechanism and what remains model-dependent together.",
+          "content": "The transmission mechanism depends on household portfolios, equilibrium responses, and fiscal policy. State the mechanism and this dependence together.",
+          "pages": "33; support 34–41",
+          "takeaway": "Question → answer → qualification",
+          "role": "setup"
+        }
+      ],
+      "change": "Keep the source sequence and replace bare section dividers with a recap, a carry-forward fact, and the next question.",
+      "branches": []
+    },
+    "source": {
+      "authors": "Greg Kaplan, Benjamin Moll, Gianluca Violante",
+      "title": "Monetary Policy According to HANK",
+      "date": "11 May 2017",
+      "url": "https://benjaminmoll.com/wp-content/uploads/2019/07/HANK_slides.pdf",
+      "pages": "10, 14, 19"
+    },
+    "values": [
+      "The baseline decomposition on PDF p. 26 reports 19% direct and 81% indirect effects; fiscal variants on p. 29 change the shares. The gallery does not treat these as universal constants."
+    ]
   },
   {
     "id": "protect-the-result",
     "number": "10",
-    "title": "Build the short route before you need it.",
-    "mode": "Rigid timing",
+    "title": "Give the evidence a main route.",
+    "mode": "Mandatory detour",
     "scale": "talk",
-    "dek": "Questions should change the amount of detail, not whether the room hears the result.",
+    "dek": "Explain what is estimated and tested; make the full likelihood an optional branch.",
     "before": [
       {
-        "title": "A fixed route has no room to contract.",
-        "kind": "timing",
-        "stage": 0,
-        "note": "Rehearsal plan · 68 speaking minutes before questions.",
-        "label": "A 75-MINUTE SEMINAR",
-        "alt": "Introduction 8, model 15, data 12, results 20, implications 8, conclusion 5 speaking minutes; total 68."
+        "kind": "image",
+        "title": "Full likelihood · PDF p. 11",
+        "image": "/originals/competitive-search-2009-p11.png",
+        "alt": "The full likelihood expression appears in the estimation section before the map of identified objects and formal tests."
+      },
+      {
+        "kind": "image",
+        "title": "Identified objects · PDF p. 14",
+        "image": "/originals/competitive-search-2009-p14.png",
+        "alt": "The source lists wage distributions, arrival rates, elasticity, surplus splitting, and job destruction among the identified objects."
+      },
+      {
+        "kind": "image",
+        "title": "Test definitions · PDF p. 15",
+        "image": "/originals/competitive-search-2009-p15.png",
+        "alt": "Nested specifications A, B, C, D impose no restrictions, submarkets, direction, and efficiency."
+      },
+      {
+        "kind": "image",
+        "title": "Detailed tests · PDF p. 19",
+        "image": "/originals/competitive-search-2009-p19.png",
+        "alt": "Specification-test results for construction and education and health services, with a link to all industries."
       }
     ],
     "after": [
       {
-        "title": "Prepare two routes to the same result.",
-        "kind": "timing",
-        "stage": 1,
-        "note": "Normal route: 53 minutes · short route: 47 minutes.",
-        "cue": "I will give the model and data at a high level, then show the main result. The details are available for discussion.",
-        "label": "A 75-MINUTE SEMINAR",
-        "alt": "Normal route: 8, 9, 6, 17, 8, 5 minutes, total 53. Short route: 8, 6, 3, 17, 8, 5, total 47."
-      },
-      {
-        "title": "A short version must still say something.",
         "kind": "flow",
+        "title": "Show what the estimates are for.",
+        "label": "THE CORE ROUTE",
         "items": [
           {
-            "title": "Inputs",
-            "text": "Prices + consumption + attention"
+            "title": "Observe",
+            "text": "Wages, unemployment durations, vacancies, labor share"
           },
           {
-            "title": "Model",
-            "text": "How noticed prices affect use"
+            "title": "Estimate",
+            "text": "Wage and arrival-rate distributions; matching and sharing parameters"
           },
           {
-            "title": "Output",
-            "text": "One demand equation"
+            "title": "Test",
+            "text": "Submarkets, search direction, and efficient surplus sharing"
           }
         ],
-        "note": "Policy predictions rely on the model’s assumed attention rule remaining applicable.",
-        "cue": "Keep the input, output, and relevant limitation visible when the intervening machinery contracts.",
-        "label": "A 75-MINUTE SEMINAR"
+        "note": "Source inputs: CPS, JOLTS, and IRS data. The model connects inputs to estimated objects.",
+        "cue": "These observations and the model identify the objects used in the tests. We can explain what the tests compare before unpacking the full likelihood."
+      },
+      {
+        "kind": "claim",
+        "title": "Each specification adds a restriction to test.",
+        "label": "WHAT THE EVIDENCE COMPARES",
+        "items": [
+          {
+            "title": "A → B",
+            "text": "Submarket flows balance: job-finding and separation flows agree."
+          },
+          {
+            "title": "B → C",
+            "text": "Directed search links higher wages to lower job-finding rates."
+          },
+          {
+            "title": "C → D",
+            "text": "Efficiency equates matching elasticity and the wage-splitting parameter: \\(\\eta=\\beta\\)."
+          }
+        ],
+        "note": "A starts without equilibrium restrictions. Maintained assumptions stay on the core route.",
+        "cue": "Now each comparison has an economic meaning. The likelihood is available to explain how the estimates are obtained."
+      },
+      {
+        "kind": "image",
+        "title": "Read the full evidence, including the aggregate · PDF p. 24",
+        "image": "/originals/competitive-search-2009-p24.png",
+        "alt": "Complete specification tests for the aggregate and six industries. The aggregate B-versus-C test rejects, while the six industry B-versus-C tests do not. Efficiency is rejected in three of six industries.",
+        "cue": "Keep the aggregate column as well as the six industries. The restrictions receive different support; a failure to reject does not establish that a restriction is true."
       }
     ],
-    "diagnosis": "The fixed plan makes every setup slide mandatory. Twelve minutes of early questions then push the first result to minute 47.",
+    "diagnosis": "Between the early preview and the detailed tests, the source takes readers through the full likelihood before listing the objects it identifies. Put that map first, then offer the derivation as a branch that returns to the evidence.",
     "changes": [
-      "Protect time for the result and implications.",
-      "Rehearse actual shorter model and data explanations.",
-      "Use a contingency appropriate to the time already spent."
+      "Preserve the early findings preview.",
+      "Explain the restrictions and measured objects before the full likelihood.",
+      "Keep a core route to detailed evidence, with a clearly marked method branch."
     ],
-    "preserved": "The core contribution and the essay’s approximate 35- and 60-minute landmarks for a long job talk.",
-    "deferred": "Detailed model and data exposition contracts. The scenarios assume all added question time occurs before results; later interruptions would require more choices.",
+    "preserved": "All three restrictions, their maintained assumptions, and the source’s empirical distinctions. The complete table retains the aggregate exception alongside the six industries.",
+    "deferred": "The full likelihood and auxiliary estimators move to an optional branch. They remain available from the stage that introduces the estimated objects.",
     "practice": "Build a core of roughly twenty distinct displays, with optional branches. Count animation builds as one display. Rehearse both routes aloud.",
     "principle": "Set deadlines and adjust as you go",
-    "sourceType": "constructed",
-    "context": "Constructed rehearsal plan; early-question time is added before the main results.",
-    "beforeCaption": "",
+    "sourceType": "public",
+    "context": "The deck previews findings on PDF p. 4 and already uses return-linked reserve tables. This proposal extends that structure to the earlier likelihood section. It concerns visible order, not elapsed presentation time.",
+    "beforeCaption": "Selected middle slides, in source order; intervening pages omitted.",
     "afterCaption": "",
     "values": [
-      "Fixed speaking minutes: introduction 8, model 15, data 12, results 20, implications 8, conclusion 5 = 68.",
-      "Normal route: 8 + 9 + 6 + 17 + 8 + 5 = 53. Short route: 8 + 6 + 3 + 17 + 8 + 5 = 47.",
-      "With 12 minutes of early questions, normal results start at 35; with 18, short-route results start at 35. Both finish implications at 60 and conclusion at 65."
-    ]
+      "The complete source table is PDF p. 24. Its aggregate B-versus-C comparison rejects while all six industry comparisons do not.",
+      "Efficiency is rejected in three of six industries in the source. No p-values or coefficients have been reconstructed.",
+      "The main slide and appendix name B-versus-C differently. The gallery uses the A/B/C/D definitions on PDF p. 15.",
+      "The optional timing exercise below is a constructed rehearsal scenario; none of its durations describe this source deck."
+    ],
+    "outline": {
+      "title": "Give the evidence a main route",
+      "description": "A 26-page research deck. Keep the early findings preview, then make the detailed tests reachable through a six-stage core. Put the full likelihood on an optional branch.",
+      "before": [
+        {
+          "label": "Source section",
+          "title": "Question and preview",
+          "content": "States the research question and previews findings.",
+          "pages": "2–4",
+          "takeaway": "Question → initial answer",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Theory",
+          "content": "Develops assumptions, value equations, equilibrium, and economic restrictions.",
+          "pages": "5–8",
+          "takeaway": "Assumptions → equations → restrictions",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Inputs",
+          "content": "Lists worker outcomes, vacancies, and labor-share data.",
+          "pages": "9",
+          "takeaway": "Data sources",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Estimation",
+          "content": "Develops the likelihood, auxiliary estimators, and identified objects.",
+          "pages": "10–14",
+          "takeaway": "Likelihood → auxiliary estimators → identification",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Tests",
+          "content": "Defines the sequence of formal specification comparisons.",
+          "pages": "15",
+          "takeaway": "A → B → C → D",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Detailed evidence",
+          "content": "Shows descriptive examples, fitted distributions, and specification-test results.",
+          "pages": "16–19",
+          "takeaway": "Examples → fit → tests",
+          "role": "setup"
+        },
+        {
+          "label": "Source section",
+          "title": "Conclusion and reserve",
+          "content": "Returns to findings and future work; linked tables and extensions follow.",
+          "pages": "20; reserve 21–26",
+          "takeaway": "Conclusion → linked tables and extensions",
+          "role": "setup"
+        }
+      ],
+      "after": [
+        {
+          "label": "Proposed stage",
+          "title": "Different restrictions face different empirical tests.",
+          "content": "Across six industries, the source does not reject submarkets or direction; it rejects efficiency in three. The aggregate comparison differs.",
+          "pages": "2–4",
+          "takeaway": "Question → qualified preview",
+          "role": "setup"
+        },
+        {
+          "label": "Proposed stage",
+          "title": "Three restrictions connect wages, waiting, and surplus sharing.",
+          "content": "A→B tests submarket flows. B→C tests the wage–waiting tradeoff. C→D tests efficient surplus splitting. The maintained model assumptions remain in view.",
+          "pages": "7–8, 15; assumptions from 5",
+          "takeaway": "Submarket flows → wage–waiting tradeoff → surplus sharing",
+          "role": "result"
+        },
+        {
+          "label": "Proposed stage",
+          "title": "The data and model identify the objects entering the tests.",
+          "content": "CPS supplies wages, unemployment durations, and unemployment; JOLTS supplies vacancies; IRS data supply labor share. The model maps these inputs to the estimated objects.",
+          "pages": "9, 14, 16",
+          "takeaway": "Data source → observed input → estimated object",
+          "role": "setup"
+        },
+        {
+          "label": "Proposed stage",
+          "title": "The restrictions receive different empirical support.",
+          "content": "Read the nested specification comparisons by industry and for the aggregate. The aggregate B-versus-C test rejects while the six industry comparisons do not.",
+          "pages": "19, 24",
+          "takeaway": "Six industries + aggregate → A/B/C/D comparisons",
+          "role": "result"
+        },
+        {
+          "label": "Proposed stage",
+          "title": "Now inspect what the fitted model reproduces.",
+          "content": "For construction and education/health, compare observed and model-implied distributions. Use these examples to read what the fitted model reproduces.",
+          "pages": "17–18; support 21–23",
+          "takeaway": "Data distribution beside fitted distribution",
+          "role": "setup"
+        },
+        {
+          "label": "Proposed stage",
+          "title": "Separate the conclusions from what remains to test.",
+          "content": "The restrictions receive different empirical support across industries and the aggregate. Failure to reject a restriction does not establish that it is true.",
+          "pages": "20; optional extensions 25–26",
+          "takeaway": "Finding → scope → next empirical question",
+          "role": "setup"
+        }
+      ],
+      "change": "Keep the early findings preview. Place the detailed evidence after the essential restriction-and-data map, with the full likelihood on a labeled optional branch.",
+      "branches": [
+        {
+          "fromStage": 3,
+          "returnToStage": 4,
+          "title": "How the estimates are obtained",
+          "pages": "6, 10–13",
+          "content": "Value equations, full likelihood, and auxiliary estimators. This branch explains the machinery and returns to the empirical tests; essential restrictions and identification limits remain on the main route."
+        }
+      ]
+    },
+    "source": {
+      "authors": "Bryan Engelhardt, Peter Rupert",
+      "title": "Competitive Search: A Test of Direction and Efficiency",
+      "date": "20 November 2009",
+      "url": "https://www.minneapolisfed.org/economic-research/conferences/~/media/files/research/events/2009_11_19/slides/Presenter8-slides-MNFed.pdf",
+      "pages": "11, 14–15, 19; full tests 24"
+    }
   },
   {
     "id": "build-the-diagram",
     "number": "11",
-    "title": "Give the audience the axes first.",
+    "title": "Teach one path before the full system.",
     "mode": "Visual overload",
     "scale": "slide",
-    "dek": "A complete diagram can be the destination rather than the starting point.",
+    "dek": "Read the unknowns, blocks, and equilibrium targets before tracing twenty connections.",
     "before": [
       {
-        "title": "Comparative statics",
-        "kind": "market",
-        "stage": 3,
-        "note": "Schematic supply and demand",
-        "label": "A DEMAND INCREASE",
-        "alt": "The new intersection is above and to the right of the original. Price rises from P0 to P1 and quantity from Q0 to Q1."
+        "kind": "image",
+        "title": "Two-asset HANK graph · PDF p. 72",
+        "image": "/originals/sequence-project-p72.png",
+        "alt": "A two-asset heterogeneous-agent New Keynesian model: seven computational blocks, three unknown paths, three equilibrium targets, and twenty labeled directed dependencies. Several long arrows cross the diagram."
       }
     ],
     "after": [
       {
-        "title": "First, say what the axes measure.",
-        "kind": "market",
+        "kind": "hank",
         "stage": 0,
-        "note": "Schematic market: price vertically; quantity horizontally.",
-        "cue": "The vertical axis is price, and the horizontal axis is quantity.",
-        "label": "A DEMAND INCREASE",
-        "alt": "Price on the vertical axis; quantity on the horizontal axis."
+        "title": "Three unknown paths. Three conditions to satisfy.",
+        "label": "ORIENT THE SOLVER",
+        "lines": [
+          "Guess \\(r,w,Y\\); hold the exogenous paths \\(Z,r^{*},G\\) fixed.",
+          "The targets are residuals \\(H_1,H_2,H_3\\), each equal to zero at equilibrium."
+        ],
+        "note": "The full source reduces 22 endogenous variables to three unknown paths.",
+        "cue": "First read the graph as a machine: choose three paths, run its blocks, and check three equilibrium conditions."
       },
       {
-        "title": "Locate the initial market outcome.",
-        "kind": "market",
+        "kind": "hank",
         "stage": 1,
-        "note": "Supply rises; initial demand falls. Their intersection is the initial outcome.",
-        "cue": "Begin with supply and the original demand curve. Their intersection gives our starting point.",
-        "label": "A DEMAND INCREASE",
-        "alt": "Upward supply and downward initial demand meet at the starting equilibrium."
+        "title": "Follow one chain from production to finance.",
+        "label": "ONE PATH THROUGH THE GRAPH",
+        "lines": [
+          "Production supplies marginal cost \\(mc\\); the price Phillips block supplies inflation \\(\\pi\\).",
+          "Finance also takes \\((p,d,r)\\) from equity and \\(i\\) from monetary policy."
+        ],
+        "note": "This panel follows selected dependencies; the complete graph returns in step 4.",
+        "cue": "Follow just this path. Production gives marginal cost, the price Phillips curve gives inflation, and finance uses that inflation alongside equity and monetary-policy inputs."
       },
       {
-        "title": "Now shift demand.",
-        "kind": "market",
+        "kind": "hank",
         "stage": 2,
-        "note": "Higher demand at every price; supply held fixed. Illustrative shift only.",
-        "cue": "The new curve means buyers demand more at any given price. Supply has not changed.",
-        "label": "A DEMAND INCREASE",
-        "alt": "Demand shifts outward while supply stays fixed."
+        "title": "See what the household block adds.",
+        "label": "CONNECT INPUTS TO EQUILIBRIUM",
+        "lines": [
+          "Households take returns \\(r^a,r^b\\) and fiscal inputs \\(\\tau,w,N\\).",
+          "They supply asset demands \\(\\mathcal A,\\mathcal B\\) and the wage-setting statistic \\(\\mathcal U\\)."
+        ],
+        "note": "Asset clearing also uses p. The wage condition also uses the direct fiscal inputs.",
+        "cue": "Now connect households. Their asset demands enter market clearing; their wage-setting statistic enters the wage Phillips condition. The two direct feeds remain visible."
       },
       {
-        "title": "Trace the change back to the axes.",
-        "kind": "market",
-        "stage": 3,
-        "note": "In this schematic, both equilibrium price and quantity rise.",
-        "cue": "The new intersection is up and to the right, so price and quantity both rise.",
-        "label": "A DEMAND INCREASE",
-        "alt": "The new intersection is above and to the right of the original. Price rises from P0 to P1 and quantity from Q0 to Q1."
+        "kind": "image",
+        "title": "Now read the complete source graph.",
+        "image": "/originals/sequence-project-p72.png",
+        "alt": "The same complete two-asset HANK graph shown before. Every original node, label, and arrow is retained.",
+        "cue": "Return to the whole graph. We can now locate the unknowns, trace an important chain, and see where households connect to the equilibrium conditions."
       }
     ],
-    "diagnosis": "When the axes, curves, shift, and projections appear together, the listener has to decide where to start while the speaker is already interpreting the outcome.",
+    "diagnosis": "The source moves from simpler models to a much richer two-asset graph. At this jump, the audience must decode seven blocks and twenty dependencies while also learning which paths are unknown and which conditions close the model.",
     "changes": [
-      "Explain the axes before adding curves.",
-      "Establish the baseline before changing it.",
-      "Only then trace the implication."
+      "Identify the unknowns and equilibrium targets first.",
+      "Trace a short chain before following its branches.",
+      "Explain the household connections, then restore every original edge."
     ],
-    "preserved": "The same final diagram and comparative-static reasoning. The improvement is the route through it, not fewer final marks.",
-    "deferred": "The final diagram stays intact. The sequence gives each part an explanation.",
-    "practice": "Put up only the axes. Explain them. Add one economically meaningful object at a time.",
+    "preserved": "The complete source diagram returns unchanged in the final build: seven blocks, twenty labeled links, three unknown paths, and three equilibrium targets.",
+    "deferred": "The first teaching panels show selected dependency groups. The full graph, including equity, monetary-policy, and direct fiscal connections, remains the destination.",
+    "practice": "Choose one path through your most complicated diagram. Teach its inputs, intermediate objects, and destination before revealing the surrounding network.",
     "principle": "Let the slide unfold",
-    "sourceType": "constructed",
-    "context": "Constructed supply-and-demand diagram.",
+    "sourceType": "public",
+    "context": "NBER Summer Institute, July 2019. The authors already teach simpler directed graphs: a Krusell–Smith model on PDF p. 61 and a one-asset HANK model on p. 71. This revision adds a bridge into the two-asset graph on p. 72 (printed slide 24).",
     "beforeCaption": "",
-    "afterCaption": ""
+    "afterCaption": "",
+    "source": {
+      "authors": "Adrien Auclert, Bence Bardóczy, Matt Rognlie, Ludwig Straub",
+      "title": "Using the Sequence-Space Jacobian to Solve and Estimate Heterogeneous-Agent Models",
+      "date": "July 2019",
+      "url": "https://raw.githubusercontent.com/shade-econ/sequence-jacobian/bcca2eff6041abc77d0a777e6c64f9ac6ff44305/docs/sequence_jacobian_slides.pdf",
+      "pages": "72"
+    },
+    "values": [
+      "Source inputs: exogenous Z, r*, G; endogenous unknown paths r, w, Y.",
+      "Seven blocks: production, fiscal, price Phillips curve, equity, finance, monetary policy, and heterogeneous households.",
+      "Three targets: Fisher equation H1, asset market clearing H2, wage Phillips curve H3.",
+      "The source graph has twenty labeled directed connections. Its complete original appears in the final better build."
+    ]
   },
   {
     "id": "claim-and-boundary",
     "number": "12",
-    "title": "Give the claim a boundary, not an apology.",
-    "mode": "Caveats first",
+    "title": "Attach each limitation to the result.",
+    "mode": "Detached caveats",
     "scale": "slide",
-    "dek": "A credible limitation should help the audience understand the result’s scope.",
+    "dek": "A closing slide should say which inference each limitation qualifies.",
     "before": [
       {
-        "title": "Caveats",
-        "kind": "plain",
-        "lines": [
-          "Only one district",
-          "Short-run outcome only",
-          "Offer ≠ participation",
-          "External validity uncertain",
-          "Attendance is endogenous"
-        ],
-        "note": "Fictional tutoring pilot; the result itself is not on this slide.",
-        "label": "FINDING & SCOPE"
+        "kind": "image",
+        "title": "Closing discussion · PDF p. 40",
+        "image": "/originals/stock-p40.png",
+        "alt": "Discussion caveats: spillovers to comparison countries; endogenous tax adoption and rate changes; interaction with the EU emissions-trading system; external validity."
       }
     ],
     "after": [
       {
-        "title": "The offer helped in this pilot. Scaling is a separate question.",
         "kind": "claim",
+        "title": "Near-zero GDP-level estimates leave three questions.",
+        "label": "RESULT & INTERPRETATION",
         "items": [
           {
-            "title": "What we learn",
-            "text": "An offer raised short-run scores by 0.18 SD in this fictional district; 95% CI 0.06–0.30."
+            "title": "Causal comparison",
+            "text": "Could endogenous tax changes or spillovers to comparison countries bias this response?"
           },
           {
-            "title": "What we do not learn",
-            "text": "Attendance effects, persistence, or effects in other districts and at national scale."
+            "title": "Policy setting",
+            "text": "These carbon taxes coexist with the EU emissions-trading system."
           },
           {
-            "title": "What comes next",
-            "text": "Test whether staffing and participation change at larger scale."
+            "title": "Transfer",
+            "text": "Would a different tax design or another country produce the same response?"
           }
         ],
-        "note": "Fictional tutoring pilot · randomized offers · 300 pupils",
-        "cue": "This design answers the offer question here. A larger rollout could change staffing and participation, and would need new evidence.",
-        "label": "FINDING & SCOPE"
+        "note": "EU+ · $40 carbon-tax increase · restricted local projections · the 95% bands include zero.",
+        "cue": "The cumulative GDP-level estimates are near zero, with uncertainty on both sides. Here are the three questions that limit how we interpret and generalize that result."
+      },
+      {
+        "kind": "image",
+        "title": "Keep the full estimate and uncertainty visible · PDF p. 25",
+        "image": "/originals/stock-p25.png",
+        "alt": "Original cumulative GDP-level impulse response for a $40 carbon-tax increase. EU+ sample, restricted local projections, parallel-path assumption, four lags, 0–6 years, 67% and 95% confidence bands. Both positive and negative effects remain within the bands.",
+        "cue": "This is the exact response the closing slide qualifies: cumulative GDP level, not annual GDP growth. Keep both confidence bands and the specification visible."
       }
     ],
-    "diagnosis": "The caveats are sensible, but without the finding there is no claim for them to qualify. The audience hears reservations before it knows what was accomplished.",
+    "diagnosis": "The closing slide lists valid limitations after the results, but leaves listeners to connect broad terms such as endogeneity and external validity to the estimate. Pairing each concern with the inference it limits makes the closing argument easier to retain.",
     "changes": [
-      "State one proportionate finding.",
-      "Name a concrete limit to its interpretation.",
-      "Explain the next research task without claiming to have done it."
+      "Restate the result with its uncertainty.",
+      "Translate each caveat into a question about that result.",
+      "Keep the original response plot available with its full specification."
     ],
-    "preserved": "The same illustrative offer effect and uncertainty, with limits on attendance and generalization.",
-    "deferred": "The limitations remain on the slide, after the finding they qualify.",
+    "preserved": "All four source concerns: spillovers, endogenous tax changes, interaction with emissions trading, and external validity. The original GDP-level plot and both confidence bands are retained.",
+    "deferred": "Other outcomes and specifications remain in the original deck. A near-zero estimate does not establish that the true effect is exactly zero.",
     "practice": "Write “What this establishes” and “What it leaves open” in equally plain language. Check both with your advisor.",
     "principle": "Be bigger than your paper",
-    "sourceType": "constructed",
-    "context": "The same fictional tutoring pilot as case 07.",
+    "sourceType": "public",
+    "context": "FRBSF seminar. Results occupy PDF pp. 21–38 and are summarized on p. 39; p. 40 is the closing caveat slide. This local repair links its concerns to the cumulative GDP-level response on p. 25.",
     "beforeCaption": "",
-    "afterCaption": ""
+    "afterCaption": "",
+    "source": {
+      "authors": "Gilbert E. Metcalf, James H. Stock",
+      "title": "The Macroeconomic Impact of Europe’s Carbon Taxes",
+      "date": "16 July 2020",
+      "url": "https://www.frbsf.org/economic-research/wp-content/uploads/sites/4/Stock-FRBSF-Seminar-071620.pdf",
+      "pages": "40; result on 25"
+    },
+    "values": [
+      "The retained figure is PDF p. 25 (printed slide 26): cumulative effect on log GDP, in percentage points; restricted local projections imposing the parallel-path assumption.",
+      "The tax scenario is a $40 increase in real 2018 USD, weighted by coverage share, for the EU+ sample.",
+      "Horizons 0–6 years; 67% and 95% bands; four lags of all regressors. No points have been digitized or redrawn."
+    ]
   }
 ]
