@@ -1,6 +1,6 @@
 # The Job Talk Field Guide
 
-A companion to Benjamin Golub’s advice on giving a better job talk. Twelve cases from public research presentations pair original slides with newly rendered revisions. Three cases provide browsable original and revised outlines of complete talks.
+A companion to Benjamin Golub’s advice on giving a better job talk. Nine cases from public research presentations pair original slides with newly rendered revisions.
 
 [Open the public gallery](https://bengolub-economics.github.io/job-talk-field-guide/)
 
@@ -32,4 +32,4 @@ All revised panels use HTML, SVG, and typeset mathematics. The build rejects an 
 
 `npm run dev` and `npm run build` retain the original Sites/Vinext deployment. The GitHub Pages build is a separate static target; application content and styling are shared.
 
-Each improved slide links to the visible before slides it reworks. Advancing the improved viewer selects its corresponding before slide, while both viewers remain independently browsable. Whole-talk cards use the same outline overviews as their detail pages. The content validator checks those references, source assets, strict LaTeX, and the rule that improved slides are rendered from code.
+Each improved slide links to the visible before slides it reworks. The before and improved viewers navigate independently; the links let a reader explicitly select the original slide that a revision reworks. The content validator checks those references, source assets, strict LaTeX, and the rule that improved slides are rendered from code.

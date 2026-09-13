@@ -8,7 +8,7 @@ import {comparisonPanels} from '@/lib/comparison-panels.mjs';
 
 export function CaseDetail({item:c}:{item:Case}){
  const idx=cases.findIndex(x=>x.id===c.id),next=cases[(idx+1)%cases.length];
- return <main id="main" className="wrap case-page"><a className="back-link" href={sitePath('/')}>← All twelve cases</a>
+ return <main id="main" className="wrap case-page"><a className="back-link" href={sitePath('/')}>← All cases</a>
   <header className="case-header"><div><p className="eyebrow">{c.number} / {c.topic} / {c.scale==='talk'?'DECK OUTLINE':c.mode.toUpperCase()}</p><h1>{c.title}</h1><p className="case-dek">{c.dek}</p></div></header>
   {c.outline?<DeckOutlineComparison outline={c.outline} sourceUrl={c.source?.url}/>:<SlideComparison {...comparisonPanels(c)} sourceUrl={c.source?.url}/>}
   <section className="case-point"><p><MathText>{c.point||c.diagnosis}</MathText></p><a href={sitePath(`/essay.html#${principleAnchors[c.principle]}`)}>The essay’s advice ↗</a></section>
