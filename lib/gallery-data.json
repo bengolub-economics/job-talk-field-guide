@@ -20,7 +20,6 @@
         "title": "Two exposed regions had very different workforces.",
         "kind": "regions",
         "note": "Year 2000 · descriptive comparison",
-        "cue": "These two places both faced import competition, but their initial workforces looked quite different.",
         "label": "REGIONAL COMPARISON · 2000",
         "alt": "Year 2000: North Hickory, NC has manufacturing employment share 43.0%, BA share of ages 18–64 15.6%, population 377.5 thousand. Raleigh-Cary, NC: 17.0%, 34.2%, and 1,420.0 thousand. Import-penetration change, 2000–2012: 4.40 and 3.42 percentage points, respectively."
       }
@@ -50,7 +49,9 @@
       "North Hickory: manufacturing share 43.0%; BA share of population aged 18–64 15.6%; population 377.5 thousand; import-penetration change 4.40 percentage points.",
       "Raleigh-Cary: manufacturing share 17.0%; BA share 34.2%; population 1,420.0 thousand; import-penetration change 3.42 percentage points.",
       "Shares and population: 2000. Import-penetration change: 2000–2012."
-    ]
+    ],
+    "topic": "International trade",
+    "point": "The two regions’ manufacturing and education shares become directly comparable once the audience can stop searching across the table."
   },
   {
     "id": "question-before-model",
@@ -58,72 +59,82 @@
     "title": "Give the model a reason to exist.",
     "mode": "Hidden question",
     "scale": "slide",
-    "dek": "Put the policy question before the payoff function.",
+    "dek": "Make the funding problem concrete before introducing the economy.",
     "before": [
       {
-        "title": "First build · PDF p. 2",
+        "title": "Model entry · PDF p. 6",
         "kind": "image",
-        "image": "/originals/targeting-p02.png",
-        "alt": "The first content slide presents investment payoffs and a network-dependent marginal return.",
-        "label": "THE POLICY QUESTION"
-      },
-      {
-        "title": "Later build · PDF p. 4",
-        "kind": "image",
-        "image": "/originals/targeting-p04.png",
-        "alt": "The same slide adds a targeting question below the payoff and verbal interpretation.",
-        "label": "THE POLICY QUESTION"
+        "alt": "Production, capital accumulation, and a resource constraint introduce the model before its banking timeline.",
+        "image": "/originals/gertler-kiyotaki-p6.png"
       }
     ],
     "after": [
       {
-        "title": "Whose incentives should a planner change?",
-        "kind": "network",
-        "stage": 0,
-        "lines": [
-          "An investment changes other people’s incentives.",
-          "A planner changes incentives to raise total welfare within a limited budget."
+        "title": "Who finances firms when investment opportunities appear?",
+        "kind": "bankFunding",
+        "timeline": [
+          {
+            "label": "Before opportunities",
+            "text": "Households deposit funds with banks."
+          },
+          {
+            "label": "After opportunities",
+            "text": "Banks redistribute funds through interbank lending."
+          }
         ],
-        "note": "Schematic network · strategic complements",
-        "cue": "Changing one person’s incentives can also change what others do. Whose incentives should the planner change?",
-        "label": "THE POLICY QUESTION",
-        "alt": "Schematic five-person network. B is highlighted as a possible intervention target."
+        "nodes": [
+          "Bank without a new local opportunity",
+          "Bank with a new local opportunity",
+          "Local firms undertaking investment"
+        ],
+        "edges": [
+          {
+            "from": 0,
+            "to": 1,
+            "label": "Interbank funding"
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "label": "Finance"
+          }
+        ],
+        "note": "Deposits are raised before banks learn where investment opportunities arrive.",
+        "label": "FUNDS AND INVESTMENT"
       },
       {
-        "title": "Now give that question a model.",
+        "title": "Local banks finance firms with three sources of funds.",
         "kind": "equation",
-        "formula": "W_i=a_i\\left[b_i+\\beta\\sum_j g_{ij}a_j\\right]-\\frac{a_i^2}{2}",
+        "formula": "Q_t^h s_t^h=n_t^h+b_t^h+d_t",
         "lines": [
-          "\\(a_i\\): investment, chosen simultaneously",
-          "\\(b_i\\): own incentive · \\(g_{ij}\\): network link",
-          "\\(\\beta>0\\): complements · \\(\\beta<0\\): substitutes"
+          "\\(Q_t^h s_t^h\\): value of claims on local firms",
+          "\\(n_t^h\\): net worth · \\(b_t^h\\): interbank borrowing",
+          "\\(d_t\\): household deposits, raised before opportunities arrive"
         ],
-        "note": "The planner changes \\(b\\) at a cost. The full targeting problem follows.",
-        "cue": "This payoff formalizes the direct incentive and the response to neighbors.",
-        "label": "THE POLICY QUESTION"
+        "note": "\\(h=i,n\\): investing or non-investing island; negative \\(b_t^h\\) means lending.",
+        "label": "THE BANK BALANCE SHEET"
       }
     ],
-    "diagnosis": "The policy question appears only after the audience has encountered the mathematical setup. A short opening can reverse that dependency.",
-    "changes": [
-      "Name the planner’s decision first.",
-      "Use an illustrative network to give spillovers a meaning.",
-      "Introduce the original payoff once it answers a known question."
-    ],
-    "preserved": "The source’s payoff, simultaneous choices, and distinction between complements and substitutes.",
-    "deferred": "The formal targeting problem, quadratic intervention cost, symmetry, and equilibrium assumptions follow in the model section.",
-    "practice": "Before your first model slide, write one sentence saying what decision the model will help us understand.",
-    "principle": "Give the audience a direction",
+    "diagnosis": "The model starts with aggregate accounting; its funding problem becomes concrete several pages later. Bring that local purpose to the model entrance.",
+    "preserved": "The timing of deposits, local investment opportunities, interbank finance, and the bank balance sheet.",
+    "deferred": "Production and accumulation equations remain in the subsequent model section.",
+    "context": "PDF p. 2 already motivates financial intermediation and policy. This is a model-entry repair. The banking timing is on p. 10, flows on pp. 11–12.",
     "sourceType": "public",
-    "context": "The original already builds gradually and labels terms. This repair changes the order. The comparison shows the first and final builds; intermediate PDF page 3 is omitted.",
-    "beforeCaption": "Original first and final builds. PDF pp. 2 and 4; p. 3 omitted.",
-    "afterCaption": "",
     "source": {
-      "authors": "Andrea Galeotti, Benjamin Golub, Sanjeev Goyal",
-      "title": "Targeting interventions in networks",
-      "date": "2019",
-      "url": "https://bengolub.net/wp-content/uploads/2020/09/TIN_slides.pdf",
-      "pages": "2–4"
-    }
+      "authors": "Mark Gertler and Nobuhiro Kiyotaki",
+      "presenter": "Nobuhiro Kiyotaki",
+      "title": "Financial Intermediation and Credit Policy",
+      "date": "2010-06-22",
+      "url": "https://www.cirje.e.u-tokyo.ac.jp/research/workshops/macro/macropaper10/macro0622slides.pdf",
+      "pages": "6; reconstruction uses 10–12",
+      "event": "CIRJE/TCER Macroeconomics Workshop, University of Tokyo",
+      "eventURL": "https://www.cirje.e.u-tokyo.ac.jp/research/workshops/macro/macro2010.html"
+    },
+    "point": "Production equations precede the banking timeline in the original. The revision starts with the funding problem those equations will help explain; the talk already motivates credit policy earlier.",
+    "beforeCaption": "",
+    "afterCaption": "",
+    "principle": "Give the audience a direction",
+    "topic": "Macro finance"
   },
   {
     "id": "define-at-use",
@@ -143,7 +154,7 @@
     ],
     "after": [
       {
-        "title": "Use old industry shares to predict local robot exposure.",
+        "title": "Past industry shares predict local robot exposure.",
         "kind": "equation",
         "formula": "E_c=\\sum_i \\ell_{ci}\\,\\overline{\\mathrm{APR}}_i",
         "lines": [
@@ -151,8 +162,7 @@
           "\\(\\ell_{ci}\\): industry \\(i\\)’s local employment share in 1970",
           "\\(\\overline{\\mathrm{APR}}_i\\): adjusted robot penetration in Europe"
         ],
-        "note": "Instrument for measured US exposure; time indices omitted here.",
-        "cue": "Start with the industries a place had before widespread robot adoption, then weight European penetration in those same industries.",
+        "note": "European robot adoption, weighted by local employment shares from 1970.",
         "label": "LOCAL ROBOT EXPOSURE"
       },
       {
@@ -164,8 +174,7 @@
           "\\(g^Y\\): industry output growth over the period",
           "\\(0\\) and \\(t\\): beginning and end of the period"
         ],
-        "note": "Industry indices omitted. Causal interpretation requires instrument-validity assumptions.",
-        "cue": "The adjustment separates robot-stock growth per initial worker from the part attributed to industry output growth.",
+        "note": "Robot-stock growth per initial worker, net of the output-growth component.",
         "label": "LOCAL ROBOT EXPOSURE"
       }
     ],
@@ -189,379 +198,512 @@
       "date": "2019-04",
       "url": "https://www.yjs.fi/wp-content/uploads/daron-acemoglu_robots-and-jobs_part-1.pdf",
       "pages": "17"
-    }
+    },
+    "topic": "Labor & technology",
+    "point": "Each symbol gets its meaning where it is used. The instrument and the robot-adoption adjustment arrive on separate slides."
   },
   {
     "id": "example-before-method",
     "number": "04",
-    "title": "Give the method a job before its formula.",
+    "title": "Give the model a concrete case first.",
     "mode": "Generality first",
     "scale": "talk",
-    "dek": "Give each method a concrete task, then introduce the machinery that solves it.",
+    "dek": "Start with an actual insurance contract, then explain the model that evaluates it.",
+    "point": "The generic budget arrives on page 4; the actual contracts arrive on page 20. Moving one contract forward gives every later price and payment a concrete meaning.",
+    "sourceType": "public",
+    "source": {
+      "authors": "Amanda E. Kowalski",
+      "title": "Estimating the Tradeoff Between Risk Protection and Moral Hazard with a Nonlinear Budget Set Model of Health Insurance",
+      "date": "October 2012",
+      "url": "https://users.nber.org/~kowalski/nlbspres10_25_12.pdf",
+      "pages": "4, 20; setting 19",
+      "physicalPages": 46
+    },
     "before": [
       {
-        "title": "Objective · PDF p. 17",
         "kind": "image",
-        "image": "/originals/nber-2015-p17.png",
-        "alt": "LASSO objective followed by a general norm definition.",
-        "label": "EARNINGS PREDICTION"
+        "title": "Generic budget · PDF p. 4",
+        "alt": "A generic insurance budget uses symbolic deductibles, coinsurance, payment caps, and virtual-income intercepts before the offered plan parameters appear.",
+        "image": "/originals/kowalski-2012-p04.png"
       },
       {
-        "title": "Mechanism · PDF p. 23",
         "kind": "image",
-        "image": "/originals/nber-2015-p23.png",
-        "alt": "LASSO selection and shrinkage explanation.",
-        "label": "EARNINGS PREDICTION"
-      },
-      {
-        "title": "Example · PDF p. 33",
-        "kind": "image",
-        "image": "/originals/nber-2015-p33.png",
-        "alt": "Earnings prediction example with OLS and LASSO test errors.",
-        "label": "EARNINGS PREDICTION"
+        "title": "Actual contracts · PDF p. 20",
+        "alt": "Four offered plans. The $350-deductible plan has 100% patient payment before the deductible,20% coinsurance afterward,and a $2,100 payment cap.",
+        "image": "/originals/kowalski-2012-p20.png"
       }
     ],
+    "beforeCaption": "Selected milestones in source order; intervening slides omitted.",
+    "afterCaption": "The $1,000 bill is a worked example of the offered contract.",
     "after": [
       {
-        "title": "LASSO has lower test error in this earnings example.",
-        "kind": "rmse",
-        "note": "1978 earnings · 15,992 people · 7,996 training. Outcome units are not specified on the example slide.",
-        "cue": "Here is a concrete prediction problem. Why might a penalized fit do better on new observations?",
-        "label": "EARNINGS PREDICTION",
-        "alt": "Test root-mean-squared prediction error, lower is better: OLS 1.4093; LASSO 0.7379. Both bars start at zero."
+        "kind": "insurance-bill",
+        "title": "At $1,000 of total medical spending, the patient pays $480.",
+        "label": "ONE EMPLOYER · FOUR OFFERED PLANS",
+        "lines": [],
+        "note": "Premium excluded",
+        "data": {
+          "totalBill": 1000,
+          "deductible": 350,
+          "postDeductibleBill": 650,
+          "postDeductiblePatientPayment": 130,
+          "patientPayment": 480,
+          "insurerPayment": 520
+        }
       },
       {
-        "title": "A penalty can leave fewer predictors.",
-        "kind": "flow",
-        "items": [
-          {
-            "title": "121",
-            "text": "candidate features"
-          },
-          {
-            "title": "Penalty",
-            "text": "on coefficient size"
-          },
-          {
-            "title": "15",
-            "text": "selected in this fit"
-          }
-        ],
-        "note": "Selection is about prediction; it does not identify causal effects.",
-        "cue": "The penalty can set some coefficients to zero. These counts describe this particular fit.",
-        "label": "EARNINGS PREDICTION"
+        "kind": "insurance-schedule",
+        "title": "The same contract has three marginal prices.",
+        "label": "THE CONTRACT’S PAYMENT SCHEDULE",
+        "lines": [],
+        "note": "The $2,100 payment cap is reached at $9,100 of total medical spending.",
+        "data": {
+          "xLabel": "Total medical spending ($), patient + insurer",
+          "yLabel": "Patient payment ($), excluding premium",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              350,
+              350
+            ],
+            [
+              9100,
+              2100
+            ],
+            [
+              12000,
+              2100
+            ]
+          ],
+          "markedPoint": [
+            1000,
+            480
+          ],
+          "insetXDomain": [
+            0,
+            1000
+          ],
+          "insetYDomain": [
+            0,
+            500
+          ],
+          "xDomain": [
+            0,
+            12000
+          ],
+          "yDomain": [
+            0,
+            2400
+          ]
+        }
       },
       {
-        "title": "Balance fit against coefficient size.",
         "kind": "equation",
-        "formula": "\\min_{\\beta}\\;\\sum_i (Y_i-X_i\\beta)^2+\\lambda\\sum_j|\\beta_j|",
+        "title": "Medical payments leave less money for other goods.",
+        "label": "FROM CONTRACT TO MODEL",
+        "formula": "A+P(Q)=Y-m",
         "lines": [
-          "First sum: fit to the training sample",
-          "Second term: penalty on absolute coefficients",
-          "\\(Y\\): outcome · \\(X\\): predictors · \\(\\beta\\): coefficients · \\(\\lambda\\): weight"
+          "\\(Q\\): total medical spending · \\(P(Q)\\): patient payment",
+          "\\(A\\): other goods · \\(Y\\): income · \\(m\\): premium",
+          "The contract determines how much money remains for other goods."
         ],
-        "note": "Assess prediction on observations outside the training sample.",
-        "cue": "Now the objective describes the tradeoff we have just seen.",
-        "label": "EARNINGS PREDICTION"
+        "note": "Plan chosen before the health shock; care chosen afterward."
       }
     ],
-    "diagnosis": "The lecture supplies concrete prediction examples after explaining the corresponding methods. Use those examples to open the method chapters, then bring back their comparisons as checkpoints.",
+    "diagnosis": "The talk introduces the generic insurance budget before the contracts in its data. One worked payment example gives the later symbols a concrete meaning.",
     "changes": [
-      "Preview the observed comparison.",
-      "Explain what the penalty does.",
-      "Show the objective with labels."
+      "Introduce one offered contract.",
+      "Work out who pays for a particular spending total.",
+      "Generalize its payment schedule into the model’s budget."
     ],
-    "preserved": "The two reported test errors, feature counts, and L1-penalized objective.",
-    "deferred": "Intervening lecture material remains in the source. The example reports prediction errors without uncertainty estimates.",
-    "practice": "Find one honest example that makes your first formula worth understanding. Put it before the formula.",
+    "preserved": "The offered-plan parameters and three-segment budget. The payment example is arithmetic, not an estimated treatment effect.",
+    "deferred": "Other contracts, virtual-income intercepts, full utility specification, and estimation details stay available in the source and outline.",
+    "practice": "Make one real instance of your model’s object understandable before introducing the general notation.",
     "principle": "Choose detail that carries insight",
-    "sourceType": "public",
-    "context": "NBER methods lecture. Earlier slides already motivate prediction, validation, and regularization. The outline preserves the survey’s coverage; the close-up reorders the LASSO subsection.",
-    "beforeCaption": "Selected milestones in source order; intervening slides omitted.",
-    "afterCaption": "",
-    "source": {
-      "authors": "Susan Athey and Guido Imbens",
-      "title": "NBER Lectures on Machine Learning",
-      "date": "18 July 2015",
-      "url": "https://conference.nber.org/confer/2015/SI2015/ML/nber_slides.pdf",
-      "pages": "17, 23, 33"
-    },
+    "context": "Actual research talk, October 2012. It already motivates the welfare question on pp. 2–3 and previews fit on p. 5. This repair places the concrete contract before the generic diagram. The study uses 2004 data from one retail employer, with 101,343 individuals in families of three or fewer. Income and premiums are not directly observed.",
     "values": [
-      "Reported test root-mean-squared error: OLS 1.4093; LASSO 0.7379. Lower is better.",
-      "The source’s outcome scale is retained. The original example does not specify units or report uncertainty."
+      "Source parameters: F=1,D=$350,C=0.2,S=$2,100.",
+      "At $1,000 total spending,patient payment=$350+0.2×$650=$480; insurer payment=$520.",
+      "The cap starts at total spending $350+($2,100−$350)/0.2=$9,100.",
+      "P(Q) is a newly introduced notation; A+P(Q)=Y−m is equivalent to the source’s budget.",
+      "The illustrative bill and plotted schedule are computed from the contract,not observed or estimated outcomes."
     ],
     "outline": {
-      "title": "Give each method a concrete job",
-      "description": "A 73-page methods lecture, grouped by topic. Keep its coverage and give each chapter a concrete task before its machinery. The LASSO close-up below shows the change in detail.",
+      "title": "Actual contract before generic model",
+      "description": "A 46-page research presentation, grouped into seven source blocks. The proposed route starts the model with a contract from the data.",
       "before": [
         {
           "label": "Source section",
-          "title": "Topic inventory",
-          "content": "Lists the categories and methods covered by the lecture.",
-          "pages": "2–4",
-          "takeaway": "Three stacked contents cards",
-          "role": "setup"
+          "title": "Question and preview",
+          "content": "Insurance trades financial protection against changed incentives to spend; a generic budget and a fit preview introduce the approach.",
+          "pages": "2–6",
+          "role": "setup",
+          "shortTitle": "Question and preview",
+          "panels": [
+            {
+              "kind": "outline-stage",
+              "title": "Question and preview",
+              "label": "Question and preview",
+              "lines": [
+                "Insurance trades financial protection against changed incentives to spend; a generic budget and a fit preview introduce the approach."
+              ]
+            },
+            {
+              "kind": "image",
+              "title": "Generic budget · PDF p. 4",
+              "alt": "A generic insurance budget uses symbolic deductibles, coinsurance, payment caps, and virtual-income intercepts before the offered plan parameters appear.",
+              "image": "/originals/kowalski-2012-p04.png",
+              "sourcePage": "4"
+            }
+          ]
         },
         {
           "label": "Source section",
-          "title": "Foundations",
-          "content": "Introduces supervised tasks, validation, regularization, and scalability.",
-          "pages": "5–11",
-          "takeaway": "Task definitions and general principles",
-          "role": "setup"
+          "title": "Model derivation",
+          "content": "Plan choice, medical spending, welfare measures, functional form, and identification.",
+          "pages": "7–16",
+          "role": "setup",
+          "shortTitle": "Model derivation"
         },
         {
           "label": "Source section",
-          "title": "Linear methods",
-          "content": "Objectives, geometry, properties, and implementation lead to an earnings example.",
-          "pages": "12–35",
-          "takeaway": "Objective → properties → tuning → example",
-          "role": "setup"
+          "title": "Estimation algorithm",
+          "content": "A simulation procedure links the model to spending data.",
+          "pages": "17–18",
+          "role": "setup",
+          "shortTitle": "Estimation"
         },
         {
           "label": "Source section",
-          "title": "Trees",
-          "content": "Construction and pruning precede the fitted tree and error comparison.",
-          "pages": "36–45",
-          "takeaway": "Split rule → prune → tree → test error",
-          "role": "setup"
+          "title": "Data and contracts",
+          "content": "One employer, four offered plans, plan choice, summary statistics, and reduced-form tests.",
+          "pages": "19–26",
+          "role": "setup",
+          "shortTitle": "Data and contracts",
+          "panels": [
+            {
+              "kind": "outline-stage",
+              "title": "Data and contracts",
+              "label": "Data and contracts",
+              "lines": [
+                "One employer, four offered plans, plan choice, summary statistics, and reduced-form tests."
+              ]
+            },
+            {
+              "kind": "image",
+              "title": "Actual contracts · PDF p. 20",
+              "alt": "Four offered plans. The $350-deductible plan has 100% patient payment before the deductible,20% coinsurance afterward,and a $2,100 payment cap.",
+              "image": "/originals/kowalski-2012-p20.png",
+              "sourcePage": "20"
+            }
+          ]
         },
         {
           "label": "Source section",
-          "title": "Combining methods",
-          "content": "Introduces several combinations before the comparison checkpoint.",
-          "pages": "46–57",
-          "takeaway": "Method family → method family → comparison",
-          "role": "setup"
+          "title": "Estimates and fit",
+          "content": "Parameters, elasticities, and comparisons of predicted with actual spending.",
+          "pages": "27–31",
+          "role": "setup",
+          "shortTitle": "Estimates and fit"
         },
         {
           "label": "Source section",
-          "title": "Unsupervised tasks",
-          "content": "Changes to data without an outcome, then dimension reduction, clustering, and associations.",
-          "pages": "58–67",
-          "takeaway": "New task → methods",
-          "role": "setup"
+          "title": "Contract counterfactuals",
+          "content": "The same population faces existing or hypothetical plans in the model.",
+          "pages": "32–38",
+          "role": "setup",
+          "shortTitle": "Counterfactuals"
         },
         {
           "label": "Source section",
-          "title": "Classification and close",
-          "content": "Introduces support-vector classification and its objective; ends with thanks.",
-          "pages": "68–73",
-          "takeaway": "Boundary → margin objective → close",
-          "role": "setup"
+          "title": "Findings and scope",
+          "content": "The conclusions are interpreted for this sample and model; scope and supporting material follow.",
+          "pages": "39–40; post-conclusion 41–46",
+          "role": "setup",
+          "shortTitle": "Findings and scope"
         }
       ],
       "after": [
         {
-          "label": "Proposed stage",
-          "title": "A fitted rule must work on observations it has not seen.",
-          "content": "Train on observations with known outcomes. Check predictions on observations left out of fitting. The survey covers predicting a number, finding structure, and assigning a category.",
-          "pages": "5–11, 33",
-          "takeaway": "Training data → fitted rule → test observations; three task cards",
-          "role": "setup"
+          "label": "",
+          "title": "Insurance changes both risk and incentives.",
+          "content": "The research asks how financial protection compares with the cost of changed medical spending.",
+          "pages": "2–3",
+          "role": "setup",
+          "shortTitle": "Risk and incentives"
         },
         {
-          "label": "Proposed stage",
-          "title": "For many predictors, shrinkage is a candidate to check on held-out data.",
-          "content": "The earnings example reports test RMSE of 1.4093 for OLS and 0.7379 for LASSO. Explain shrinkage, the objective, and penalty tuning after showing the comparison.",
-          "pages": "33 → 23 → 17 → 29–31; context 12–35",
-          "takeaway": "Example → mechanism → labeled equation → validation",
-          "role": "setup"
+          "label": "",
+          "title": "One employer offered four deductible plans.",
+          "content": "The $350 plan charges 20% after the deductible and caps patient payments at $2,100. At $1,000 of total medical spending, the patient pays $480.",
+          "pages": "19–20; payment arithmetic constructed",
+          "role": "setup",
+          "shortTitle": "An actual contract",
+          "panels": [
+            {
+              "kind": "insurance-bill",
+              "title": "At $1,000 of total medical spending, the patient pays $480.",
+              "label": "ONE EMPLOYER · FOUR OFFERED PLANS",
+              "lines": [],
+              "note": "Premium excluded",
+              "data": {
+                "totalBill": 1000,
+                "deductible": 350,
+                "postDeductibleBill": 650,
+                "postDeductiblePatientPayment": 130,
+                "patientPayment": 480,
+                "insurerPayment": 520
+              }
+            }
+          ]
         },
         {
-          "label": "Proposed stage",
-          "title": "A tree makes different predictions for different groups.",
-          "content": "A regression tree partitions the observations into groups with different predictions. Its fitted tree and test error give the split and pruning rules a concrete purpose.",
-          "pages": "43–44 → 36–42; 45",
-          "takeaway": "Partition sketch → fitted tree → test comparison → optional mechanics",
-          "role": "setup"
+          "label": "",
+          "title": "The contract gives medical care three marginal prices.",
+          "content": "Patient payments rise at $1, then 20¢, then $0 per additional dollar of care. These payments determine the money left for other goods.",
+          "pages": "4, 7–9, 13–16",
+          "role": "setup",
+          "shortTitle": "From contract to budget",
+          "panels": [
+            {
+              "kind": "insurance-schedule",
+              "title": "The same contract has three marginal prices.",
+              "label": "THE CONTRACT’S PAYMENT SCHEDULE",
+              "lines": [],
+              "note": "The $2,100 payment cap is reached at $9,100 of total medical spending.",
+              "data": {
+                "xLabel": "Total medical spending ($), patient + insurer",
+                "yLabel": "Patient payment ($), excluding premium",
+                "vertices": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    350,
+                    350
+                  ],
+                  [
+                    9100,
+                    2100
+                  ],
+                  [
+                    12000,
+                    2100
+                  ]
+                ],
+                "markedPoint": [
+                  1000,
+                  480
+                ],
+                "insetXDomain": [
+                  0,
+                  1000
+                ],
+                "insetYDomain": [
+                  0,
+                  500
+                ],
+                "xDomain": [
+                  0,
+                  12000
+                ],
+                "yDomain": [
+                  0,
+                  2400
+                ]
+              }
+            },
+            {
+              "kind": "equation",
+              "title": "Medical payments leave less money for other goods.",
+              "label": "FROM CONTRACT TO MODEL",
+              "formula": "A+P(Q)=Y-m",
+              "lines": [
+                "\\(Q\\): total medical spending · \\(P(Q)\\): patient payment",
+                "\\(A\\): other goods · \\(Y\\): income · \\(m\\): premium",
+                "The contract determines how much money remains for other goods."
+              ],
+              "note": "Plan chosen before the health shock; care chosen afterward."
+            }
+          ]
         },
         {
-          "label": "Proposed stage",
-          "title": "Combining fitted rules gives another prediction rule to test.",
-          "content": "Boosting fits residuals; bagging averages resampled fits; random forests vary candidate predictors; ensembles combine fitted rules. Compare their predictions on the same task.",
-          "pages": "57 → 46–56",
-          "takeaway": "Comparison → four mechanism cards",
-          "role": "setup"
+          "label": "",
+          "title": "The model separates risk protection from spending incentives.",
+          "content": "Plan choice occurs before the health shock; medical spending is chosen after it. The model computes both sides of the welfare comparison.",
+          "pages": "7, 10–12",
+          "role": "setup",
+          "shortTitle": "The welfare comparison"
         },
         {
-          "label": "Proposed stage",
-          "title": "Now we look for structure without an outcome label.",
-          "content": "Without an outcome label, the output changes: lower-dimensional representations, clusters, mixture components, or association rules.",
-          "pages": "58–67",
-          "takeaway": "No outcome label → structure-finding sketches",
-          "role": "setup"
+          "label": "",
+          "title": "Data and model determine the estimated comparison.",
+          "content": "Estimation links contract choices and spending to model parameters. Fit checks compare predictions with actual spending and retain the differences.",
+          "pages": "15, 17–18, 21–31",
+          "role": "setup",
+          "shortTitle": "Estimation and fit"
         },
         {
-          "label": "Proposed stage",
-          "title": "Classification assigns a category rather than a number.",
-          "content": "Support-vector classification separates labels with a boundary and a margin. This formulation does not directly supply probabilities.",
-          "pages": "68–72",
-          "takeaway": "Labeled points → boundary → margin objective",
-          "role": "setup"
+          "label": "",
+          "title": "The same population can face a different contract.",
+          "content": "Counterfactuals compare specified existing and hypothetical plans, with outcomes depending on the estimated model.",
+          "pages": "32–38",
+          "role": "setup",
+          "shortTitle": "Counterfactuals"
         },
         {
-          "label": "Proposed stage",
-          "title": "Choose the task, fit the rule, and check what the evidence supports.",
-          "content": "Choose the task and its output. Check supervised predictions on held-out observations. A useful prediction rule does not by itself identify a causal effect.",
-          "pages": "5–11, 33, 44, 57–58, 68–72",
-          "takeaway": "Task → output → appropriate check",
-          "role": "setup"
+          "label": "",
+          "title": "In this sample, moral-hazard costs exceed risk-protection gains.",
+          "content": "For the existing plans, the average model-implied spending distortion outweighs the gain from financial protection. The sample is already insured and does not include large expenditure shocks.",
+          "pages": "19, 39–42; support 43–46",
+          "role": "setup",
+          "shortTitle": "Findings and scope",
+          "takeaway": "The welfare comparison varies substantially across individuals."
         }
       ],
-      "change": "Organize each method chapter around a task, example, mechanism, and validation checkpoint.",
-      "branches": [
-        {
-          "fromStage": 2,
-          "returnToStage": 2,
-          "title": "Linear-method depth",
-          "pages": "15–16, 18–22, 27–28, 32",
-          "content": "Alternative formulations, Bayesian interpretations, and asymptotic discussion. Keep caveats essential to the example on the main route."
-        },
-        {
-          "fromStage": 3,
-          "returnToStage": 3,
-          "title": "Tree mechanics",
-          "pages": "37–42",
-          "content": "Full split and pruning derivation after the listener sees the job and output."
-        }
-      ]
-    }
+      "change": "Introduce the observed contract and its payment arithmetic before the general budget and choice model.",
+      "overviewTitle": "What does health insurance buy?"
+    },
+    "topic": "Health insurance"
   },
   {
     "id": "teach-the-picture",
     "number": "05",
-    "title": "Teach the visual alphabet first.",
+    "title": "Explain one segment before the full diagram.",
     "mode": "Visual overload",
     "scale": "slide",
-    "dek": "Six unfamiliar diagrams are easier to read after one has been explained.",
+    "sourceType": "public",
+    "dek": "A contract segment and its extension have different meanings. Make that distinction visible first.",
+    "point": "A solid segment is an actual budget; its dashed extension identifies a local price and intercept. Giving that operation its own view makes the larger identification figure easier to read.",
+    "source": {
+      "authors": "Amanda E. Kowalski",
+      "title": "Estimating the Tradeoff Between Risk Protection and Moral Hazard with a Nonlinear Budget Set Model of Health Insurance",
+      "date": "October 2012",
+      "url": "https://users.nber.org/~kowalski/nlbspres10_25_12.pdf",
+      "pages": "16; context 15; contract 20"
+    },
     "before": [
       {
-        "title": "Matrix first · PDF p. 11",
         "kind": "image",
-        "image": "/originals/targeting-p11.png",
-        "alt": "The source introduces the eigenvalue decomposition.",
-        "label": "PATTERNS ON A NETWORK"
-      },
-      {
-        "title": "Six patterns · PDF p. 12",
-        "kind": "image",
-        "image": "/originals/targeting-p12.png",
-        "alt": "Six ring-network patterns appear together; signs and sizes have no written key on this page.",
-        "label": "PATTERNS ON A NETWORK"
+        "title": "Identification diagram · PDF p. 16",
+        "alt": "Three panels connect a nonlinear contract, multiple linear budgets with indifference curves, and a demand diagram using projection lines and symbolic intercepts.",
+        "image": "/originals/kowalski-2012-p16.png"
       }
     ],
     "after": [
       {
-        "title": "Begin with a pattern everyone can read.",
-        "kind": "ring",
+        "kind": "insurance-linearization",
         "stage": 0,
+        "title": "On this segment, another dollar of care costs the patient 20¢.",
+        "label": "THE COINSURANCE SEGMENT",
         "lines": [
-          "Each dot is one node on the ring.",
-          "The + sign denotes a positive entry."
+          "\\(B\\): income after the premium · \\(A\\): spending on other goods"
         ],
-        "note": "Equal dot sizes mean equal magnitudes; sign and size encode vector entries.",
-        "cue": "Read the entries as a pattern across the same network.",
-        "label": "PATTERNS ON A NETWORK",
-        "alt": "A fourteen-node ring. All entries are positive and equal in magnitude."
+        "note": "Offered plan: $350 deductible · 20% coinsurance · $2,100 patient-payment cap",
+        "alt": "The translated budget A minus B declines from zero to minus $350 at total spending $350, then at slope minus 0.2 to total spending $9,100 and other spending minus $2,100; it is flat after that. The coinsurance segment is highlighted."
       },
       {
-        "title": "Neighbors can move in opposite directions.",
-        "kind": "ring",
+        "kind": "insurance-linearization",
         "stage": 1,
-        "lines": [
-          "+ and − alternate around the ring.",
-          "Every entry has the same magnitude."
-        ],
-        "note": "The source’s two extreme patterns; same ring, different entries.",
-        "cue": "Now the pattern alternates. The network has not changed; the entries have.",
-        "label": "PATTERNS ON A NETWORK",
-        "alt": "The same fourteen-node ring. Plus and minus entries alternate; all magnitudes are equal."
+        "title": "Extending the segment reveals its virtual-income intercept.",
+        "label": "NEAR THE DEDUCTIBLE · $0–$2,000 OF CARE",
+        "formula": "A+0.2Q=B-280",
+        "lines": [],
+        "note": "Solid: actual contract · Dashed: linear extension · B = income after premium",
+        "alt": "The highlighted middle contract segment is extended with a dashed line to Q equals zero. Its intercept is minus $280 relative to B; the actual budget at zero spending has intercept zero."
       },
       {
-        "title": "The network preserves these patterns up to a multiplier.",
-        "kind": "ring",
+        "kind": "insurance-linearization",
         "stage": 2,
-        "formula": "g u=\\lambda u",
-        "note": "\\(u\\): pattern · \\(g\\): network · \\(\\lambda\\): multiplier. Intermediate patterns stay in the full source.",
-        "cue": "These are eigenvectors: applying the network rescales the same pattern.",
-        "label": "PATTERNS ON A NETWORK",
-        "alt": "The common and alternating patterns, side by side on the same fourteen-node ring. Applying the network rescales each pattern."
+        "title": "Each segment has its own price and virtual income.",
+        "label": "THREE LOCAL BUDGETS",
+        "formula": "A+pQ=y",
+        "lines": [],
+        "note": "B = income after premium. The budgets agree at the two spending thresholds."
       }
     ],
-    "diagnosis": "The source stages the matrix before the pictures. The next build adds six patterns without a written key for the visual encoding.",
+    "diagnosis": "The identification figure combines budgets, curves, and projection lines. One coinsurance segment makes its visual grammar concrete: the negative slope is the marginal price; the extended intercept is virtual income.",
     "changes": [
-      "Explain one pattern before comparing several.",
-      "Use signs as well as color.",
-      "Name the mathematical object after its operation is visible."
+      "Identify the actual contract segment.",
+      "Distinguish its linear extension from the actual contract.",
+      "Name the price and virtual income encoded by each segment."
     ],
-    "preserved": "The ring and its two extreme patterns. The simplification changes the teaching sequence, not the decomposition.",
-    "deferred": "Intermediate patterns and the full matrix identity remain in the original.",
-    "practice": "Introduce the meaning of one mark before asking your audience to compare a whole collection of marks.",
+    "preserved": "The piecewise budget and its local price–income pairs, using a contract actually offered in the study.",
+    "deferred": "The full demand panel and identification argument stay in the source. Geometry alone does not establish identification.",
+    "practice": "Name what one solid line, dashed line, or projection means before combining them in a larger figure.",
     "principle": "Let the slide unfold",
-    "sourceType": "public",
-    "context": "The original has animation builds. This revision extends that approach by staging the newly introduced patterns and adding a visible key.",
-    "beforeCaption": "",
-    "afterCaption": "",
-    "source": {
-      "authors": "Andrea Galeotti, Benjamin Golub, Sanjeev Goyal",
-      "title": "Targeting interventions in networks",
-      "date": "2019",
-      "url": "https://bengolub.net/wp-content/uploads/2020/09/TIN_slides.pdf",
-      "pages": "11–12"
-    }
+    "context": "Actual research talk. The contract and model precede this figure. This repair teaches one operation inside the identification argument. PDF p. 15 states the identifying variation and functional-form assumptions; p. 20 supplies the offered-plan parameters.",
+    "beforeCaption": "Original identification diagram, PDF p. 16.",
+    "afterCaption": "The same contract, with one geometric operation at a time.",
+    "values": [
+      "F=1, D=$350, C=0.2, S=$2,100.",
+      "The middle segment satisfies A−B=−350−0.2(Q−350)=−280−0.2Q.",
+      "At Q=$350 and Q=$9,100 the adjoining budgets agree.",
+      "The dashed line is a mathematical extension, not a contract outside the indicated range.",
+      "The three local budgets have different virtual incomes; do not join their choices into a single ordinary Marshallian demand curve without further assumptions."
+    ],
+    "topic": "Health insurance"
   },
   {
     "id": "keep-the-uncertainty",
     "number": "06",
-    "title": "Draw the estimates—and the uncertainty.",
+    "title": "Draw the uncertainty with the estimate.",
     "mode": "Table search",
     "scale": "slide",
-    "dek": "A coefficient plot should preserve the inconvenient results too.",
+    "dek": "Make precision visible with the estimate.",
     "before": [
       {
-        "title": "Regression table · PDF p. 76",
+        "title": "Peer-response table · PDF p. 58",
         "kind": "image",
-        "image": "/originals/autor-trade-p76.png",
-        "alt": "A six-column table reports current-exposure estimates and pre-period placebo estimates with standard errors.",
-        "label": "TRADE & EMPLOYMENT"
+        "alt": "Four peer comparisons, two liquidity outcomes and two specifications; coefficients have standard errors below them.",
+        "image": "/originals/silva-p58.png"
       }
     ],
     "after": [
       {
-        "title": "Show current and future exposure separately.",
-        "kind": "coefficients",
-        "note": "10-year-equivalent manufacturing employment / population change. Approx. 95% intervals; state-clustered SE; population-weighted.",
-        "cue": "Read the upper three as current-exposure estimates, and the lower three as placebo comparisons using future exposure.",
-        "label": "TRADE & EMPLOYMENT",
-        "alt": "Current exposure, estimate [approximate 95% CI]: 1990–2000 −0.89 [−1.2428, −0.5372]; 2000–2007 −0.72 [−0.8376, −0.6024]; pooled −0.75 [−0.8872, −0.6128]. Future exposure / placebo: 1970–1980 +0.43 [+0.1360, +0.7240]; 1980–1990 −0.13 [−0.3848, +0.1248]; pooled +0.15 [−0.0264, +0.3264]."
+        "title": "Large banks’ response to small peers remains uncertain.",
+        "kind": "bankPeerCoefficients",
+        "axisLabel": "Response coefficient: liquidity creation",
+        "rowLabelHeader": "Responding banks / peers",
+        "domain": [
+          -0.65,
+          1.65
+        ],
+        "note": "Bank and year fixed effects. Approx. 95% intervals: estimate ± 1.96 × bank-clustered SE.",
+        "alt": "Liquidity-creation peer responses with approximate 95% intervals: large/large 0.773 [0.422,1.124]; large/small 0.045 [−0.529,0.619]; small/small 0.803 [0.072,1.534]; small/large 0.886 [0.510,1.262].",
+        "label": "BANKS’ LIQUIDITY CREATION"
       }
     ],
-    "diagnosis": "The highlighted table contains two different comparisons. A single plot can preserve all six estimates while making the grouping and precision easier to see.",
-    "changes": [
-      "Keep current-exposure and future-exposure rows separate.",
-      "Reconstruct intervals transparently from the reported standard errors.",
-      "Retain the positive 1970–80 placebo coefficient."
-    ],
-    "preserved": "All six coefficients and standard errors. Outcome: ten times the annual change in manufacturing employment / working-age population, in percentage points; exposure: $1,000 per worker.",
-    "deferred": "Full table notes remain in the original. N = 722 per period, 1,444 in pooled columns; state-clustered SE and population weights apply. Normal-approximation intervals are a new display, not reported intervals.",
-    "practice": "Decide which coefficients answer your claim. Plot every one needed for that claim, including the awkward ones.",
-    "principle": "Minimize tables with lots of numbers!",
+    "diagnosis": "Standard errors are present, but the audience must mentally turn them into uncertainty. Plot one complete comparison with intervals.",
+    "preserved": "All four coefficients and standard errors from the second liquidity-creation column, including the near-zero estimate.",
+    "deferred": "Other outcome and specification. No inference about differences between coefficients is added.",
+    "context": "Actual EBA research talk. The original uses blue type for significant rows; the repair adds interval width. The companion paper spells out the direction hidden by the slide’s arrows.",
     "sourceType": "public",
-    "context": "A 2026 graduate lecture reproducing a table from Autor, Dorn, and Hanson (2013). The positive 1970–80 placebo coefficient is retained.",
+    "source": {
+      "authors": "André Silva",
+      "title": "Strategic complementarity in banks’ funding liquidity choices and financial stability",
+      "date": "2015-11-19",
+      "url": "https://eba.europa.eu/documents/10180/1018121/Silva%2B-%2BStrategic%2Bcomplementarity%2Bin%2Bbanks%27%20funding%2Bliquidity%2Bchoices%2Band%2Bfinancial%2Bstability%2B-%2BPresentation.pdf/6c025e56-3737-45bd-a59d-bed72647afca",
+      "pages": "58 (printed 14/17)",
+      "event": "4th EBA Policy Research Workshop",
+      "eventURL": "https://www.eba.europa.eu/publications-and-media/events/4th-annual-research-workshop-financial-regulation-and-real-economy",
+      "companionPaperURL": "https://www.eba.europa.eu/sites/default/files/documents/10180/1018121/1a9009ba-aa10-496c-9b20-9c1bf1834261/Silva%2520-%2520Strategic%2520complementarity%2520in%2520banks%2527%2520funding%2520liquidity%2520choices%2520and%2520financial%2520stability%2520-%2520Paper.pdf",
+      "companionPages": "50 (Table 7), 20 (measurement)"
+    },
+    "point": "Standard errors are present, but the audience must mentally turn them into uncertainty. Plot one complete comparison with intervals.",
     "beforeCaption": "",
     "afterCaption": "",
-    "source": {
-      "authors": "David Autor",
-      "title": "Trade and (Local) Labor Markets",
-      "date": "2026-03-16",
-      "url": "https://economics.mit.edu/sites/default/files/inline-files/14.662-Spring-2026-Lectures-Slides-12-Trade-and-Labor-Canvas.pdf",
-      "pages": "76 (exposure units: p. 69)"
-    },
+    "principle": "Minimize tables with lots of numbers!",
+    "topic": "Banking",
     "values": [
-      "Current exposure: 1990–2000 −0.89 (SE 0.18); 2000–2007 −0.72 (0.06); pooled 1990–2007 −0.75 (0.07).",
-      "Future exposure / placebo: 1970–1980 +0.43 (0.15); 1980–1990 −0.13 (0.13); pooled 1970–1990 +0.15 (0.09).",
-      "Intervals use estimate ± 1.96 × SE. Axis units: outcome percentage points per $1,000 exposure per worker."
+      "Source column 2: liquidity creation with bank and year fixed effects. All four peer comparisons are retained.",
+      "Each interval is the reported coefficient ±1.96 times its bank-clustered standard error; these are approximate normal 95% intervals.",
+      "Responding banks / peers: large / large 0.773 (SE0.179), large / small 0.045 (0.293), small / small 0.803 (0.373), small / large 0.886 (0.192).",
+      "The original arrows run from responding banks to peers; the companion paper’s Table 7 spells out that direction. No test of differences between coefficients is shown."
     ]
   },
   {
@@ -585,8 +727,7 @@
         "title": "Aid disbursements coincide with rising haven deposits.",
         "label": "ELITE CAPTURE OF FOREIGN AID",
         "note": "22 highly aid-dependent countries · 1990–2010",
-        "cue": "The table associates larger aid disbursements with faster growth in haven deposits. The non-haven estimate is negative and imprecise; the ratio also rises.",
-        "alt": "The original regression table with a finding as its title. All coefficients, standard errors, significance marks, controls, observation counts and R-squared values are retained."
+        "alt": "Rebuilt regression table. All coefficients, standard errors, significance marks, controls, observation counts, and R-squared values are retained."
       }
     ],
     "diagnosis": "A topic title leaves the audience to extract the finding from the table. Naming the observed relationship gives every number a question to answer.",
@@ -616,7 +757,9 @@
       "date": "2020",
       "url": "https://thedocs.worldbank.org/en/doc/605901583339487690-0050022020/render/EliteCaptureofForeignAid.pdf",
       "pages": "39"
-    }
+    },
+    "topic": "Development finance",
+    "point": "The table now opens with the association it documents. Its negative and imprecise non-haven estimate remains visible."
   },
   {
     "id": "start-with-two",
@@ -624,19 +767,19 @@
     "title": "Let two people teach the general case.",
     "mode": "Generality first",
     "scale": "slide",
-    "dek": "Let two players explain the inverse in a real network-game lecture.",
+    "dek": "Work through two players’ incentives before moving to the general network.",
     "before": [
       {
         "kind": "image",
-        "title": "General equilibrium · PDF p. 14",
-        "image": "/originals/acemoglu-games-p14.png",
-        "alt": "Nash equilibria: the general interior solution is expressed using the inverse of I minus phi over theta times the transposed network matrix."
+        "title": "General game · PDF p. 2",
+        "image": "/originals/targeting-p02.png",
+        "alt": "A simultaneous investment game with n agents, standalone returns, strategic interaction, and a network matrix."
       },
       {
         "kind": "image",
-        "title": "Power-series expansion · PDF p. 15",
-        "image": "/originals/acemoglu-games-p15.png",
-        "alt": "The next slide defines Bonacich centrality and gives the inverse’s power-series representation; the following page interprets walks through the network."
+        "title": "Equilibrium condition · PDF p. 10",
+        "image": "/originals/targeting-p10.png",
+        "alt": "The planner’s general targeting problem and spectral-radius condition for unique equilibrium."
       }
     ],
     "after": [
@@ -645,63 +788,62 @@
         "kind": "network",
         "stage": 1,
         "lines": [
-          "Each player’s direct incentive is \\(1\\).",
-          "Each adds \\(\\tfrac14\\) of the other’s action to their own best response."
+          "Each player chooses an investment.",
+          "An extra unit from the other player raises the best response by \\(\\tfrac14\\)."
         ],
-        "note": "Source model with \\(\\theta=1\\), \\(\\phi=\\tfrac14\\), \\(\\alpha_A=\\alpha_B=1\\), and zero shocks.",
-        "cue": "Each starts with a direct incentive of one. Each also responds to one quarter of the other player’s action.",
+        "note": "\\(b_A=b_B=1\\) · \\(\\beta=\\tfrac14\\) · One reciprocal link",
         "label": "A TWO-PLAYER NETWORK GAME",
         "alt": "Two reciprocal links between A and B, each with coefficient one quarter. Each direct incentive equals one."
       },
       {
-        "title": "Each round contributes less.",
+        "title": "Repeated responses amplify the initial incentive.",
         "kind": "feedback",
         "formula": "1+\\frac14+\\frac1{16}+\\frac1{64}+\\cdots=\\frac43",
-        "note": "\\(x_A=1+\\tfrac14x_B\\), \\(x_B=1+\\tfrac14x_A\\). Both actions equal \\(\\tfrac43\\).",
-        "cue": "These are terms of the equilibrium expansion: one, then a quarter, then a sixteenth. Their sum is four thirds; the bars are not a timeline.",
+        "note": "\\(a_A=1+\\tfrac14a_B\\), \\(a_B=1+\\tfrac14a_A\\); hence \\(a_A=a_B=\\tfrac43\\).",
         "label": "A TWO-PLAYER NETWORK GAME",
         "alt": "Successive contributions: direct 1, first round 0.25, second 0.0625, third 0.015625. Cumulative responses approach 4/3."
       },
       {
-        "title": "The general formula adds the same rounds.",
         "kind": "equation",
-        "formula": "x=\\sum_{k=0}^{\\infty}\\left(\\frac{\\phi}{\\theta}G^{\\prime}\\right)^k(\\widetilde{\\alpha}+\\widetilde{\\xi})",
+        "title": "The general equilibrium adds the same responses.",
+        "label": "INVESTMENT WITH SPILLOVERS",
+        "formula": "a^*=(I-\\beta g)^{-1}b=\\sum_{k=0}^{\\infty}(\\beta g)^k b",
         "lines": [
-          "\\(k=0\\): direct incentives and shocks",
-          "\\(k=1\\): one round of responses · \\(k=2\\): two rounds",
-          "\\(\\widetilde{\\alpha}=\\alpha/\\theta\\), \\(\\widetilde{\\xi}=\\xi/\\theta\\); \\(G^{\\prime}\\) is the transposed network."
+          "\\(b\\): direct incentives · \\(g\\): network · \\(\\beta\\): interaction strength",
+          "\\(k=0\\): direct incentives; \\(k=1,2,\\ldots\\): successive responses"
         ],
-        "note": "Interior solution. This expansion requires \\(\\rho((\\phi/\\theta)G^{\\prime})<1\\).",
-        "cue": "The general formula sums the same rounds across every sequence of links, including repeated links. Its convergence condition still matters.",
-        "label": "BACK TO THE SOURCE MODEL"
+        "note": "The expansion converges when \\(\\rho(\\beta g)<1\\)."
       }
     ],
-    "diagnosis": "The general inverse and its expansion arrive before a solved numerical example. A two-player calculation gives the audience something concrete to recognize in both expressions.",
+    "diagnosis": "The original presents an n-player payoff and then a general targeting problem. A solved two-player example gives the audience a concrete mechanism to recognize in the matrix notation.",
     "changes": [
       "Solve a small case with the mechanism intact.",
       "Show the contribution of each round.",
       "Carry the interpretation into the general notation."
     ],
-    "preserved": "The source’s linear best responses and interior-solution formula. The example sets \\(\\theta=1\\), \\(\\phi=\\tfrac14\\), \\(\\alpha_A=\\alpha_B=1\\), and \\(\\xi_A=\\xi_B=0\\).",
-    "deferred": "The general network, heterogeneous incentives, shocks, and boundary equilibria follow. The geometric-series interpretation requires the spectral-radius condition.",
+    "preserved": "The source’s payoff and equilibrium condition. The worked example sets \\(b=(1,1)\\), \\(\\beta=1/4\\), and \\(g_{AB}=g_{BA}=1\\), with no self-links.",
+    "deferred": "The general targeting problem and eigenvector characterization follow. The expansion uses the source’s spectral-radius condition.",
     "practice": "Find the smallest example in which your main force still operates. Teach it, then say exactly what generalizes.",
     "principle": "Choose detail that carries insight",
     "sourceType": "public",
-    "context": "PDF pp. 12–13 introduce payoffs and best responses; pp. 14–16 develop the inverse and network interpretation. The revision inserts a solved two-player specialization before that general solution.",
-    "beforeCaption": "Two consecutive source pages.",
-    "afterCaption": "",
+    "context": "PDF p.2 introduces the general investment game; p.10 gives the targeting problem and spectral-radius condition. The two-player numbers and geometric-series display are derived specializations; the general equilibrium equation appears on p.36.",
+    "beforeCaption": "The general game and its equilibrium condition.",
+    "afterCaption": "A two-player calculation, followed by the general formula.",
     "values": [
-      "Source specialization: \\(\\theta=1\\), \\(\\phi=\\tfrac14\\), \\(\\alpha_A=\\alpha_B=1\\), \\(\\xi_A=\\xi_B=0\\); reciprocal links with no self-links.",
-      "Best responses: \\(x_A=\\max\\{1+x_B/4,0\\}\\) and \\(x_B=\\max\\{1+x_A/4,0\\}\\). The positive solution is \\(x_A=x_B=\\tfrac43\\).",
-      "Terms of the equilibrium expansion: \\(1,\\tfrac14,\\tfrac1{16},\\tfrac1{64},\\ldots\\); their sum is \\(\\tfrac43\\)."
+      "Exact specialization: \\(b=(1,1)\\), \\(\\beta=1/4\\), and \\(g=\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}\\).",
+      "First-order conditions give \\(a=b+\\beta ga\\); both actions equal \\(4/3\\).",
+      "The bars show terms in an equilibrium expansion, not a time series.",
+      "The two-player values are chosen for this reconstruction; the model and convergence condition come from the research talk."
     ],
     "source": {
-      "authors": "Daron Acemoglu",
-      "title": "Networks: Games over Networks and Peer Effects",
-      "date": "22 July 2014",
-      "url": "https://conference.nber.org/confer/2014/SI2014/ML/Acemoglu1.pdf",
-      "pages": "14–15"
-    }
+      "authors": "Andrea Galeotti, Benjamin Golub, Sanjeev Goyal",
+      "title": "Targeting interventions in networks",
+      "date": "2019",
+      "url": "https://bengolub.net/wp-content/uploads/2020/09/TIN_slides.pdf",
+      "pages": "2, 10; equilibrium equation 36"
+    },
+    "topic": "Network games",
+    "point": "Two reciprocal links make the amplification visible before the audience meets the matrix expression."
   },
   {
     "id": "give-a-way-back-in",
@@ -709,7 +851,7 @@
     "title": "Restore the argument at each stop.",
     "mode": "No re-entry",
     "scale": "talk",
-    "dek": "A section name tells listeners where you are. A bridge tells them what they need next.",
+    "dek": "At each section break, restore the economic problem the next section solves.",
     "before": [
       {
         "kind": "image",
@@ -732,67 +874,38 @@
     ],
     "after": [
       {
-        "kind": "claim",
-        "title": "The model is specified. Now compute its behavior.",
-        "label": "BRIDGE INTO THE SOLUTION",
+        "kind": "flow",
+        "title": "Household choices and the wealth distribution must agree.",
+        "label": "SOLVING THE ECONOMY",
         "items": [
           {
-            "title": "So far",
-            "text": "Households hold different portfolios and make different spending choices."
+            "title": "Household choices",
+            "text": "The Hamilton–Jacobi–Bellman equation determines spending and asset transfers."
           },
           {
-            "title": "Carry forward",
-            "text": "These choices and the distribution of households must be solved together."
-          },
-          {
-            "title": "Next",
-            "text": "Compute the behavior of the whole economy."
+            "title": "Wealth distribution",
+            "text": "The Kolmogorov forward equation tracks the resulting distribution of households."
           }
         ],
-        "note": "Model ingredients from pp. 6–9; solution method on pp. 10–13.",
-        "cue": "We have the economic ingredients. Now the numerical method tells us how household choices and their distribution fit together."
+        "note": "Prices make these choices consistent with market clearing."
       },
       {
-        "kind": "claim",
-        "title": "We can solve the model. Does it resemble household data?",
-        "label": "BRIDGE INTO PARAMETERIZATION",
-        "items": [
-          {
-            "title": "So far",
-            "text": "We can solve household choices and their distribution."
-          },
-          {
-            "title": "Carry forward",
-            "text": "Portfolios and spending responses matter for monetary transmission."
-          },
-          {
-            "title": "Next",
-            "text": "Compare wealth patterns and household spending responses with the evidence."
-          }
-        ],
-        "note": "The lottery evidence is shown separately from the model calibration.",
-        "cue": "Before the policy experiment, check whether the model gives a useful account of household wealth and spending responses."
+        "kind": "hank-wealth",
+        "title": "Does the model match household wealth?",
+        "label": "HOUSEHOLD PORTFOLIOS",
+        "note": "Average quarterly MPC from a $500 windfall in the model: 16%."
       },
       {
-        "kind": "claim",
-        "title": "We have different spending responses. What does a rate cut do?",
-        "label": "BRIDGE INTO RESULTS",
-        "items": [
-          {
-            "title": "So far",
-            "text": "The model matches wealth patterns and produces heterogeneous spending responses."
-          },
-          {
-            "title": "Carry forward",
-            "text": "An interest-rate change reaches households through several channels."
-          },
-          {
-            "title": "Next",
-            "text": "Trace the policy experiment; separate direct and indirect effects."
-          }
+        "kind": "equation",
+        "title": "The rate cut changes returns, earnings, and transfers.",
+        "label": "THE MONETARY POLICY EXPERIMENT",
+        "formula": "i_t=\\bar r^b+\\phi\\pi_t+\\varepsilon_t",
+        "lines": [
+          "Initial shock: \\(\\varepsilon_0=-0.0025\\), or −1 percentage point annualized.",
+          "Direct channel: liquid return \\(r^b\\).",
+          "Indirect channels: illiquid return \\(r^a\\), wage \\(w\\), transfers \\(T\\)."
         ],
-        "note": "The spending response’s size and composition depend on calibration and the fiscal response.",
-        "cue": "Now return to the monetary-policy question. Trace the rate cut, then separate its direct and indirect effects."
+        "note": "\\(i_t\\): nominal rate · \\(\\pi_t\\): inflation · \\(\\phi\\): policy response"
       }
     ],
     "diagnosis": "The dividers name the next section without restoring the argument. A listener returning after several technical slides still has to recover why the solution, calibration, or experiment matters.",
@@ -815,121 +928,223 @@
       "before": [
         {
           "label": "Source section",
-          "title": "Preview",
-          "content": "Motivates the framework, contrasts transmission mechanisms, and positions the contribution.",
+          "title": "The transmission question",
+          "content": "Interest rates affect consumption directly and through equilibrium responses.",
           "pages": "2–5",
-          "takeaway": "Question → early result preview",
-          "role": "setup"
+          "role": "setup",
+          "shortTitle": "The transmission question"
         },
         {
           "label": "Source section",
-          "title": "Model",
-          "content": "Specifies households, portfolios, firms, policy, and market clearing.",
+          "title": "The household model",
+          "content": "Households hold liquid and illiquid assets; markets link their choices.",
           "pages": "6–9",
-          "takeaway": "Agents and markets",
-          "role": "setup"
+          "role": "setup",
+          "shortTitle": "The household model"
         },
         {
           "label": "Source section",
-          "title": "Solution Method",
-          "content": "A bare divider leads to numerical solution and computational advantages.",
+          "title": "Solution methods",
+          "content": "Hamilton–Jacobi–Bellman and Kolmogorov forward equations; equilibrium computation.",
           "pages": "10–13",
-          "takeaway": "Section name → solver details",
-          "role": "setup"
+          "role": "setup",
+          "shortTitle": "Solution methods",
+          "panels": [
+            {
+              "kind": "divider",
+              "title": "Solution Method",
+              "sourcePage": "10"
+            },
+            {
+              "kind": "outline-stage",
+              "title": "Solution methods",
+              "label": "Solution methods",
+              "lines": [
+                "Hamilton–Jacobi–Bellman and Kolmogorov forward equations; equilibrium computation."
+              ]
+            }
+          ]
         },
         {
           "label": "Source section",
           "title": "Parameterization",
-          "content": "A bare divider leads to calibration, wealth fit, spending responses, and external lottery evidence.",
+          "content": "Income process, wealth distribution, marginal propensities to consume, and external spending evidence.",
           "pages": "14–18",
-          "takeaway": "Section name → data and model evidence",
-          "role": "setup"
+          "role": "setup",
+          "shortTitle": "Parameterization",
+          "panels": [
+            {
+              "kind": "divider",
+              "title": "Parameterization",
+              "sourcePage": "14"
+            },
+            {
+              "kind": "outline-stage",
+              "title": "Parameterization",
+              "label": "Parameterization",
+              "lines": [
+                "Income process, wealth distribution, marginal propensities to consume, and external spending evidence."
+              ]
+            }
+          ]
         },
         {
           "label": "Source section",
           "title": "Results",
-          "content": "A bare divider leads to the policy experiment, decomposition, and interpretation.",
+          "content": "Monetary shock, impulse responses, and direct versus indirect channels.",
           "pages": "19–28",
-          "takeaway": "Section name → shock → decomposition",
-          "role": "setup"
+          "role": "setup",
+          "shortTitle": "Results",
+          "panels": [
+            {
+              "kind": "divider",
+              "title": "Results",
+              "sourcePage": "19"
+            },
+            {
+              "kind": "outline-stage",
+              "title": "Results",
+              "label": "Results",
+              "lines": [
+                "Monetary shock, impulse responses, and direct versus indirect channels."
+              ]
+            }
+          ]
         },
         {
           "label": "Source section",
-          "title": "Variants",
-          "content": "Explores fiscal responses, persistence, and alternative benchmarks.",
+          "title": "Alternative fiscal responses",
+          "content": "Transfers, government purchases, public debt, shock persistence, and alternative household benchmarks.",
           "pages": "29–32",
-          "takeaway": "Comparisons",
-          "role": "setup"
+          "role": "setup",
+          "shortTitle": "Alternative fiscal responses"
         },
         {
           "label": "Source section",
-          "title": "Synthesis",
-          "content": "Returns to the transmission mechanism; supporting details follow.",
+          "title": "Conclusion and supporting results",
+          "content": "HANK and RANK transmission summaries; additional wealth, consumption, and counterfactual results.",
           "pages": "33; support 34–41",
-          "takeaway": "Main answer → linked supporting material",
-          "role": "setup"
+          "role": "setup",
+          "shortTitle": "Conclusion and supporting results"
         }
       ],
       "after": [
         {
-          "label": "Proposed stage",
-          "title": "Household differences can change how monetary policy reaches spending.",
-          "content": "Interest rates affect household spending directly and through the economy-wide response. Fiscal policy changes the composition of transmission.",
+          "title": "How does a rate cut reach household spending?",
+          "shortTitle": "The transmission question",
+          "content": "Lower interest rates affect spending directly. They also change earnings, asset returns, and transfers.",
           "pages": "2–5",
-          "takeaway": "Question → direct/indirect distinction",
+          "takeaway": "Liquid returns · Labor income · Illiquid returns · Transfers",
+          "label": "",
           "role": "setup"
         },
         {
-          "label": "Proposed stage",
-          "title": "The model links household portfolios to economy-wide spending.",
-          "content": "Households hold different liquid and illiquid portfolios. Prices and incomes connect their individual choices to aggregate spending.",
+          "title": "Liquid and illiquid assets support different spending choices.",
+          "shortTitle": "Portfolios and markets",
+          "content": "The liquid asset pays for current spending. The illiquid asset earns a higher equilibrium return but is costly to adjust.",
           "pages": "6–9",
-          "takeaway": "Households and portfolios → markets → spending",
+          "takeaway": "\\(r^a>r^b\\) · Asset transfers carry an adjustment cost.",
+          "label": "",
           "role": "setup"
         },
         {
-          "label": "Proposed stage",
-          "title": "We have the ingredients; now compute their joint behavior.",
-          "content": "Compute household choices and their distribution consistently with aggregate prices. These are the outputs the policy experiment will use.",
+          "title": "Household choices and the wealth distribution must agree.",
+          "shortTitle": "Joint solution",
+          "content": "Household choices and their distribution are solved together, with prices consistent with market clearing.",
           "pages": "10–13",
-          "takeaway": "Established ingredients → required output → solver",
-          "role": "bridge"
+          "panels": [
+            {
+              "kind": "flow",
+              "title": "Household choices and the wealth distribution must agree.",
+              "label": "SOLVING THE ECONOMY",
+              "items": [
+                {
+                  "title": "Household choices",
+                  "text": "The Hamilton–Jacobi–Bellman equation determines spending and asset transfers."
+                },
+                {
+                  "title": "Wealth distribution",
+                  "text": "The Kolmogorov forward equation tracks the resulting distribution of households."
+                }
+              ],
+              "note": "Prices make these choices consistent with market clearing."
+            }
+          ],
+          "role": "bridge",
+          "label": ""
         },
         {
-          "label": "Proposed stage",
-          "title": "Now check whether the model resembles household data.",
-          "content": "Compare household wealth patterns and spending responses with the model. The lottery study provides separate external evidence.",
+          "title": "Does the model reproduce household wealth patterns?",
+          "shortTitle": "Wealth and spending",
+          "content": "Household data discipline portfolios and spending responses.",
           "pages": "14–18",
-          "takeaway": "Policy question → household data → disciplined model",
-          "role": "bridge"
+          "panels": [
+            {
+              "kind": "hank-wealth",
+              "title": "Does the model match household wealth?",
+              "label": "HOUSEHOLD PORTFOLIOS",
+              "note": "Average quarterly MPC from a $500 windfall in the model: 16%."
+            }
+          ],
+          "role": "bridge",
+          "label": ""
         },
         {
-          "label": "Proposed stage",
-          "title": "With household behavior disciplined, ask what a rate cut changes.",
-          "content": "Introduce the rate cut. Trace aggregate spending, then separate direct effects from indirect channels through earnings, returns, and transfers.",
+          "title": "The rate cut changes returns, earnings, and transfers.",
+          "shortTitle": "The rate-cut experiment",
+          "content": "The policy experiment exposes heterogeneous households to the same monetary shock.",
           "pages": "19–28",
-          "takeaway": "So far → carry forward → next question",
-          "role": "bridge"
+          "panels": [
+            {
+              "kind": "equation",
+              "title": "The rate cut changes returns, earnings, and transfers.",
+              "label": "THE MONETARY POLICY EXPERIMENT",
+              "formula": "i_t=\\bar r^b+\\phi\\pi_t+\\varepsilon_t",
+              "lines": [
+                "Initial shock: \\(\\varepsilon_0=-0.0025\\), or −1 percentage point annualized.",
+                "Direct channel: liquid return \\(r^b\\).",
+                "Indirect channels: illiquid return \\(r^a\\), wage \\(w\\), transfers \\(T\\)."
+              ],
+              "note": "\\(i_t\\): nominal rate · \\(\\pi_t\\): inflation · \\(\\phi\\): policy response"
+            }
+          ],
+          "role": "bridge",
+          "label": ""
         },
         {
-          "label": "Proposed stage",
-          "title": "The effect depends on the rest of the policy response.",
-          "content": "Change the fiscal response, persistence, or household benchmark. Compare each variant with the baseline and explain which mechanism changes.",
+          "title": "Fiscal adjustment changes monetary transmission.",
+          "shortTitle": "The fiscal response",
+          "content": "Lower interest payments finance different combinations of transfers, purchases, or debt adjustment.",
           "pages": "29–32",
-          "takeaway": "Baseline → one changed element → implication",
-          "role": "bridge"
+          "panels": [
+            {
+              "kind": "hank-fiscal",
+              "title": "Fiscal adjustment changes monetary transmission.",
+              "label": "THREE FISCAL RESPONSES",
+              "note": "Initial consumption elasticity with respect to the liquid return; associated direct-effect share."
+            }
+          ],
+          "label": "",
+          "role": "setup"
         },
         {
-          "label": "Proposed stage",
-          "title": "State the mechanism and what remains model-dependent together.",
-          "content": "The transmission mechanism depends on household portfolios, equilibrium responses, and fiscal policy. State the mechanism and this dependence together.",
+          "title": "Indirect channels account for most of the HANK spending response.",
+          "shortTitle": "The transmission mechanism",
+          "content": "Wealthy households’ income effects offset part of intertemporal substitution. Hand-to-mouth households make spending sensitive to income.",
           "pages": "33; support 34–41",
-          "takeaway": "Question → answer → qualification",
+          "panels": [
+            {
+              "kind": "hank-transmission",
+              "title": "Indirect channels account for most of the HANK response.",
+              "label": "TRANSMISSION SUMMARY"
+            }
+          ],
+          "label": "",
           "role": "setup"
         }
       ],
       "change": "Keep the source sequence and replace bare section dividers with a recap, a carry-forward fact, and the next question.",
-      "branches": []
+      "overviewTitle": "Household portfolios shape monetary transmission."
     },
     "source": {
       "authors": "Greg Kaplan, Benjamin Moll, Gianluca Violante",
@@ -939,8 +1154,12 @@
       "pages": "10, 14, 19"
     },
     "values": [
-      "The baseline decomposition on PDF p. 26 reports 19% direct and 81% indirect effects; fiscal variants on p. 29 change the shares. The gallery does not treat these as universal constants."
-    ]
+      "Wealth moments: data/model illiquid assets-to-GDP 2.920/2.920; liquid assets-to-GDP 0.260/0.263; poor hand-to-mouth 10%/10%; wealthy hand-to-mouth 20%/19%. PDF p.16.",
+      "Fiscal response table, PDF p.29: transfers, purchases, debt give consumption elasticities −2.21, −2.07, −1.48 and direct-effect shares 19%, 22%, 46%.",
+      "The concluding direct/indirect decomposition is the summary on PDF p.33. It is distinct from the three fiscal scenarios on p.29."
+    ],
+    "topic": "Monetary policy",
+    "point": "A section label tells listeners where the talk is. An economic question tells them what they need to understand next. The revision keeps the sequence and replaces the three bare transitions."
   },
   {
     "id": "protect-the-result",
@@ -948,7 +1167,7 @@
     "title": "Give the evidence a main route.",
     "mode": "Mandatory detour",
     "scale": "talk",
-    "dek": "Explain what is estimated and tested; make the full likelihood an optional branch.",
+    "dek": "Reach the specification tests before unpacking the full likelihood.",
     "before": [
       {
         "kind": "image",
@@ -978,8 +1197,8 @@
     "after": [
       {
         "kind": "flow",
-        "title": "Show what the estimates are for.",
-        "label": "THE CORE ROUTE",
+        "title": "Wages and waiting times identify the test objects.",
+        "label": "COMPETITIVE SEARCH",
         "items": [
           {
             "title": "Observe",
@@ -994,8 +1213,7 @@
             "text": "Submarkets, search direction, and efficient surplus sharing"
           }
         ],
-        "note": "Source inputs: CPS, JOLTS, and IRS data. The model connects inputs to estimated objects.",
-        "cue": "These observations and the model identify the objects used in the tests. We can explain what the tests compare before unpacking the full likelihood."
+        "note": "CPS: wages and unemployment · JOLTS: vacancies · IRS: labor share"
       },
       {
         "kind": "claim",
@@ -1015,15 +1233,14 @@
             "text": "Efficiency equates matching elasticity and the wage-splitting parameter: \\(\\eta=\\beta\\)."
           }
         ],
-        "note": "A starts without equilibrium restrictions. Maintained assumptions stay on the core route.",
-        "cue": "Now each comparison has an economic meaning. The likelihood is available to explain how the estimates are obtained."
+        "note": "A: unrestricted · B: balanced flows · C: homogeneous workers · D: \\(\\eta=\\beta\\)"
       },
       {
-        "kind": "image",
-        "title": "Read the full evidence, including the aggregate · PDF p. 24",
-        "image": "/originals/competitive-search-2009-p24.png",
-        "alt": "Complete specification tests for the aggregate and six industries. The aggregate B-versus-C test rejects, while the six industry B-versus-C tests do not. Efficiency is rejected in three of six industries.",
-        "cue": "Keep the aggregate column as well as the six industries. The restrictions receive different support; a failure to reject does not establish that a restriction is true."
+        "kind": "search-tests",
+        "title": "The aggregate rejects restrictions that most industries do not.",
+        "label": "COMPETITIVE SEARCH",
+        "note": "Likelihood-ratio p-values. 0 denotes a rounded value. ¹Homogeneous-worker specifications.",
+        "alt": "P-values by row (submarkets, direction with homogeneous workers, efficiency with homogeneous workers): Aggregate 1,0,0; Construction 1,.86,.56; Manufacturing 1,.90,0; Trade/transport/utilities 1,.13,.83; Professional/business 1,.92,0; Education/health 1,.54,0; Leisure/hospitality 1,.85,.28."
       }
     ],
     "diagnosis": "Between the early preview and the detailed tests, the source takes readers through the full likelihood before listing the objects it identifies. Put that map first, then offer the derivation as a branch that returns to the evidence.",
@@ -1041,10 +1258,9 @@
     "beforeCaption": "Selected middle slides, in source order; intervening pages omitted.",
     "afterCaption": "",
     "values": [
-      "The complete source table is PDF p. 24. Its aggregate B-versus-C comparison rejects while all six industry comparisons do not.",
-      "Efficiency is rejected in three of six industries in the source. No p-values or coefficients have been reconstructed.",
-      "The main slide and appendix name B-versus-C differently. The gallery uses the A/B/C/D definitions on PDF p. 15.",
-      "The optional timing exercise below is a constructed rehearsal scenario; none of its durations describe this source deck."
+      "P-values are transcribed from PDF p. 24; values printed as 0 are rounded, not exact zero.",
+      "The B/C test adds homogeneous workers and is interpreted by the paper as evidence about directed search.",
+      "The rebuilt table keeps all six industries and the aggregate. The log-likelihood levels and LR statistics remain in the linked source."
     ],
     "outline": {
       "title": "Give the evidence a main route",
@@ -1053,120 +1269,184 @@
         {
           "label": "Source section",
           "title": "Question and preview",
-          "content": "States the research question and previews findings.",
+          "content": "Do submarkets, directed search and efficient surplus sharing describe the labor market?",
           "pages": "2–4",
-          "takeaway": "Question → initial answer",
-          "role": "setup"
+          "role": "setup",
+          "shortTitle": "Question and preview"
         },
         {
           "label": "Source section",
-          "title": "Theory",
-          "content": "Develops assumptions, value equations, equilibrium, and economic restrictions.",
+          "title": "Model and restrictions",
+          "content": "Equilibrium restrictions link wages, job-finding rates and surplus sharing.",
           "pages": "5–8",
-          "takeaway": "Assumptions → equations → restrictions",
-          "role": "setup"
+          "role": "setup",
+          "shortTitle": "Model and restrictions"
         },
         {
           "label": "Source section",
-          "title": "Inputs",
-          "content": "Lists worker outcomes, vacancies, and labor-share data.",
+          "title": "Data",
+          "content": "CPS, JOLTS and IRS inputs.",
           "pages": "9",
-          "takeaway": "Data sources",
-          "role": "setup"
+          "role": "setup",
+          "shortTitle": "Data"
         },
         {
           "label": "Source section",
-          "title": "Estimation",
-          "content": "Develops the likelihood, auxiliary estimators, and identified objects.",
+          "title": "Estimation machinery",
+          "content": "Likelihood contributions, estimation and parameter identification.",
           "pages": "10–14",
-          "takeaway": "Likelihood → auxiliary estimators → identification",
-          "role": "setup"
+          "role": "setup",
+          "shortTitle": "Estimation machinery"
         },
         {
           "label": "Source section",
-          "title": "Tests",
-          "content": "Defines the sequence of formal specification comparisons.",
+          "title": "Specification tests",
+          "content": "The A/B/C/D restrictions formalize tests of submarkets, direction, and efficiency.",
           "pages": "15",
-          "takeaway": "A → B → C → D",
-          "role": "setup"
+          "role": "setup",
+          "shortTitle": "Specification tests"
         },
         {
           "label": "Source section",
-          "title": "Detailed evidence",
-          "content": "Shows descriptive examples, fitted distributions, and specification-test results.",
+          "title": "Examples, fit, and test evidence",
+          "content": "Descriptive data, fitted distributions, and specification-test results for the industries.",
           "pages": "16–19",
-          "takeaway": "Examples → fit → tests",
-          "role": "setup"
+          "role": "setup",
+          "shortTitle": "Examples, fit, and evidence"
         },
         {
           "label": "Source section",
-          "title": "Conclusion and reserve",
-          "content": "Returns to findings and future work; linked tables and extensions follow.",
+          "title": "Conclusion and supporting results",
+          "content": "Conclusions, additional fitted distributions, full test table and extensions.",
           "pages": "20; reserve 21–26",
-          "takeaway": "Conclusion → linked tables and extensions",
-          "role": "setup"
+          "role": "setup",
+          "shortTitle": "Conclusion and supporting results"
         }
       ],
       "after": [
         {
-          "label": "Proposed stage",
-          "title": "Different restrictions face different empirical tests.",
-          "content": "Across six industries, the source does not reject submarkets or direction; it rejects efficiency in three. The aggregate comparison differs.",
-          "pages": "2–4",
-          "takeaway": "Question → qualified preview",
-          "role": "setup"
-        },
-        {
-          "label": "Proposed stage",
-          "title": "Three restrictions connect wages, waiting, and surplus sharing.",
-          "content": "A→B tests submarket flows. B→C tests the wage–waiting tradeoff. C→D tests efficient surplus splitting. The maintained model assumptions remain in view.",
-          "pages": "7–8, 15; assumptions from 5",
-          "takeaway": "Submarket flows → wage–waiting tradeoff → surplus sharing",
-          "role": "result"
-        },
-        {
-          "label": "Proposed stage",
-          "title": "The data and model identify the objects entering the tests.",
-          "content": "CPS supplies wages, unemployment durations, and unemployment; JOLTS supplies vacancies; IRS data supply labor share. The model maps these inputs to the estimated objects.",
-          "pages": "9, 14, 16",
-          "takeaway": "Data source → observed input → estimated object",
-          "role": "setup"
-        },
-        {
-          "label": "Proposed stage",
+          "shortTitle": "The empirical finding",
           "title": "The restrictions receive different empirical support.",
-          "content": "Read the nested specification comparisons by industry and for the aggregate. The aggregate B-versus-C test rejects while the six industry comparisons do not.",
-          "pages": "19, 24",
-          "takeaway": "Six industries + aggregate → A/B/C/D comparisons",
-          "role": "result"
-        },
-        {
-          "label": "Proposed stage",
-          "title": "Now inspect what the fitted model reproduces.",
-          "content": "For construction and education/health, compare observed and model-implied distributions. Use these examples to read what the fitted model reproduces.",
-          "pages": "17–18; support 21–23",
-          "takeaway": "Data distribution beside fitted distribution",
+          "content": "Across six industries, submarkets and direction are not rejected. Efficiency is rejected in three. The aggregate rejects both direction and efficiency.",
+          "pages": "2–4; 19,24",
+          "label": "",
           "role": "setup"
         },
         {
-          "label": "Proposed stage",
-          "title": "Separate the conclusions from what remains to test.",
-          "content": "The restrictions receive different empirical support across industries and the aggregate. Failure to reject a restriction does not establish that it is true.",
-          "pages": "20; optional extensions 25–26",
-          "takeaway": "Finding → scope → next empirical question",
+          "shortTitle": "Three economic restrictions",
+          "title": "Three restrictions connect wages, waiting, and surplus sharing.",
+          "content": "Submarkets balance inflows and outflows. Directed search links higher wages to lower job-finding rates. Efficiency equates matching elasticity with the wage-splitting parameter.",
+          "pages": "5–8,15",
+          "panels": [
+            {
+              "kind": "claim",
+              "title": "Each specification adds a restriction to test.",
+              "label": "WHAT THE EVIDENCE COMPARES",
+              "items": [
+                {
+                  "title": "A → B",
+                  "text": "Submarket flows balance: job-finding and separation flows agree."
+                },
+                {
+                  "title": "B → C",
+                  "text": "Directed search links higher wages to lower job-finding rates."
+                },
+                {
+                  "title": "C → D",
+                  "text": "Efficiency equates matching elasticity and the wage-splitting parameter: \\(\\eta=\\beta\\)."
+                }
+              ],
+              "note": "A: unrestricted · B: balanced flows · C: homogeneous workers · D: \\(\\eta=\\beta\\)"
+            }
+          ],
+          "label": "",
           "role": "setup"
+        },
+        {
+          "shortTitle": "Data and identification",
+          "title": "Worker histories and market totals identify the test objects.",
+          "content": "CPS supplies wages, unemployment durations and unemployment. JOLTS supplies vacancies; IRS returns supply labor share.",
+          "pages": "9,14,16",
+          "panels": [
+            {
+              "kind": "flow",
+              "title": "Wages and waiting times identify the test objects.",
+              "label": "COMPETITIVE SEARCH",
+              "items": [
+                {
+                  "title": "Observe",
+                  "text": "Wages, unemployment durations, vacancies, labor share"
+                },
+                {
+                  "title": "Estimate",
+                  "text": "Wage and arrival-rate distributions; matching and sharing parameters"
+                },
+                {
+                  "title": "Test",
+                  "text": "Submarkets, search direction, and efficient surplus sharing"
+                }
+              ],
+              "note": "CPS: wages and unemployment · JOLTS: vacancies · IRS: labor share"
+            }
+          ],
+          "label": "",
+          "role": "setup"
+        },
+        {
+          "shortTitle": "Specification tests",
+          "title": "The aggregate rejects restrictions that most industries do not.",
+          "content": "Likelihood-ratio p-values for all six industries and the aggregate.",
+          "pages": "19,24",
+          "panels": [
+            {
+              "kind": "search-tests",
+              "title": "The aggregate rejects restrictions that most industries do not.",
+              "label": "COMPETITIVE SEARCH",
+              "note": "Likelihood-ratio p-values. 0 denotes a rounded value. ¹Homogeneous-worker specifications.",
+              "alt": "P-values by row (submarkets, direction with homogeneous workers, efficiency with homogeneous workers): Aggregate 1,0,0; Construction 1,.86,.56; Manufacturing 1,.90,0; Trade/transport/utilities 1,.13,.83; Professional/business 1,.92,0; Education/health 1,.54,0; Leisure/hospitality 1,.85,.28."
+            }
+          ],
+          "label": "",
+          "role": "setup"
+        },
+        {
+          "shortTitle": "Distributional fit",
+          "title": "Observed and fitted wage distributions can be compared.",
+          "content": "Construction and education/health: observed wages, fitted wage distributions, and estimated arrival-rate distributions.",
+          "pages": "17–18; 21–23",
+          "schema": [
+            {
+              "title": "Construction",
+              "text": "Observed wages · Fitted wages · Arrival rates"
+            },
+            {
+              "title": "Education & health",
+              "text": "Observed wages · Fitted wages · Arrival rates"
+            }
+          ],
+          "label": "",
+          "role": "setup"
+        },
+        {
+          "shortTitle": "Scope of the finding",
+          "title": "Efficiency is rejected in three of six industries.",
+          "content": "Manufacturing; professional and business services; education and health. The other industry tests fail to reject efficiency.",
+          "pages": "20; 24–26",
+          "takeaway": "The aggregate also rejects efficiency.",
+          "label": "",
+          "role": "setup"
+        },
+        {
+          "shortTitle": "Technical reserve: estimation",
+          "title": "The likelihood connects wages and durations to arrival rates.",
+          "content": "Separate likelihood contributions for employed and unemployed workers combine observed wages, unemployment durations, and employment status. Parameters determine the wage and arrival-rate distributions.",
+          "pages": "10–13",
+          "role": "reserve",
+          "label": ""
         }
       ],
       "change": "Keep the early findings preview. Place the detailed evidence after the essential restriction-and-data map, with the full likelihood on a labeled optional branch.",
-      "branches": [
-        {
-          "fromStage": 3,
-          "returnToStage": 4,
-          "title": "How the estimates are obtained",
-          "pages": "6, 10–13",
-          "content": "Value equations, full likelihood, and auxiliary estimators. This branch explains the machinery and returns to the empirical tests; essential restrictions and identification limits remain on the main route."
-        }
-      ]
+      "overviewTitle": "Which competitive-search restrictions survive the data?"
     },
     "source": {
       "authors": "Bryan Engelhardt, Peter Rupert",
@@ -1174,7 +1454,9 @@
       "date": "20 November 2009",
       "url": "https://www.minneapolisfed.org/economic-research/conferences/~/media/files/research/events/2009_11_19/slides/Presenter8-slides-MNFed.pdf",
       "pages": "11, 14–15, 19; full tests 24"
-    }
+    },
+    "topic": "Labor markets",
+    "point": "The revised outline explains the restrictions and reaches their tests before the likelihood. It moves the derivation into the technical reserve."
   },
   {
     "id": "build-the-diagram",
@@ -1196,44 +1478,41 @@
         "kind": "hank",
         "stage": 0,
         "title": "Three unknown paths. Three conditions to satisfy.",
-        "label": "ORIENT THE SOLVER",
+        "label": "TWO-ASSET HANK",
         "lines": [
           "Guess \\(r,w,Y\\); hold the exogenous paths \\(Z,r^{*},G\\) fixed.",
           "The targets are residuals \\(H_1,H_2,H_3\\), each equal to zero at equilibrium."
         ],
-        "note": "The full source reduces 22 endogenous variables to three unknown paths.",
-        "cue": "First read the graph as a machine: choose three paths, run its blocks, and check three equilibrium conditions."
+        "note": "22 endogenous variables reduce to three unknown paths."
       },
       {
         "kind": "hank",
         "stage": 1,
-        "title": "Follow one chain from production to finance.",
-        "label": "ONE PATH THROUGH THE GRAPH",
+        "title": "Inflation connects production to asset returns.",
+        "label": "PRICES AND RETURNS",
         "lines": [
           "Production supplies marginal cost \\(mc\\); the price Phillips block supplies inflation \\(\\pi\\).",
           "Finance also takes \\((p,d,r)\\) from equity and \\(i\\) from monetary policy."
         ],
-        "note": "This panel follows selected dependencies; the complete graph returns in step 4.",
-        "cue": "Follow just this path. Production gives marginal cost, the price Phillips curve gives inflation, and finance uses that inflation alongside equity and monetary-policy inputs."
+        "note": "Equity values and monetary policy also enter the finance block."
       },
       {
         "kind": "hank",
         "stage": 2,
-        "title": "See what the household block adds.",
-        "label": "CONNECT INPUTS TO EQUILIBRIUM",
+        "title": "Household choices enter two equilibrium conditions.",
+        "label": "HOUSEHOLD CHOICES",
         "lines": [
           "Households take returns \\(r^a,r^b\\) and fiscal inputs \\(\\tau,w,N\\).",
           "They supply asset demands \\(\\mathcal A,\\mathcal B\\) and the wage-setting statistic \\(\\mathcal U\\)."
         ],
-        "note": "Asset clearing also uses p. The wage condition also uses the direct fiscal inputs.",
-        "cue": "Now connect households. Their asset demands enter market clearing; their wage-setting statistic enters the wage Phillips condition. The two direct feeds remain visible."
+        "note": "Asset clearing also uses equity value; wage setting also uses fiscal inputs."
       },
       {
-        "kind": "image",
-        "title": "Now read the complete source graph.",
-        "image": "/originals/sequence-project-p72.png",
-        "alt": "The same complete two-asset HANK graph shown before. Every original node, label, and arrow is retained.",
-        "cue": "Return to the whole graph. We can now locate the unknowns, trace an important chain, and see where households connect to the equilibrium conditions."
+        "kind": "hank-system",
+        "title": "Seven computations feed three equilibrium checks.",
+        "label": "THE COMPLETE SYSTEM",
+        "note": "Guessed paths: \\(r,w,Y\\) · Exogenous paths: \\(Z,r^*,G\\).",
+        "alt": "Seven ordered computations list every input and feed-forward variable. Production; price Phillips; fiscal; equity; monetary policy; finance; households. Three targets are Fisher, asset market, and wage Phillips residuals."
       }
     ],
     "diagnosis": "The source moves from simpler models to a much richer two-asset graph. At this jump, the audience must decode seven blocks and twenty dependencies while also learning which paths are unknown and which conditions close the model.",
@@ -1248,8 +1527,8 @@
     "principle": "Let the slide unfold",
     "sourceType": "public",
     "context": "NBER Summer Institute, July 2019. The authors already teach simpler directed graphs: a Krusell–Smith model on PDF p. 61 and a one-asset HANK model on p. 71. This revision adds a bridge into the two-asset graph on p. 72 (printed slide 24).",
-    "beforeCaption": "",
-    "afterCaption": "",
+    "beforeCaption": "Two-asset HANK: seven blocks, twenty dependencies, three equilibrium targets.",
+    "afterCaption": "Four rebuilt views of the same model dependencies.",
     "source": {
       "authors": "Adrien Auclert, Bence Bardóczy, Matt Rognlie, Ludwig Straub",
       "title": "Using the Sequence-Space Jacobian to Solve and Estimate Heterogeneous-Agent Models",
@@ -1262,7 +1541,9 @@
       "Seven blocks: production, fiscal, price Phillips curve, equity, finance, monetary policy, and heterogeneous households.",
       "Three targets: Fisher equation H1, asset market clearing H2, wage Phillips curve H3.",
       "The source graph has twenty labeled directed connections. Its complete original appears in the final better build."
-    ]
+    ],
+    "topic": "Computational macro",
+    "point": "The dependency graph becomes readable in three passes: equilibrium conditions, prices and returns, then households. A rebuilt computation table brings the complete system back together without crossing arrows."
   },
   {
     "id": "claim-and-boundary",
@@ -1281,9 +1562,16 @@
     ],
     "after": [
       {
+        "kind": "carbon-response",
+        "title": "Estimated GDP effects remain close to zero.",
+        "label": "A $40 INCREASE IN THE CARBON TAX",
+        "note": "67% and 95% confidence bands · EU+ · Restricted local projections · Four lags",
+        "alt": "Rebuilt cumulative GDP-level response over years 0–6. Both 67% and 95% confidence bands include zero at every horizon."
+      },
+      {
         "kind": "claim",
-        "title": "Near-zero GDP-level estimates leave three questions.",
-        "label": "RESULT & INTERPRETATION",
+        "title": "The GDP response depends on the comparison and policy setting.",
+        "label": "CARBON TAXES AND GDP",
         "items": [
           {
             "title": "Causal comparison",
@@ -1298,15 +1586,7 @@
             "text": "Would a different tax design or another country produce the same response?"
           }
         ],
-        "note": "EU+ · $40 carbon-tax increase · restricted local projections · the 95% bands include zero.",
-        "cue": "The cumulative GDP-level estimates are near zero, with uncertainty on both sides. Here are the three questions that limit how we interpret and generalize that result."
-      },
-      {
-        "kind": "image",
-        "title": "Keep the full estimate and uncertainty visible · PDF p. 25",
-        "image": "/originals/stock-p25.png",
-        "alt": "Original cumulative GDP-level impulse response for a $40 carbon-tax increase. EU+ sample, restricted local projections, parallel-path assumption, four lags, 0–6 years, 67% and 95% confidence bands. Both positive and negative effects remain within the bands.",
-        "cue": "This is the exact response the closing slide qualifies: cumulative GDP level, not annual GDP growth. Keep both confidence bands and the specification visible."
+        "note": "The confidence bands include both gains and losses in GDP."
       }
     ],
     "diagnosis": "The closing slide lists valid limitations after the results, but leaves listeners to connect broad terms such as endogeneity and external validity to the estimate. Pairing each concern with the inference it limits makes the closing argument easier to retain.",
@@ -1322,7 +1602,7 @@
     "sourceType": "public",
     "context": "FRBSF seminar. Results occupy PDF pp. 21–38 and are summarized on p. 39; p. 40 is the closing caveat slide. This local repair links its concerns to the cumulative GDP-level response on p. 25.",
     "beforeCaption": "",
-    "afterCaption": "",
+    "afterCaption": "The GDP response, followed by its interpretation.",
     "source": {
       "authors": "Gilbert E. Metcalf, James H. Stock",
       "title": "The Macroeconomic Impact of Europe’s Carbon Taxes",
@@ -1331,9 +1611,12 @@
       "pages": "40; result on 25"
     },
     "values": [
-      "The retained figure is PDF p. 25 (printed slide 26): cumulative effect on log GDP, in percentage points; restricted local projections imposing the parallel-path assumption.",
-      "The tax scenario is a $40 increase in real 2018 USD, weighted by coverage share, for the EU+ sample.",
-      "Horizons 0–6 years; 67% and 95% bands; four lags of all regressors. No points have been digitized or redrawn."
-    ]
+      "The GDP-level response is replotted from the chart on PDF p. 25. Coordinates were digitized from its raster plot and are approximate.",
+      "The plot retains horizons 0–6, both 67% and 95% bands, and the zero line. The vertical axis is tightened to ±3 percentage points so the bands can be read.",
+      "The experiment is a $40 carbon-tax increase in real 2018 US dollars, weighted by coverage share. Sample EU+; restricted local projections; parallel-path assumption; four lags.",
+      "Approximate point estimates at years 0–6: 0.04, 0.13, 0.31, 0.29, −0.04, 0.08, 0.08 percentage points."
+    ],
+    "topic": "Climate & macro",
+    "point": "The estimate and the questions that limit its interpretation appear together. “Close to zero” remains a statement about an uncertain estimate, not proof of no effect."
   }
 ]

@@ -1,0 +1,208 @@
+{
+  "carbon": {
+    "years": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "estimate": [
+      0.04,
+      0.13,
+      0.31,
+      0.29,
+      -0.04,
+      0.08,
+      0.08
+    ],
+    "lower67": [
+      -0.23,
+      -0.56,
+      -0.63,
+      -0.56,
+      -0.94,
+      -0.81,
+      -0.9
+    ],
+    "upper67": [
+      0.31,
+      0.81,
+      1.23,
+      1.15,
+      0.81,
+      0.94,
+      1.02
+    ],
+    "lower95": [
+      -0.6,
+      -1.31,
+      -1.6,
+      -1.48,
+      -1.85,
+      -1.73,
+      -1.9
+    ],
+    "upper95": [
+      0.69,
+      1.52,
+      2.23,
+      2.02,
+      1.73,
+      1.85,
+      1.98
+    ]
+  },
+  "searchTests": [
+    {
+      "name": "Aggregate",
+      "p": [
+        "1",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "Construction",
+      "p": [
+        "1",
+        "0.86",
+        "0.56"
+      ]
+    },
+    {
+      "name": "Manufacturing",
+      "p": [
+        "1",
+        "0.90",
+        "0"
+      ]
+    },
+    {
+      "name": "Trade, transport & utilities",
+      "p": [
+        "1",
+        "0.13",
+        "0.83"
+      ]
+    },
+    {
+      "name": "Professional & business",
+      "p": [
+        "1",
+        "0.92",
+        "0"
+      ]
+    },
+    {
+      "name": "Education & health",
+      "p": [
+        "1",
+        "0.54",
+        "0"
+      ]
+    },
+    {
+      "name": "Leisure & hospitality",
+      "p": [
+        "1",
+        "0.85",
+        "0.28"
+      ]
+    }
+  ],
+  "hankBlocks": [
+    {
+      "name": "Production",
+      "inputs": "r,w,Y,Z",
+      "outputs": "mc,N,q,K"
+    },
+    {
+      "name": "Price Phillips",
+      "inputs": "r,Y,mc",
+      "outputs": "\\pi"
+    },
+    {
+      "name": "Fiscal",
+      "inputs": "w,r,G,N",
+      "outputs": "\\tau,w,N"
+    },
+    {
+      "name": "Equity",
+      "inputs": "Y,r,w,q,K,\\pi",
+      "outputs": "p,d,r"
+    },
+    {
+      "name": "Monetary policy",
+      "inputs": "r^{*},\\pi",
+      "outputs": "i"
+    },
+    {
+      "name": "Finance",
+      "inputs": "p,d,r,\\pi,i",
+      "outputs": "r^a,r^b,p,i,r,\\pi"
+    },
+    {
+      "name": "Households",
+      "inputs": "r^a,r^b,\\tau,w,N",
+      "outputs": "\\mathcal A,\\mathcal B,\\mathcal U"
+    }
+  ],
+  "hankTargets": [
+    {
+      "name": "Fisher",
+      "inputs": "i,r,\\pi",
+      "condition": "H_1=0"
+    },
+    {
+      "name": "Asset market",
+      "inputs": "p,\\mathcal A,\\mathcal B",
+      "condition": "H_2=0"
+    },
+    {
+      "name": "Wage Phillips",
+      "inputs": "\\tau,w,N,\\mathcal U",
+      "condition": "H_3=0"
+    }
+  ],
+  "bankPeers": [
+    {
+      "respondent": "Large banks",
+      "peers": "Large peers",
+      "estimate": 0.773,
+      "se": 0.179,
+      "lower": 0.42216,
+      "upper": 1.12384,
+      "n": 3334
+    },
+    {
+      "respondent": "Large banks",
+      "peers": "Small peers",
+      "estimate": 0.045,
+      "se": 0.293,
+      "lower": -0.52928,
+      "upper": 0.61928,
+      "n": 3108
+    },
+    {
+      "respondent": "Small banks",
+      "peers": "Small peers",
+      "estimate": 0.803,
+      "se": 0.373,
+      "lower": 0.07192,
+      "upper": 1.53408,
+      "n": 2946
+    },
+    {
+      "respondent": "Small banks",
+      "peers": "Large peers",
+      "estimate": 0.886,
+      "se": 0.192,
+      "lower": 0.50968,
+      "upper": 1.26232,
+      "n": 3184
+    }
+  ]
+}

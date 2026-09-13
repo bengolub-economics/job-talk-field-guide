@@ -16,7 +16,16 @@ function validate(value, key = '') {
   } else if (Array.isArray(value)) value.forEach(v => validate(v));
   else if (value && typeof value === 'object') Object.entries(value).forEach(([k, v]) => validate(v, k));
 }
+for (const c of cases) {
+  const after = [...c.after, ...(c.outline?.after || []).flatMap(s => s.panels || [])];
+  if (after.some(p => p.kind === 'image' || p.image)) throw new Error(`${c.id}: revised slides must be self-rendered`);
+  for (const p of c.before) if (p.image) await readFile(path.join(root, 'public', p.image));
+}
 validate(cases);
+const reconstruction = JSON.parse(await readFile(path.join(root, 'lib/reconstruction-data.json'), 'utf8'));
+for (const row of [...reconstruction.hankBlocks, ...reconstruction.hankTargets]) {
+  for (const key of ['inputs','outputs','condition']) if (row[key]) validate(row[key], 'formula');
+}
 const decode = s => s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"');
 let essay = await readFile(path.join(root, 'content/essay.html'), 'utf8');
 let essayCount = 0;
