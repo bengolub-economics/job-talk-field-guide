@@ -21,11 +21,11 @@
       {
         "title": "Two exposed regions had different workforces.",
         "kind": "regions",
-        "label": "REGIONAL COMPARISON · 2000",
         "alt": "Year 2000: North Hickory, NC has manufacturing employment share 43.0%, BA share of ages 18–64 15.6%, population 377.5 thousand. Raleigh-Cary, NC: 17.0%, 34.2%, and 1,420.0 thousand. Import-penetration change, 2000–2012: 4.40 and 3.42 percentage points, respectively.",
         "revises": [
           "regional-table"
-        ]
+        ],
+        "subtitle": "Workforce composition in 2000"
       }
     ],
     "diagnosis": "The original already tells us which two rows matter. A revision can carry that emphasis through to the comparison itself.",
@@ -121,7 +121,6 @@
             "label": "Finance"
           }
         ],
-        "label": "FUNDS AND INVESTMENT",
         "revises": [
           "bank-balance",
           "bank-flows"
@@ -131,7 +130,6 @@
         "title": "Local banks finance firms with three sources of funds.",
         "kind": "equation",
         "formula": "Q_t^h s_t^h=n_t^h+b_t^h+d_t",
-        "label": "THE BANK BALANCE SHEET",
         "revises": [
           "bank-balance",
           "bank-flows"
@@ -155,9 +153,11 @@
           },
           {
             "symbol": "h",
-            "meaning": "Island type: investing (i) or without new investment (n)"
+            "meaning": "Island type: investing (i) or without new investment (n)",
+            "fullWidth": true
           }
-        ]
+        ],
+        "subtitle": "The bank balance sheet"
       }
     ],
     "diagnosis": "The model starts with aggregate accounting; its funding problem becomes concrete several pages later. Bring that local purpose to the model entrance.",
@@ -219,7 +219,6 @@
         "title": "Past industry shares predict local robot exposure.",
         "kind": "equation",
         "formula": "E_c=\\sum_i \\ell_{ci}\\,\\overline{\\mathrm{APR}}_i",
-        "label": "LOCAL ROBOT EXPOSURE",
         "revises": [
           "exposure",
           "notation"
@@ -227,7 +226,8 @@
         "terms": [
           {
             "symbol": "E_c",
-            "meaning": "Predicted exposure in local labor market \\(c\\)"
+            "meaning": "Predicted exposure in local labor market \\(c\\)",
+            "fullWidth": true
           },
           {
             "symbol": "\\ell_{ci}",
@@ -243,7 +243,6 @@
         "title": "“Adjusted” removes an output-growth component.",
         "kind": "equation",
         "formula": "\\mathrm{APR}=\\frac{M_t-M_0}{L_0}-g^Y\\frac{M_0}{L_0}",
-        "label": "LOCAL ROBOT EXPOSURE",
         "revises": [
           "exposure",
           "notation"
@@ -251,7 +250,8 @@
         "terms": [
           {
             "symbol": "M_0,\\ M_t",
-            "meaning": "Robot stock at the start and end of the period"
+            "meaning": "Robot stock at the start and end of the period",
+            "fullWidth": true
           },
           {
             "symbol": "L_0",
@@ -261,7 +261,8 @@
             "symbol": "g^Y",
             "meaning": "Industry output growth over the period"
           }
-        ]
+        ],
+        "subtitle": "Adjusted robot penetration"
       }
     ],
     "diagnosis": "The page already explains European adoption and the 1970 weights. Its formulas still ask the audience to retrieve several symbols from elsewhere.",
@@ -345,7 +346,6 @@
         "kind": "insurance-linearization",
         "stage": 0,
         "title": "On this segment, another dollar of care costs the patient 20¢.",
-        "label": "THE COINSURANCE SEGMENT",
         "alt": "The translated budget A minus B declines from zero to minus $350 at total spending $350, then at slope minus 0.2 to total spending $9,100 and other spending minus $2,100; it is flat after that. The coinsurance segment is highlighted.",
         "revises": [
           "numerical-budget"
@@ -371,7 +371,6 @@
         "kind": "insurance-linearization",
         "stage": 1,
         "title": "Extending the segment reveals its virtual-income intercept.",
-        "label": "NEAR THE DEDUCTIBLE · $0–$2,000 OF CARE",
         "formula": "A+0.2Q=B-280",
         "alt": "The highlighted middle contract segment is extended with a dashed line to Q equals zero. Its intercept is minus $280 relative to B; the actual budget at zero spending has intercept zero.",
         "revises": [
@@ -387,13 +386,13 @@
             "symbol": "B",
             "meaning": "Income after the insurance premium"
           }
-        ]
+        ],
+        "subtitle": "Near the deductible: $0–$2,000 of medical spending"
       },
       {
         "kind": "insurance-linearization",
         "stage": 2,
         "title": "Each segment has its own price and virtual income.",
-        "label": "THREE LOCAL BUDGETS",
         "formula": "A+pQ=y",
         "revises": [
           "linear-budgets",
@@ -462,10 +461,10 @@
           1.65
         ],
         "alt": "Liquidity-creation peer responses with approximate 95% intervals: large/large 0.773 [0.422,1.124]; large/small 0.045 [−0.529,0.619]; small/small 0.803 [0.072,1.534]; small/large 0.886 [0.510,1.262].",
-        "label": "BANKS’ LIQUIDITY CREATION",
         "revises": [
           "peer-estimates"
-        ]
+        ],
+        "subtitle": "Banks’ liquidity creation"
       }
     ],
     "diagnosis": "Standard errors are present, but the audience must mentally turn them into uncertainty. Plot one complete comparison with intervals.",
@@ -518,7 +517,6 @@
       {
         "kind": "aid-results",
         "title": "Aid disbursements coincide with rising haven deposits.",
-        "label": "ELITE CAPTURE OF FOREIGN AID",
         "alt": "Rebuilt regression table. All coefficients, standard errors, significance marks, controls, observation counts, and R-squared values are retained.",
         "revises": [
           "aid-table"
@@ -603,7 +601,6 @@
         "title": "Each player responds to the other.",
         "kind": "network",
         "stage": 1,
-        "label": "A TWO-PLAYER NETWORK GAME",
         "alt": "Two reciprocal links between A and B, each with coefficient one quarter. Each direct incentive equals one.",
         "revises": [
           "two-player-calculation"
@@ -614,13 +611,13 @@
             "symbol": "a_A,\\ a_B",
             "meaning": "Investments chosen by players A and B"
           }
-        ]
+        ],
+        "subtitle": "Investment in a two-player network"
       },
       {
         "title": "Repeated responses amplify the initial incentive.",
         "kind": "feedback",
         "formula": "a_A=a_B=1+\\frac14+\\frac1{16}+\\frac1{64}+\\cdots=\\frac43",
-        "label": "A TWO-PLAYER NETWORK GAME",
         "alt": "Successive contributions: direct 1, first round 0.25, second 0.0625, third 0.015625. Cumulative responses approach 4/3.",
         "revises": [
           "two-player-calculation",
@@ -630,7 +627,6 @@
       {
         "kind": "equation",
         "title": "The general equilibrium adds the same responses.",
-        "label": "INVESTMENT WITH SPILLOVERS",
         "formula": "\\begin{aligned}a^*&=(I-\\beta g)^{-1}b\\\\&=\\sum_{k=0}^{\\infty}(\\beta g)^k b\\end{aligned}",
         "revises": [
           "network-equilibrium"
@@ -658,7 +654,8 @@
             "label": "Convergence",
             "text": "\\(\\rho(\\beta g)<1\\)"
           }
-        ]
+        ],
+        "subtitle": "Investment with spillovers"
       }
     ],
     "diagnosis": "The original presents an n-player payoff and then a general targeting problem. A solved two-player example gives the audience a concrete mechanism to recognize in the matrix notation.",
@@ -711,7 +708,6 @@
         "kind": "transaction-flows",
         "stage": 0,
         "title": "Household spending is revenue for firms.",
-        "label": "CONSUMPTION",
         "revises": [
           "complete-transactions-diagram"
         ],
@@ -726,7 +722,6 @@
         "kind": "transaction-flows",
         "stage": 1,
         "title": "Firms pay wages and profits to households.",
-        "label": "INCOME",
         "revises": [
           "complete-transactions-diagram"
         ],
@@ -741,7 +736,6 @@
         "kind": "transaction-flows",
         "stage": 2,
         "title": "Government receives taxes and buys output.",
-        "label": "TAXES AND PUBLIC SPENDING",
         "revises": [
           "complete-transactions-diagram"
         ],
@@ -813,16 +807,15 @@
       {
         "kind": "carbon-response",
         "title": "Estimated GDP effects remain close to zero.",
-        "label": "A $40 INCREASE IN THE CARBON TAX",
         "alt": "Rebuilt cumulative GDP-level response over years 0–6. Both 67% and 95% confidence bands include zero at every horizon.",
         "revises": [
           "carbon-result"
-        ]
+        ],
+        "subtitle": "Response to a $40 increase in the carbon tax"
       },
       {
         "kind": "claim",
         "title": "The GDP response depends on the comparison and policy setting.",
-        "label": "CARBON TAXES AND GDP",
         "items": [
           {
             "title": "Causal inference",
