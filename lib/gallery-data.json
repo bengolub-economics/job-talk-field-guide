@@ -5,7 +5,7 @@
     "title": "Make the comparison visible.",
     "mode": "Table search",
     "scale": "slide",
-    "dek": "Two highlighted rows still ask the listener to search through a page of numbers.",
+    "dek": "When presenting several numbers, decide which comparison the audience should make. Arrange or plot the values so that comparison is easy to see.",
     "before": [
       {
         "title": "The full table",
@@ -56,15 +56,15 @@
       "Shares and population: 2000. Import-penetration change: 2000–2012."
     ],
     "topic": "International trade",
-    "point": "The two regions’ manufacturing and education shares become directly comparable once the audience can stop searching across the table."
+    "point": "A table can contain all the relevant evidence while making the audience search for the relationship you want to discuss. Organize the display around that relationship: put comparable quantities together, label their units, and use a common scale where appropriate. Keep the full table available for other comparisons."
   },
   {
     "id": "question-before-model",
     "number": "02",
-    "title": "Give the model a reason to exist.",
+    "title": "Explain the question before the model.",
     "mode": "Hidden question",
     "scale": "slide",
-    "dek": "Make the funding problem concrete before introducing the economy.",
+    "dek": "Introduce a model by explaining the economic question it will answer. The audience can then understand why its assumptions and equations are needed.",
     "before": [
       {
         "title": "Model entry · PDF p. 6",
@@ -161,7 +161,7 @@
       "event": "CIRJE/TCER Macroeconomics Workshop, University of Tokyo",
       "eventURL": "https://www.cirje.e.u-tokyo.ac.jp/research/workshops/macro/macro2010.html"
     },
-    "point": "The original enters the model with production equations, then introduces the bank’s funding problem. The revision brings that same funding problem and balance sheet to the entrance.",
+    "point": "Before introducing a model’s formal structure, explain the behavior or outcome you want to understand and the difficulty the model will help resolve. As you introduce agents, constraints, and choices, connect them to that purpose. This gives listeners a reason to follow the setup and a way to judge which details matter.",
     "beforeCaption": "",
     "afterCaption": "",
     "principle": "Give the audience a direction",
@@ -173,7 +173,7 @@
     "title": "Put the meaning next to the symbol.",
     "mode": "Notation overload",
     "scale": "slide",
-    "dek": "A notation key should be where the listener needs it.",
+    "dek": "Define the symbols a listener needs on the slide where they are used. Explain what the expression says in economic terms.",
     "before": [
       {
         "id": "notation",
@@ -256,17 +256,17 @@
       "pages": "5, 8–13, 17"
     },
     "topic": "Labor & technology",
-    "point": "The before separates the notation key from the formulas. The revision puts each needed definition beside its formula."
+    "point": "Listeners may forget a definition or miss the moment when it is introduced. Put short definitions beside the expressions that depend on them, even if the notation appeared earlier. State what the calculation measures or what the equation says about economic behavior, so the audience can recover the argument while looking at the current slide."
   },
   {
     "id": "teach-the-picture",
     "number": "05",
-    "title": "Explain one segment before the full diagram.",
+    "title": "Explain how to read the figure.",
     "mode": "Visual overload",
     "scale": "slide",
     "sourceType": "public",
-    "dek": "A contract segment and its extension have different meanings. Make that distinction visible first.",
-    "point": "The same budget is first written compactly, then separated into the actual contract, its linear extension, and the three local price–income pairs.",
+    "dek": "Before presenting a complicated figure, explain what its lines, regions, or symbols mean. Teach one element at a time, then show how they fit together.",
+    "point": "Reading a figure requires knowing what its visual elements represent. Introduce the axes and explain one curve, shaded region, or line style before asking the audience to interpret several together. Build toward the complete figure while keeping familiar elements in place, so each addition extends what listeners already understand.",
     "source": {
       "authors": "Amanda E. Kowalski",
       "title": "Estimating the Tradeoff Between Risk Protection and Moral Hazard with a Nonlinear Budget Set Model of Health Insurance",
@@ -381,7 +381,7 @@
     "title": "Draw the uncertainty with the estimate.",
     "mode": "Table search",
     "scale": "slide",
-    "dek": "Make precision visible with the estimate.",
+    "dek": "Display uncertainty alongside the estimates you discuss. A listener should be able to see both the estimated magnitude and how precisely it is measured.",
     "before": [
       {
         "title": "Peer-response table · PDF p. 58",
@@ -427,7 +427,7 @@
       "companionPaperURL": "https://www.eba.europa.eu/sites/default/files/documents/10180/1018121/1a9009ba-aa10-496c-9b20-9c1bf1834261/Silva%2520-%2520Strategic%2520complementarity%2520in%2520banks%2527%2520funding%2520liquidity%2520choices%2520and%2520financial%2520stability%2520-%2520Paper.pdf",
       "companionPages": "50 (Table 7), 20 (measurement)"
     },
-    "point": "Standard errors are present, but the audience must mentally turn them into uncertainty. Plot one complete comparison with intervals.",
+    "point": "Interpreting an estimate requires information about its precision. Plotting estimates with clearly labeled confidence intervals lets the audience see their magnitudes and uncertainty together, with the relevant reference value marked. Include imprecise estimates when they belong to the comparison; they also matter for what the evidence establishes.",
     "beforeCaption": "",
     "afterCaption": "",
     "principle": "Minimize tables with lots of numbers!",
@@ -445,7 +445,7 @@
     "title": "Put the finding in the title.",
     "mode": "Buried takeaway",
     "scale": "slide",
-    "dek": "“Baseline Results” names the section. A sentence tells the room what the table says.",
+    "dek": "Use a results slide’s title to state the finding the audience should remember. Match the strength of that statement to what the evidence supports.",
     "before": [
       {
         "kind": "image",
@@ -497,15 +497,15 @@
       "pages": "39"
     },
     "topic": "Development finance",
-    "point": "The table now opens with the association it documents. Its negative and imprecise non-haven estimate remains visible."
+    "point": "A results slide is easier to follow when listeners know which conclusion its evidence is meant to support. State that conclusion in a sentence at the top, then use the table or figure to substantiate it. Keep the wording precise about the population, comparison, and strength of inference, including whether the evidence establishes an association or a causal effect."
   },
   {
     "id": "start-with-two",
     "number": "08",
-    "title": "Let two people teach the general case.",
+    "title": "Start with the smallest useful example.",
     "mode": "Generality first",
     "scale": "slide",
-    "dek": "Work through two players’ incentives before moving to the general network.",
+    "dek": "Introduce a general model through a small example that preserves its central mechanism. Work through the example before explaining what carries over to the general case.",
     "before": [
       {
         "kind": "image",
@@ -610,15 +610,15 @@
       "pages": "2, 10"
     },
     "topic": "Network games",
-    "point": "Both sides contain the same game, parameter values, and equilibrium calculation. The revision starts with the two-player incentives and ends with their matrix form."
+    "point": "Choose a simple case in which the main economic force still operates. Work through the relevant choices, interactions, and outcome before presenting the general notation or result. Then explain which features carry over and which depend on the simplification. The example gives listeners a concrete argument to recognize in the more general analysis."
   },
   {
     "id": "build-the-diagram",
     "number": "11",
-    "title": "Teach one path before the full system.",
+    "title": "Trace one path before the full system.",
     "mode": "Visual overload",
     "scale": "slide",
-    "dek": "Read the unknowns, blocks, and equilibrium targets before tracing twenty connections.",
+    "dek": "When a model has many connected parts, first trace one path from an input to an outcome. Add the other connections after the audience understands that path.",
     "before": [
       {
         "kind": "image",
@@ -711,15 +711,15 @@
       "The source graph has twenty labeled directed connections. Its complete original appears in the final better build."
     ],
     "topic": "Computational macro",
-    "point": "The dependency graph becomes readable in three passes: equilibrium conditions, prices and returns, then households. A rebuilt computation table brings the complete system back together without crossing arrows."
+    "point": "A diagram of an entire model can ask listeners to learn many relationships at once. Begin with one input, show what it affects next, and follow the chain to an outcome the audience cares about. Add the remaining branches and feedbacks in stages, explaining what each contributes, before returning to the complete system."
   },
   {
     "id": "claim-and-boundary",
     "number": "12",
-    "title": "Attach each limitation to the result.",
+    "title": "Explain what each limitation qualifies.",
     "mode": "Detached caveats",
     "scale": "slide",
-    "dek": "A closing slide should say which inference each limitation qualifies.",
+    "dek": "Connect each limitation to the conclusion it affects. Explain how it changes what the audience can infer from the evidence or carry over to another setting.",
     "before": [
       {
         "id": "carbon-result",
@@ -802,6 +802,6 @@
       "Approximate point estimates at years 0–6: 0.04, 0.13, 0.31, 0.29, −0.04, 0.08, 0.08 percentage points."
     ],
     "topic": "Climate & macro",
-    "point": "The estimate and the questions that limit its interpretation appear together. “Close to zero” remains a statement about an uncertain estimate, not proof of no effect."
+    "point": "A limitation is informative when the audience understands its consequence for a claim. State the finding, identify the inference at issue, and explain how a remaining uncertainty or assumption restricts that inference. Distinguish questions about causal interpretation, precision, and applicability to other settings, so listeners understand both what the work establishes and what remains open."
   }
 ]
