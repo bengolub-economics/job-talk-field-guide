@@ -10,38 +10,37 @@
     "file": "job-talk-field-guide/_next/static/chunks/rolldown-runtime-DKindhIo.js",
     "name": "rolldown-runtime"
   },
-  "_useCompositeListItem-CZDJMFK3.js": {
-    "file": "job-talk-field-guide/_next/static/chunks/useCompositeListItem-CZDJMFK3.js",
-    "name": "useCompositeListItem",
+  "_slide-CgAWGrmP.js": {
+    "file": "job-talk-field-guide/_next/static/chunks/slide-CgAWGrmP.js",
+    "name": "slide",
     "imports": [
       "_rolldown-runtime-DKindhIo.js",
       "_framework-jMw_Iro_.js"
     ]
   },
   "components/case-detail.tsx": {
-    "file": "job-talk-field-guide/_next/static/chunks/case-detail-uoXp09xO.js",
+    "file": "job-talk-field-guide/_next/static/chunks/case-detail-CJ-SABt7.js",
     "name": "case-detail",
     "src": "components/case-detail.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-DKindhIo.js",
-      "_useCompositeListItem-CZDJMFK3.js",
+      "_slide-CgAWGrmP.js",
       "_framework-jMw_Iro_.js"
     ]
   },
   "components/gallery.tsx": {
-    "file": "job-talk-field-guide/_next/static/chunks/gallery-BUOuUrEK.js",
+    "file": "job-talk-field-guide/_next/static/chunks/gallery-BaspdTeY.js",
     "name": "gallery",
     "src": "components/gallery.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_rolldown-runtime-DKindhIo.js",
-      "_useCompositeListItem-CZDJMFK3.js",
+      "_slide-CgAWGrmP.js",
       "_framework-jMw_Iro_.js"
     ]
   },
   "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js": {
-    "file": "job-talk-field-guide/_next/static/chunks/app-route-prefetch-policy-9RnKTjqn.js",
+    "file": "job-talk-field-guide/_next/static/chunks/app-route-prefetch-policy-DG1Znf4i.js",
     "name": "app-route-prefetch-policy",
     "src": "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
     "isDynamicEntry": true,
@@ -50,7 +49,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "job-talk-field-guide/_next/static/chunks/layout-segment-context-BBIpAVcQ.js",
+    "file": "job-talk-field-guide/_next/static/chunks/layout-segment-context-CtNrCdmf.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -71,7 +70,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "job-talk-field-guide/_next/static/chunks/index-DC9KEiB6.js",
+    "file": "job-talk-field-guide/_next/static/chunks/index-CO6O_xk_.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
