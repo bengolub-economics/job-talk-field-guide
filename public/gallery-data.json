@@ -895,14 +895,14 @@
             "text": "Inverse error variance; positive and finite"
           }
         ],
-        "formula": "\\widehat y=\\frac{\\tau_1 f_1+\\tau_2 f_2}{\\tau_1+\\tau_2}",
+        "formula": "\\widehat y=\\frac{\\tau_1 x_1+\\tau_2 x_2}{\\tau_1+\\tau_2}",
         "terms": [
           {
-            "symbol": "f_1",
+            "symbol": "x_1",
             "meaning": "Market forecast"
           },
           {
-            "symbol": "f_2",
+            "symbol": "x_2",
             "meaning": "Survey forecast"
           },
           {
@@ -932,20 +932,20 @@
             "text": "Both forecasts and survey precision"
           }
         ],
-        "formula": "\\frac{\\partial\\widehat y}{\\partial\\tau_1}=\\frac{\\tau_2(f_1-f_2)}{(\\tau_1+\\tau_2)^2}<0",
+        "formula": "\\frac{\\partial\\widehat y}{\\partial\\tau_1}=\\frac{\\tau_2(x_1-x_2)}{(\\tau_1+\\tau_2)^2}<0",
         "conditions": [
           {
             "label": "When",
-            "text": "\\(f_1<f_2\\) and \\(\\tau_1,\\tau_2>0\\)"
+            "text": "\\(x_1<x_2\\) and \\(\\tau_1,\\tau_2>0\\)"
           }
         ],
         "terms": [
           {
-            "symbol": "f_1",
+            "symbol": "x_1",
             "meaning": "Market forecast"
           },
           {
-            "symbol": "f_2",
+            "symbol": "x_2",
             "meaning": "Survey forecast"
           },
           {
@@ -1053,24 +1053,24 @@
         ]
       }
     ],
-    "diagnosis": "The numbered subscripts are conventional and fully defined. But the listener must remember which source is 1 and which is 2 each time the forecasts and their precisions reappear. In the second slide, that translation gets in the way of seeing which information changes and why the combined forecast falls. Neither the source labels nor τ offer a direct reminder of their meanings.",
+    "diagnosis": "The symbols x and τ and the numbered subscripts are conventional and fully defined. But the listener must remember what each symbol represents and which source is 1 or 2 each time the forecasts and their precisions reappear. In the second slide, that translation gets in the way of seeing which information changes and why the combined forecast falls.",
     "changes": [
       "Use M for the market source and S for the survey source.",
-      "Use π for precision, with the same source labels in the averaging formula and its derivative.",
+      "Use f for forecast and π for precision, with the same source labels in the averaging formula and its derivative.",
       "Preserve every definition, assumption, equation, and layout so the comparison isolates the notation."
     ],
-    "preserved": "The same precision-weighted average, comparative static, definitions, assumptions, and slide design. The revision changes τ to π for precision and the source subscripts from 1, 2 to M, S.",
+    "preserved": "The same precision-weighted average, comparative static, definitions, assumptions, and slide design. The revision changes x to f for forecast, τ to π for precision, and the source subscripts from 1, 2 to M, S.",
     "deferred": "No content is deferred. Both versions define every symbol on both slides.",
     "practice": "Choose a label that recalls each recurring object’s role. Use that label consistently across its levels, weights, and derivatives.",
     "principle": "Give people a way back in",
     "context": "Synthetic two-source forecasting example. The source identities are market and survey. Forecast errors are unbiased and independent, with positive finite variances. Precision means inverse error variance. The second slide differentiates the displayed averaging rule with both forecasts and survey precision fixed.",
-    "beforeCaption": "Ordinary numbered subscripts, with every symbol defined.",
-    "afterCaption": "The same two slides, with π for precision, M for market, and S for survey.",
-    "point": "A listener can follow the calculation yet forget whether 1 means market or survey. Subscripts M and S keep that distinction visible in both the averaging formula and the later derivative; π provides a reminder of precision. Attach the same source label to its forecast and its precision, and keep the definitions on the slide. Both versions here use the same content and layout; the change is the choice of symbols.",
+    "beforeCaption": "Conventional symbols x and τ with numbered subscripts; every symbol is defined.",
+    "afterCaption": "The same two slides, with f for forecast, π for precision, M for market, and S for survey.",
+    "point": "A listener can follow the calculation yet forget what x represents or whether 1 means market or survey. The revision uses f for forecast, π for precision, and subscripts M and S for the sources. These reminders remain useful in both the averaging formula and the later derivative. Attach the same source label to its forecast and its precision, and keep the definitions on the slide. Both versions here use the same content and layout; the change is the choice of symbols.",
     "values": [
       "Constructed teaching example; no source talk or empirical estimates.",
       "Both versions use the same two-source precision-weighted averaging rule. Under independent unbiased errors, it minimizes variance among unbiased linear combinations.",
-      "Only the notation changes: τ ↔ π (precision), 1 ↔ M (market), 2 ↔ S (survey).",
+      "Only the notation changes: x ↔ f (forecast), τ ↔ π (precision), 1 ↔ M (market), 2 ↔ S (survey).",
       "The derivative holds both realized forecasts and survey precision fixed. Its sign is the sign of the market forecast minus the survey forecast.",
       "Numbered indices remain natural when presenting a general collection of sources. This example concerns two economically distinct sources that recur through a talk."
     ]
