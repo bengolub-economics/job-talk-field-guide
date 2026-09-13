@@ -260,7 +260,7 @@
   },
   {
     "id": "teach-the-picture",
-    "number": "05",
+    "number": "04",
     "title": "Explain how to read the figure.",
     "mode": "Visual overload",
     "scale": "slide",
@@ -377,7 +377,7 @@
   },
   {
     "id": "keep-the-uncertainty",
-    "number": "06",
+    "number": "05",
     "title": "Draw the uncertainty with the estimate.",
     "mode": "Table search",
     "scale": "slide",
@@ -441,7 +441,7 @@
   },
   {
     "id": "title-the-finding",
-    "number": "07",
+    "number": "06",
     "title": "Put the finding in the title.",
     "mode": "Buried takeaway",
     "scale": "slide",
@@ -501,7 +501,7 @@
   },
   {
     "id": "start-with-two",
-    "number": "08",
+    "number": "07",
     "title": "Start with the smallest useful example.",
     "mode": "Generality first",
     "scale": "slide",
@@ -614,7 +614,7 @@
   },
   {
     "id": "build-the-diagram",
-    "number": "11",
+    "number": "08",
     "title": "Trace one path before the full system.",
     "mode": "Visual overload",
     "scale": "slide",
@@ -715,7 +715,7 @@
   },
   {
     "id": "claim-and-boundary",
-    "number": "12",
+    "number": "09",
     "title": "Explain what each limitation qualifies.",
     "mode": "Detached caveats",
     "scale": "slide",
