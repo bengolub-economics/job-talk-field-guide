@@ -13,7 +13,7 @@ npm run build:pages
 
 The static website is written to `dist/client/`. Publish that directory, including `.nojekyll`, to the root of the `gh-pages` branch. GitHub Pages uses that branch as its source.
 
-The default project path is `/job-talk-field-guide`. Set `PAGES_BASE_PATH` when building for a differently named repository. The export checks every HTML page, internal link, image, stylesheet, and font target. It retains interactive filters, slide controls, enlargement, and local KaTeX fonts.
+The default project path is `/job-talk-field-guide`. Set `PAGES_BASE_PATH` when building for a differently named repository. The export checks every HTML page, internal link, image, stylesheet, and font target. It retains numbered case navigation, slide controls, enlargement, and local KaTeX fonts.
 
 The installed vinext beta exporter needs two adaptations for project-path hosting: its local prerender requests need the configured path and trailing slash, and its prefixed asset directory needs flattening to match the GitHub Pages mount. The build script handles both without changing the dependency package.
 

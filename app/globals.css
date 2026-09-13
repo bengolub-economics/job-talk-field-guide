@@ -55,15 +55,10 @@ body{padding-bottom:65px}.panel-viewer .single-state{display:none}.panel-caption
 /* Teach the payment direction before adding income and government flows. */
 .slide-art.after-art.kind-transaction-flows .diagram{height:35cqw;aspect-ratio:800/365;flex-shrink:0}
 
-/* Visible category navigation keeps every gallery filter within reach. */
-.problem-browser{gap:0}
-.browse-label{font:600 14px/1.5 Arial,Helvetica,sans-serif;margin:0 0 12px;color:var(--muted-foreground)}
-.problem-tabs[data-slot=tabs-list]{display:flex;flex-wrap:wrap;justify-content:flex-start;align-items:stretch;width:100%;height:auto;gap:8px;padding:0}
-.problem-tabs .problem-tab[data-slot=tabs-trigger]{flex:0 1 auto;height:auto;min-height:44px;gap:12px;border:1px solid var(--border);border-radius:3px;padding:10px 14px;background:transparent;color:var(--foreground);font:400 14px/1.4 Arial,Helvetica,sans-serif;text-align:left;white-space:normal;transition:background .15s,border-color .15s,color .15s}
-.problem-tabs .problem-tab::after{display:none}
-.problem-tabs .problem-tab:hover{border-color:var(--primary);color:var(--primary)}
-.problem-tabs .problem-tab[data-active]{background:var(--primary);border-color:var(--primary);color:white}
-.problem-tabs .problem-tab:focus-visible{outline:3px solid var(--primary);outline-offset:3px}
-.problem-count{font-size:12px;line-height:1;font-variant-numeric:tabular-nums;min-width:1.6em;min-height:1.6em;display:grid;place-items:center;border-radius:50%;background:var(--muted);color:var(--muted-foreground);flex-shrink:0}
-.problem-tab[data-active] .problem-count{background:#ffffff26;color:white}
-@media(max-width:760px){.problem-tabs[data-slot=tabs-list]{gap:7px}.problem-tabs .problem-tab[data-slot=tabs-trigger]{padding:10px 11px;gap:9px}.browse-label{margin-bottom:10px}}
+/* A compact index opens each case directly. */
+.case-index{display:flex;align-items:center;gap:24px;border-top:1px solid var(--foreground);border-bottom:1px solid var(--border);padding:13px 0}
+.case-index-label{font-size:14px;color:var(--muted-foreground)}
+.case-index ol{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:0}
+.case-index a{display:grid;place-items:center;min-width:44px;min-height:44px;padding:8px;font:16px/1 monospace;color:var(--primary);border-radius:2px;transition:background .15s,color .15s}
+.case-index a:hover{background:var(--primary);color:white}
+@media(max-width:760px){.case-index{align-items:flex-start;gap:8px;flex-direction:column}.case-index ol{gap:5px}}
