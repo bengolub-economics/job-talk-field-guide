@@ -2,7 +2,7 @@
 
 Benjamin Golub · September 11, 2026
 
-[Slides handout (PDF)](slides_handout.pdf){.handout-link} [Gallery of before-and-betters](https://bengolub-economics.github.io/job-talk-field-guide/){.gallery-link}
+[Slides handout (PDF)](slides_handout.pdf){.handout-link} [Gallery of before-and-betters](https://bengolub-economics.github.io/job-talk-field-guide/){.gallery-link} [Presentation resources](resources.html){.resources-link}
 
 In these notes we'll cover:
 
@@ -55,7 +55,7 @@ Often, the expert has to be impressed too. There are two sorts of champions: one
 
 ## Give the audience a direction
 
-There’s a beautiful document by my advisor Matt Jackson, [*Notes on Presenting a Paper*](https://web.stanford.edu/~jacksonm/present.pdf), which he wrote, I think, when people mostly still used transparencies. It’s still really good advice. I also got a lot out of Julie Fu’s [*How to Make Effective Slides*](https://fuzhiyu.me/blogs/slide_design_guide/slide_deck_design.pdf).
+There’s a beautiful document by my advisor Matt Jackson, [*Notes on Presenting a Paper*](https://web.stanford.edu/~jacksonm/present.pdf), which he wrote, I think, when people mostly still used transparencies. It’s still really good advice. I also got a lot out of Julie Fu’s [*How to Make Effective Slides*](https://fuzhiyu.me/blogs/slide_design_guide/slide_deck_design.pdf). For more, see the [collection of ten presentation guides](resources.html), covering theoretical and empirical work.
 
 I think this abstract perspective will help you use the specific advice in their guides and others. If you internalize the problem of chosen attention, you have a reason to use what people have learned about attention, visuals, and presentation.
 

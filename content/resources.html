@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Ten guides to economics research presentations: theory, empirical work, job talks, short talks, and slide design.">
+<meta name="source-sha256" content="70ad5044d084488adcc5f6fa28e09b815e6271c4871ec15ad21a96052949c7dd">
+<title>Presentation resources · The Job Talk Field Guide</title>
+<style>:root { color-scheme: light; --ink: #20323c; --muted: #687780; --teal: #216b70; --rule: #d9e0dd; --paper: #fbfaf7; --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+* { box-sizing: border-box; }
+html { background: #fff; color: var(--ink); scroll-padding-top: 28px; }
+body { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 20px; line-height: 1.67; -webkit-font-smoothing: antialiased; }
+main { width: min(100%, 820px); margin: 0 auto; padding: 76px 40px 48px; }
+.essay-header { padding-bottom: 25px; }
+h1 { max-width: 700px; margin: 0 0 22px; font-size: clamp(38px, 5vw, 56px); line-height: 1.1; letter-spacing: -1.65px; font-weight: 500; }
+.essay-header p { font: 15px/1.5 var(--sans); color: var(--muted); margin: 0; }
+.essay-header .handout-link, .essay-header .gallery-link, .essay-header .resources-link { display: inline-block; margin-top: 12px; margin-right: 20px; }
+p { margin: 0 0 24px; }
+h2 { margin: 58px 0 22px; font-size: 31px; line-height: 1.24; letter-spacing: -.45px; font-weight: 500; text-wrap: balance; }
+h3 { margin: 35px 0 18px; font-size: 22px; line-height: 1.4; font-weight: 600; }
+.paragraph-heading { margin: 32px 0 8px; font-size: 1em; line-height: 1.4; font-weight: 700; text-wrap: balance; break-after: avoid; }
+a { color: var(--teal); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--teal); outline-offset: 5px; }
+.essay-preview { margin: 8px 0 28px; font-size: 18px; line-height: 1.55; }
+.essay-preview p { margin: 0 0 12px; }
+.essay-preview ul { margin: 0; padding-left: 22px; }
+.essay-preview li { margin: 0 0 10px; padding-left: 3px; }
+.essay-preview li:last-child { margin-bottom: 0; }
+.essay-preview li::marker { color: var(--muted); }
+.essay-listicle { margin: 36px 0 42px; border-top: 1px solid var(--rule); }
+.listicle-heading { padding: 26px 0 6px; }
+.listicle-heading h2 { margin: 0 0 10px; }
+.full-essay-link { font: 14px/1.5 var(--sans); }
+.advice-pair { padding: 24px 0 8px; border-bottom: 1px solid var(--rule); }
+.advice-pair h3 { margin: 0 0 18px; font-size: 22px; line-height: 1.35; }
+.advice-item { display: grid; grid-template-columns: 62px minmax(0, 1fr); gap: 12px; margin: 0 0 19px; font-size: 17px; line-height: 1.6; }
+.advice-label { padding-top: 5px; font: 700 11px/1.8 var(--sans); letter-spacing: .07em; color: var(--teal); }
+.advice-dont .advice-label { color: #934734; }
+.advice-copy a { text-decoration-color: #a5c1bf; }
+.advice-copy a:hover { text-decoration-color: var(--teal); }
+#essay p[id^="essay-"]:target { background: #fff3cf; box-shadow: 0 0 0 8px #fff3cf; border-radius: 2px; }
+.contents { margin: 8px 0 36px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font: 14px/1.55 var(--sans); }
+.contents summary { padding: 15px 0; cursor: pointer; font-weight: 600; }
+.contents summary span { float: right; font-weight: 400; color: var(--muted); }
+.contents ol { margin: 0 0 22px; padding-left: 22px; columns: 2; column-gap: 35px; }
+.contents li { padding: 4px 0 4px 3px; break-inside: avoid; }
+.contents a { text-decoration: none; }
+.contents a:hover { text-decoration: underline; }
+.illustration { margin: 38px -40px 42px; }
+.artwork { background: var(--paper); border: 1px solid var(--rule); border-radius: 7px; overflow: hidden; }
+.artwork img { display: block; width: 100%; height: auto; }
+figcaption { max-width: 700px; margin: 13px auto 0; padding: 0 14px; font: 14px/1.55 var(--sans); color: var(--muted); text-align: left; }
+button { color: var(--teal); font: 13px/1.5 var(--sans); cursor: pointer; }
+.enlarge { display: none; margin: 7px 0 0 auto; padding: 5px 10px; border: 0; background: transparent; }
+.viewer-ready .enlarge { display: block; }
+.enlarge:hover { text-decoration: underline; text-underline-offset: 3px; }
+math[display="block"] { display: block; font-size: 1.06em; margin: 28px 0; padding: 16px 8px; max-width: 100%; overflow-x: auto; overflow-y: hidden; }
+math[display="inline"] { font-size: .98em; }
+#qa { margin-top: 62px; padding-top: 35px; border-top: 1px solid var(--rule); }
+footer { margin-top: 54px; border-top: 1px solid var(--rule); padding-top: 20px; font: 13px/1.5 var(--sans); text-align: right; }
+.skip-link { position: absolute; top: -100px; left: 16px; z-index: 10; background: white; padding: 10px; font: 15px var(--sans); }
+.skip-link:focus { top: 8px; }
+dialog { color: var(--ink); width: min(1240px, calc(100vw - 36px)); max-width: none; max-height: calc(100dvh - 36px); border: 1px solid var(--rule); border-radius: 8px; padding: 0; background: white; box-shadow: 0 12px 64px #0003; }
+dialog::backdrop { background: #15232bcc; }
+.viewer-toolbar { display: flex; align-items: center; gap: 12px; padding: 13px 18px; border-bottom: 1px solid var(--rule); }
+.viewer-toolbar h2 { margin: 0 auto 0 0; font: 15px/1.4 var(--sans); }
+.viewer-toolbar button { white-space: nowrap; border: 1px solid var(--rule); background: white; border-radius: 4px; padding: 6px 10px; min-height: 36px; }
+.viewer-scroll { overflow: auto; max-height: calc(100dvh - 200px); overscroll-behavior: contain; }
+.viewer-scroll img { display: block; width: 100%; height: auto; }
+.viewer-scroll.full-size img { width: var(--image-width); max-width: none; }
+#viewer-caption { font: 14px/1.5 var(--sans); color: var(--muted); padding: 14px 18px; margin: 0; }
+@media (max-width: 600px) {
+  body { font-size: 18px; line-height: 1.66; }
+  main { padding: 36px 22px 32px; }
+  h1 { letter-spacing: -.9px; }
+  h2 { margin-top: 43px; font-size: 27px; }
+  h3 { font-size: 21px; }
+  .essay-header { padding-bottom: 22px; }
+  .essay-header p { font-size: 14px; }
+  .advice-item { grid-template-columns: 54px minmax(0, 1fr); gap: 8px; font-size: 16px; }
+  .advice-pair h3 { font-size: 20px; }
+  .contents { margin-bottom: 28px; }
+  .contents ol { columns: 1; }
+  .illustration { margin: 30px -12px 34px; }
+  figcaption { font-size: 13px; padding: 0 12px; }
+  math[display="block"] { font-size: .9em; padding: 14px 0; }
+  dialog { width: calc(100vw - 16px); max-height: calc(100dvh - 16px); }
+  .viewer-toolbar { padding: 10px; gap: 7px; }
+  .viewer-toolbar h2 { font-size: 13px; }
+  .viewer-toolbar button { font-size: 12px; padding: 6px 8px; }
+}
+@media print {
+  main { width: 100%; padding: 0; }
+  body { font-size: 11pt; line-height: 1.5; }
+  h1 { font-size: 28pt; }
+  h2 { font-size: 18pt; margin-top: 28px; break-after: avoid; }
+  h3 { font-size: 13pt; break-after: avoid; }
+  .essay-preview { font-size: inherit; break-inside: avoid; }
+  .advice-item { font-size: inherit; break-inside: avoid; }
+  .advice-label { font-size: 9pt; }
+  .advice-pair h3 { font-size: 13pt; }
+  .full-essay-link { display: none; }
+  .contents, .enlarge, .viewer-ready .enlarge, dialog, footer, .skip-link { display: none !important; }
+  .illustration { margin: 22px 0; break-inside: avoid; }
+  .artwork { border: 0; }
+  .artwork img { max-height: 7.5in; object-fit: contain; }
+  math { break-inside: avoid; }
+  p { orphans: 3; widows: 3; }
+}
+
+.deck-core { border: 1px solid var(--rule); border-radius: 7px; background: var(--paper); overflow: hidden; font-family: var(--sans); }
+.deck-heading { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 4px 16px; padding: 16px 18px; font-size: 16px; line-height: 1.5; }
+.deck-heading span { font-size: 13px; color: var(--muted); }
+.deck-stage { background: #f8f8f8; border-block: 1px solid var(--rule); overflow: auto; }
+.deck-slide img { display: block; width: 100%; height: auto; aspect-ratio: 2200 / 1238; object-fit: contain; }
+.deck-controls { display: none; align-items: center; gap: 7px; padding: 14px 18px 0; }
+.deck-ready .deck-controls { display: flex; }
+.deck-controls button, .deck-controls select { min-height: 40px; padding: 7px 10px; border: 1px solid var(--rule); border-radius: 4px; color: var(--teal); background: white; font: 13px/1.4 var(--sans); cursor: pointer; }
+.deck-controls select { min-width: 0; flex: 1; text-overflow: ellipsis; }
+.deck-controls button { flex-shrink: 0; white-space: nowrap; }
+.deck-controls button:disabled { color: #849096; cursor: default; background: #f1f3f1; }
+.deck-controls button[aria-pressed="true"] { color: white; background: var(--teal); border-color: var(--teal); }
+.deck-controls [hidden], .deck-slide[hidden] { display: none; }
+.deck-description { min-height: 114px; padding: 16px 18px 0; font: 14px/1.55 var(--sans); }
+.deck-description strong { font-size: 15px; }
+.deck-description p { margin: 6px 0 0; }
+.deck-hint { display: none; margin: 0; padding: 9px 18px 14px; font: 12px/1.5 var(--sans); color: var(--muted); }
+.deck-ready .deck-hint { display: block; }
+.source-caption { display: block; margin-bottom: 5px; }
+.deck-source { display: block; margin-top: 10px; font-size: 12px; }
+.print-stage-note { display: none; }
+#slides-viewer { width: min(1500px, calc(100vw - 24px)); }
+#slides-viewer .viewer-toolbar { position: sticky; top: 0; z-index: 1; background: white; }
+#slides-viewer .deck-core { border: 0; border-radius: 0; }
+#slides-viewer .deck-heading { display: none; }
+#slides-viewer .deck-stage { height: min(calc((100vw - 28px) * .562727), calc(100dvh - 278px)); min-height: 130px; }
+#slides-viewer .deck-slide, #slides-viewer .deck-slide img { height: 100%; }
+#slides-viewer .deck-slide img { object-fit: contain; }
+#slides-viewer .deck-stage.deck-zoomed .deck-slide { height: auto; }
+#slides-viewer .deck-stage.deck-zoomed img { width: 1600px; max-width: none; height: auto; }
+#slides-viewer .deck-description { min-height: 100px; }
+.standalone-slides main { width: min(1240px, 100%); padding: 34px 32px; }
+.standalone-slides h1 { max-width: none; font-size: 32px; letter-spacing: -.6px; margin: 0 0 24px; }
+.standalone-slides .illustration { margin: 0; }
+@media (max-width: 600px) {
+  .deck-heading { padding: 12px; }
+  .deck-heading strong { font-size: 15px; }
+  .deck-heading span { font-size: 12px; }
+  .deck-controls { flex-wrap: wrap; padding: 10px 10px 0; gap: 7px; }
+  .deck-controls select { order: -1; flex-basis: 100%; width: 100%; }
+  .deck-controls button { min-height: 40px; padding: 7px 10px; }
+  .deck-controls [data-action="previous"] span, .deck-controls [data-action="next"] span { display: none; }
+  .deck-description { min-height: 142px; padding: 14px 12px 0; }
+  .deck-description strong { font-size: 14px; }
+  .deck-hint { padding: 10px 12px 12px; }
+  #slides-viewer .deck-stage { height: min(calc((100vw - 28px) * .562727), calc(100dvh - 365px)); }
+  #slides-viewer .deck-description { min-height: 142px; }
+  .standalone-slides main { padding: 24px 12px; }
+  .standalone-slides h1 { font-size: 26px; }
+}
+@media print {
+  .deck-core { border: 0; overflow: visible; }
+  .deck-stage { border: 0; overflow: visible; }
+  .deck-controls, .deck-ready .deck-controls, .deck-hint, .deck-ready .deck-hint, .deck-description { display: none; }
+  .slide-deck { break-inside: auto; }
+  .deck-slide[hidden], .print-stage-note { display: block; }
+  .deck-slide { break-inside: avoid; margin: 18px 0; }
+  .print-stage-note { font: 10pt/1.4 var(--sans); margin: 8px 0; }
+}
+
+.site-links { display:flex; flex-wrap:wrap; gap:12px 24px; margin-bottom:38px; font:15px/1.5 var(--sans); }
+.resources-header { padding-bottom:22px; }
+.resources-header h1 { max-width:700px; }
+.resource-intro { font-size:19px; }
+.reading-path { border-left:3px solid var(--teal); padding-left:20px; margin:28px 0; font-size:18px; }
+.reading-path p { margin:0 0 8px; }
+.reading-path p:last-child { margin:0; }
+.resource-index { border-block:1px solid var(--rule); padding:20px 0; margin:32px 0 0; font:15px/1.6 var(--sans); }
+.resource-index ol { margin:0; padding-left:23px; columns:2; column-gap:32px; }
+.resource-index li { padding:5px 0 5px 3px; break-inside:avoid; }
+.resource { padding:36px 0 14px; border-bottom:1px solid var(--rule); }
+.resource-author { font:600 15px/1.5 var(--sans); color:var(--teal); margin:0 0 10px; }
+.resource h2 { margin:0 0 17px; font-size:30px; }
+.resource-meta { font:15px/1.7 var(--sans); color:var(--muted); margin-bottom:23px; }
+.resource p:not(.resource-author):not(.resource-meta) { font-size:18px; line-height:1.7; }
+.resource :target { scroll-margin-top:26px; }
+.resources-footer { display:flex; justify-content:space-between; flex-wrap:wrap; gap:15px; text-align:left; font-size:14px; }
+@media(max-width:600px) {
+  .site-links { font-size:14px; margin-bottom:28px; }
+  .resource-intro,.reading-path,.resource p:not(.resource-author):not(.resource-meta) { font-size:17px; }
+  .resource-index ol { columns:1; }
+  .resource h2 { font-size:27px; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#resources">Skip to resources</a>
+<main id="top">
+<nav class="site-links" aria-label="Companion pages"><a href="essay.html">← How to give a better job talk</a><a href="./">Slide gallery</a></nav>
+<header class="essay-header resources-header">
+<h1>Ten guides to economics presentations</h1>
+<p>A reading list for theory, empirical work, and slide design · September 13, 2026</p>
+</header>
+<p class="resource-intro">Advice from economists on explaining a model, presenting evidence, designing slides, and making good use of seminar time. All ten guides are freely available.</p>
+<div class="reading-path">
+<p><strong>Theory:</strong> start with <a href="#resource-1">Jackson</a> and <a href="#resource-2">Li</a>.</p>
+<p><strong>Empirical work:</strong> start with <a href="#resource-3">Shapiro</a> and <a href="#resource-4">La Ferrara</a>.</p>
+<p><strong>Building slides:</strong> use <a href="#resource-5">Goldsmith-Pinkham's examples and editable source</a>.</p>
+</div>
+<nav class="resource-index" aria-label="The ten resources"><ol><li><a href="#resource-1">Matthew O. Jackson</a></li><li><a href="#resource-2">Shengwu Li</a></li><li><a href="#resource-3">Jesse M. Shapiro</a></li><li><a href="#resource-4">Eliana La Ferrara</a></li><li><a href="#resource-5">Paul Goldsmith-Pinkham</a></li><li><a href="#resource-6">Monika Piazzesi</a></li><li><a href="#resource-7">John H. Cochrane</a></li><li><a href="#resource-8">Francesco Caselli</a></li><li><a href="#resource-9">Tim Kehoe</a></li><li><a href="#resource-10">LSE development faculty</a></li></ol></nav>
+<div id="resources"><section class="resource" aria-labelledby="resource-1">
+<p class="resource-author">01 · Matthew O. Jackson</p>
+<h2 id="resource-1"><em>Notes on Presenting a Paper</em></h2>
+<p class="resource-meta"><a href="https://web.stanford.edu/~jacksonm/present.pdf">Read the guide</a> · 6 pages · Fall 1998 · <strong>Theory and general research seminars</strong></p>
+<p><strong>Author:</strong> Stanford’s William D. Eberle Professor of Economics, a National Academy of Sciences member and former <em>Econometrica</em> coeditor. <a href="https://economics.stanford.edu/people/matthew-o-jackson">Stanford profile</a>.</p>
+<p><strong>Why it belongs:</strong> The best starting point for deciding what an audience should learn from a technical talk. Jackson explains how to organize the question, contribution, framework, and results, with particularly good advice on using special cases, introducing notation through examples, and choosing how much proof to present. He distinguishes proof steps that explain an economic insight from routine derivations that consume attention. His discussion also explicitly covers empirical and experimental work. <a href="https://web.stanford.edu/~jacksonm/present.pdf">Guide</a>.</p>
+<p><strong>Read first:</strong> Sections 4–5 on the framework and main results, followed by the final remarks on audience and organization. Especially useful when a theory presentation follows the paper too closely or tries to establish every result in full generality.</p>
+</section><section class="resource" aria-labelledby="resource-2">
+<p class="resource-author">02 · Shengwu Li</p>
+<h2 id="resource-2"><em>How to give an economic theory talk</em></h2>
+<p class="resource-meta"><a href="https://drive.google.com/file/d/1SHiJs6Uz1wDBOSMRb8rPvu4UkqfJUjSF/view">Read the author’s linked copy</a> · <a href="https://zhu-wenbo.github.io/misc/Theory_Presentation_Advice.pdf">Direct PDF mirror</a> · 4 pages · March 4, 2023 · <strong>Theory and mathematical slides</strong></p>
+<p><strong>Author:</strong> Professor of Economics at Harvard; the guide is linked from his personal website. <a href="https://www.economics.harvard.edu/people/shengwu-li">Harvard profile</a>, <a href="https://www.shengwu.li/">author’s website</a>.</p>
+<p><strong>Why it belongs:</strong> The most specific short guide here to communicating mathematical economics. Li explains how to choose examples that distinguish the intended concept from nearby misunderstandings, make notation distinguishable when spoken, and separate precise theorems from informal claims. Equations require time to read; displaying them without explaining them defeats their purpose. <a href="https://zhu-wenbo.github.io/misc/Theory_Presentation_Advice.pdf">Guide</a>.</p>
+<p><strong>Read first:</strong> Rules 7–11, on examples, notation, equations, and precision. The advice about constructing an example that rules out a plausible misunderstanding is particularly valuable. Treat the numerical limits and software preferences as personal rules of thumb.</p>
+</section><section class="resource" aria-labelledby="resource-3">
+<p class="resource-author">03 · Jesse M. Shapiro</p>
+<h2 id="resource-3"><em>How to Give an Applied Micro Talk: Unauthoritative Notes</em></h2>
+<p class="resource-meta"><a href="https://shapiro.scholars.harvard.edu/file_url/147">Read the slides</a> · <a href="https://shapiro.scholars.harvard.edu/notes-and-lectures">Author’s resource page</a> · 43 PDF pages, including builds · Undated · <strong>Empirical seminar structure</strong></p>
+<p><strong>Author:</strong> George Gund Professor of Economics and Business Administration at Harvard. <a href="https://shapiro.scholars.harvard.edu/">Harvard profile</a>.</p>
+<p><strong>Why it belongs:</strong> The essential empirical counterpart to Jackson. Shapiro connects the economic question to measurement, the estimating equation, identifying assumptions, and economic interpretation. His examples show how to preview findings at a useful level of detail, and how slides can help the audience follow the argument without reproducing the paper. The discussion of figures and selective tables is immediately useful for applied work. <a href="https://shapiro.scholars.harvard.edu/file_url/147">Slides</a>.</p>
+<p><strong>Read first:</strong> PDF pages 6–9 for contrasting result previews; pages 15–20 for the specification and identification discussion; then the slide-design portion. Use the current Harvard link above: widely circulated lists still point to an obsolete Brown address.</p>
+</section><section class="resource" aria-labelledby="resource-4">
+<p class="resource-author">04 · Eliana La Ferrara</p>
+<h2 id="resource-4"><em>How to present your job market paper</em></h2>
+<p class="resource-meta"><a href="https://www.europeanjobmarketofeconomists.org/uploads/HowToPresent_LaFerrara.pdf">Read the slides</a> · 41 PDF pages · December 6, 2018 · <strong>Empirical job talks and results slides</strong></p>
+<p><strong>Author:</strong> Harvard Kennedy School Professor of Public Policy and past president of both the Econometric Society and the European Economic Association. <a href="https://www.hks.harvard.edu/faculty/eliana-la-ferrara">Harvard profile</a>.</p>
+<p><strong>Why it belongs:</strong> An unusually practical guide that combines talk structure with examples from research presentations. It makes the identification discussion concrete: explain the source of variation, state the assumptions, and define the unit of observation. For results, it recommends one finding per slide, informative titles, understandable variable names, and readable displays of the main coefficients. It also addresses how to acknowledge limitations. <a href="https://www.europeanjobmarketofeconomists.org/uploads/HowToPresent_LaFerrara.pdf">Slides</a>.</p>
+<p><strong>Read first:</strong> PDF pages 23–28, moving from identification through empirical specification and limitations to what results to show and how. This is the strongest companion to Shapiro when revising an actual job market deck.</p>
+</section><section class="resource" aria-labelledby="resource-5">
+<p class="resource-author">05 · Paul Goldsmith-Pinkham</p>
+<h2 id="resource-5"><em>Tips + Tricks with Beamer for Economists</em></h2>
+<p class="resource-meta"><a href="https://paulgp.com/beamer_tips.pdf">Read the slides</a> · <a href="https://github.com/paulgp/beamer-tips">Editable source</a> · March 11, 2019 · <strong>Building the slides</strong></p>
+<p><strong>Author:</strong> Yale School of Management Associate Professor of Finance and an applied econometrician. <a href="https://som.yale.edu/faculty-research/faculty-directory/paul-goldsmith-pinkham">Yale profile</a>.</p>
+<p><strong>Why it belongs:</strong> Goldsmith-Pinkham supplies concrete implementations of advice that other guides leave verbal. Examples cover readable graph labels, table highlighting, sequential reveals, research-design diagrams, annotated equations, and links to backup slides. The source files make the examples reusable. <a href="https://paulgp.com/beamer_tips.pdf">Slides and examples</a>.</p>
+<p><strong>Read first:</strong> Printed frames 16–17 on legibility, 25–27 on tables, and 35–36 on a difference-in-differences diagram and an annotated instrumental-variables equation. Frame numbers differ from PDF page numbers because of builds. The implementation is Beamer-specific; many design ideas transfer to other software.</p>
+</section><section class="resource" aria-labelledby="resource-6">
+<p class="resource-author">06 · Monika Piazzesi</p>
+<h2 id="resource-6"><em>Tips on how to avoid disaster in presentations</em></h2>
+<p class="resource-meta"><a href="https://web.stanford.edu/~niederle/piazzesi.pdf">Read the guide</a> · 4 pages · Undated · <strong>Theory, macro, finance, and audience interaction</strong></p>
+<p><strong>Author:</strong> Stanford’s Joan Kenney Professor of Economics, an Econometric Society fellow, Elaine Bennett Research Prize recipient, and former <em>Journal of Political Economy</em> coeditor. <a href="https://siepr.stanford.edu/people/monika-piazzesi">Stanford profile</a>.</p>
+<p><strong>Why it belongs:</strong> Particularly strong on the live seminar. Explain the whole setup to a smart economist outside your field, define symbols, and prepare transitions between slides. Its most valuable discussion concerns questions and model weaknesses: acknowledge a limitation, then explain why the abstraction remains useful for the question being studied. The guide draws on advice from Darrell Duffie, Lasse Pedersen, and Thomas Sargent. <a href="https://web.stanford.edu/~niederle/piazzesi.pdf">Guide</a>.</p>
+<p><strong>Read first:</strong> Pages 2–3 on transitions, audience questions, and limitations. The old software instructions have aged; the advice about explaining a model and responding candidly remains highly useful.</p>
+</section><section class="resource" aria-labelledby="resource-7">
+<p class="resource-author">07 · John H. Cochrane</p>
+<h2 id="resource-7">“Seminar presentations” in <em>Writing Tips for Ph. D. Students</em></h2>
+<p class="resource-meta"><a href="https://www.johnhcochrane.com/s/phd_paper_writing.pdf#page=12">Read the guide</a> · Section 4, printed pages 11–12 / PDF pages 12–13 · June 8, 2005 · <strong>Cutting and simplifying a seminar</strong></p>
+<p><strong>Author:</strong> Hoover senior fellow, former American Finance Association president, and former <em>Journal of Political Economy</em> editor. <a href="https://www.hoover.org/profiles/john-h-cochrane">Hoover biography</a>.</p>
+<p><strong>Why it belongs:</strong> Two forceful pages on getting to the substantive contribution, cutting slide text, letting the audience digest material, and keeping essential model equations available when they are needed. It is a useful editing test for a talk burdened by preliminaries. <a href="https://www.johnhcochrane.com/s/phd_paper_writing.pdf#page=12">Section 4</a>.</p>
+<p><strong>Read with judgment:</strong> Cochrane explicitly rejects motivation and result previews in seminars. This conflicts with several other guides here. His insistence on reaching the contribution quickly is valuable; his categorical prescriptions should be read as a particular seminar philosophy, not a consensus rule.</p>
+</section><section class="resource" aria-labelledby="resource-8">
+<p class="resource-author">08 · Francesco Caselli</p>
+<h2 id="resource-8"><em>Presentation guidelines</em></h2>
+<p class="resource-meta"><a href="https://www.wouterdenhaan.com/other/Presentation_advice_Francesco_Caselli.pdf">Read the guide</a> · 2 pages · September 2012 · <strong>Opening slides; theory, computational work, and empirics</strong></p>
+<p><strong>Author:</strong> LSE’s Norman Sosnow Professor of Economics and a fellow of the British Academy and Econometric Society. <a href="https://info.lse.ac.uk/staff/divisions/Secretarys-Division/Governance/Francesco-Caselli">LSE profile</a>.</p>
+<p><strong>Why it belongs:</strong> The most economical template here for constructing an opening. State an actual research question immediately, explain why it matters, give the answer, and supply the intuition or identification strategy. The guide also gives a useful test for equations: include them when they help explain the mechanism or insight. <a href="https://www.wouterdenhaan.com/other/Presentation_advice_Francesco_Caselli.pdf">Guide</a>.</p>
+<p><strong>Read first:</strong> The first page while drafting the opening slides. Treat the later slide and equation budgets as workshop heuristics.</p>
+</section><section class="resource" aria-labelledby="resource-9">
+<p class="resource-author">09 · Tim Kehoe</p>
+<h2 id="resource-9"><em>Tips on Preparing for the Workshop</em>, refreshed by Franck Portier</h2>
+<p class="resource-meta"><a href="https://workshop.webs.uvigo.es/tips.html">Read the updated guide</a> · October 2005; refreshed May 2023 · <strong>Rehearsal, pacing, and short conference talks</strong></p>
+<p><strong>Author:</strong> University of Minnesota economist and Econometric Society fellow, with major contributions to general equilibrium, trade, and macroeconomics. <a href="https://cla.umn.edu/about/directory/profile/tkehoe">Minnesota profile</a>.</p>
+<p><strong>Why it belongs:</strong> Kehoe treats rehearsal as a way to discover what needs reorganizing. Practice with economists outside your field, identify what each slide should teach, and change the talk when listeners become confused. His discussion of short talks is especially good: a 20–30-minute presentation needs to be built around one idea. He also explains how to reserve time for questions. <a href="https://workshop.webs.uvigo.es/tips.html">Updated guide</a>.</p>
+<p><strong>Read first:</strong> Items 1–3 on preparation and slide purpose, then 5–6 on timing and short presentations. Use the refreshed version linked above, which removes obsolete presentation-technology advice.</p>
+</section><section class="resource" aria-labelledby="resource-10">
+<p class="resource-author">10 · LSE development faculty</p>
+<h2 id="resource-10"><em>EC501 Development and Growth: Guidelines for Presentations</em></h2>
+<p class="resource-meta"><a href="https://personal.lse.ac.uk/fischerg/Assets/EC501PresentationGuidelines.pdf">Read the guide</a> · 3 pages · Undated · <strong>Theory–empirics connections and work in progress</strong></p>
+<p><strong>Authors:</strong> Oriana Bandiera, Tim Besley, Gharad Bryan, Robin Burgess, Greg Fischer, Maitreesh Ghatak, and Gerard Padró i Miquel. The faculty group includes Bandiera, LSE’s Sir Anthony Atkinson Chair, and Besley, a past Econometric Society president. <a href="https://www.lse.ac.uk/people/oriana-bandiera">Bandiera profile</a>, <a href="https://www.lse.ac.uk/people/tim-besley">Besley profile</a>.</p>
+<p><strong>Why it belongs:</strong> A compact checklist with separate sections for empirical and theoretical papers. Empirical presentations should connect their framework to the analysis and explain identifying variation. Theory presentations should explain the environment, assumptions, and intuition, using examples to reach non-theorists. Its distinctive addition is advice on unfinished research: explain what failed, what comes next, and where feedback would help. <a href="https://personal.lse.ac.uk/fischerg/Assets/EC501PresentationGuidelines.pdf">Guide</a>.</p>
+<p><strong>Read first:</strong> Page 2 for the field-specific checklists, and page 1 for work-in-progress presentations. Its local course requirements are context, while the research-presentation advice applies much more broadly.</p>
+</section></div>
+<footer class="resources-footer"><a href="essay.html">Back to the essay</a><a href="#top">Back to top ↑</a></footer>
+</main>
+</body>
+</html>

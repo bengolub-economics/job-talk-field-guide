@@ -42,4 +42,15 @@ for(const anchor of adviceLinks) {
  if(!essay.includes(`<p id="${anchor}"`)) throw new Error(`Listicle target is not a paragraph: ${anchor}`);
 }
 console.log('Verified all 20 listicle links land on distinct supporting paragraphs.');
+await check('resources.html', 'essay.html');
+if (!essay.includes('href="resources.html"')) throw new Error('The essay must link to the resources page');
+const resources = await readFile(path.join(out, 'resources.html'), 'utf8');
+const resourceIds = [...resources.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
+if (new Set(resourceIds).size !== resourceIds.length) throw new Error('Duplicate IDs in resources');
+if (resourceIds.filter(id => /^resource-\d+$/.test(id)).length !== 10) throw new Error('Expected ten resources');
+for (const [,anchor] of resources.matchAll(/href="#([^"]+)"/g)) {
+  if (!resourceIds.includes(anchor)) throw new Error(`Resources link has no target: #${anchor}`);
+}
+if (!resources.includes('href="essay.html"')) throw new Error('Resources must link back to the essay');
+console.log('Verified ten resources, section links, and navigation to and from the essay.');
 console.log(`Verified ${html.length} HTML pages and ${checked.size} local link/asset targets.`);

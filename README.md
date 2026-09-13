@@ -36,6 +36,8 @@ The current manuscript is `job-talk-essay-revised.md` in the parent JM wisdom fo
 python3 scripts/build_essay_html.py
 ```
 
+The essay also links to `resources.html`, a curated reading list of ten presentation guides. Its source is `10-economics-presentation-guides.md` in the parent folder. Run `python3 scripts/build_resources_html.py` there to update the matching `content/resources.md` and `content/resources.html` snapshots. In a standalone checkout, edit `content/resources.md` and run `python3 scripts/build-resources.py` (requires Pandoc). The normal build validates their source hash and copies the page to `public/resources.html`. The export checks all ten resource anchors and links in both directions between the essay and resources.
+
 This regenerates the standalone `job-talk-essay.html` and synchronizes `content/essay.md`, `content/essay-listicle.md`, and `content/essay.html`, retaining the link back to the field guide. Listicle headlines link directly to the supporting paragraphs in the same page. Then run `npm run build:pages` in this folder. Every build checks both Markdown snapshots against the source hashes embedded in the HTML; in the writing workspace, it also checks against the latest manuscripts. The build stops if they differ or a paragraph link has no target. Do not edit the generated HTML directly.
 
 All revised panels use HTML, SVG, and typeset mathematics. The build rejects an original slide image on the revised side. Numerical reconstruction notes record any calculated or digitized values.

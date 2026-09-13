@@ -39,11 +39,12 @@ const decode = s => s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;
 let essay = await readFile(path.join(root, 'content/essay.html'), 'utf8');
 // A standalone site checkout uses its committed source snapshot. In the writing
 // workspace, also reject a build if the author's latest Markdown has changed.
-async function verifySource(snapshot, manuscript, metaName) {
+async function verifySource(snapshot, manuscript, metaName, page = essay) {
   const source = await readFile(path.join(root, 'content', snapshot));
   const hash = createHash('sha256').update(source).digest('hex');
-  const htmlHash = essay.match(new RegExp(`<meta name="${metaName}" content="([a-f0-9]{64})">`))?.[1];
-  const rebuild = 'Run python3 scripts/build_essay_html.py from the parent JM wisdom folder.';
+  const htmlHash = page.match(new RegExp(`<meta name="${metaName}" content="([a-f0-9]{64})">`))?.[1];
+  const renderer = snapshot === 'resources.md' ? 'build_resources_html.py' : 'build_essay_html.py';
+  const rebuild = `Run python3 scripts/${renderer} from the parent JM wisdom folder.`;
   if (hash !== htmlHash) throw new Error(`${snapshot} and HTML are out of sync. ${rebuild}`);
   const latest = await readFile(path.join(root, '..', manuscript)).catch(error => {
     if (error.code === 'ENOENT') return null;
@@ -53,6 +54,9 @@ async function verifySource(snapshot, manuscript, metaName) {
 }
 await verifySource('essay.md', 'job-talk-essay-revised.md', 'source-sha256');
 await verifySource('essay-listicle.md', 'job-talk-dos-and-donts.md', 'listicle-source-sha256');
+const resources = await readFile(path.join(root, 'content/resources.html'), 'utf8');
+await verifySource('resources.md', '10-economics-presentation-guides.md', 'source-sha256', resources);
+await writeFile(path.join(root, 'public/resources.html'), resources);
 if (process.env.NEXT_PUBLIC_BASE_PATH) essay = essay.replace(/(href|src)="\/(?!\/)/g, `$1="${process.env.NEXT_PUBLIC_BASE_PATH}/`);
 let essayCount = 0;
 essay = essay.replace(/<math\b[^>]*>[\s\S]*?<\/math>/g, original => {
