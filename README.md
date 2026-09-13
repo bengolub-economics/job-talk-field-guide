@@ -24,7 +24,17 @@ The installed vinext beta exporter needs two adaptations for project-path hostin
 - `components/panel-viewer.tsx`: slide navigation and enlargement.
 - `components/deck-outline.tsx`: whole-talk schematic sequences.
 - `public/originals/`: selected original slide renders, attributed in each case.
-- `content/essay.html` and `public/talk.pdf`: companion essay and talk.
+- `content/essay.md` and `content/essay.html`: matching source snapshot and illustrated companion essay. `public/essay.html` is generated with local KaTeX fonts; `public/talk.pdf` is the accompanying talk.
+
+### Keep the essay synchronized
+
+The current manuscript is `job-talk-essay-revised.md` in the parent JM wisdom folder. From that folder, run:
+
+```sh
+python3 scripts/build_essay_html.py
+```
+
+This regenerates the standalone `job-talk-essay.html` and synchronizes `content/essay.md` and `content/essay.html`, retaining the link back to the field guide. Then run `npm run build:pages` in this folder. Every build checks the Markdown snapshot against the source hash embedded in the HTML; in the writing workspace, it also checks against the latest manuscript. The build stops if they differ. Do not edit the generated HTML directly.
 
 All revised panels use HTML, SVG, and typeset mathematics. The build rejects an original slide image on the revised side. Numerical reconstruction notes record any calculated or digitized values.
 

@@ -1,4 +1,5 @@
 import katex from 'katex';
+import { createHash } from 'node:crypto';
 import { readFile, writeFile, mkdir, cp } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
@@ -36,6 +37,17 @@ for (const row of [...reconstruction.hankBlocks, ...reconstruction.hankTargets])
 }
 const decode = s => s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"');
 let essay = await readFile(path.join(root, 'content/essay.html'), 'utf8');
+const essaySource = await readFile(path.join(root, 'content/essay.md'));
+const sourceHash = createHash('sha256').update(essaySource).digest('hex');
+const htmlSourceHash = essay.match(/<meta name="source-sha256" content="([a-f0-9]{64})">/)?.[1];
+if (sourceHash !== htmlSourceHash) throw new Error('Essay Markdown and HTML are out of sync. Run python3 scripts/build_essay_html.py from the parent JM wisdom folder.');
+// A standalone site checkout uses its committed source snapshot. In the writing
+// workspace, also reject a build if the author's latest Markdown has changed.
+const latestSource = await readFile(path.join(root, '../job-talk-essay-revised.md')).catch(error => {
+  if (error.code === 'ENOENT') return null;
+  throw error;
+});
+if (latestSource && !latestSource.equals(essaySource)) throw new Error('The field guide essay is older than job-talk-essay-revised.md. Run python3 scripts/build_essay_html.py from the parent JM wisdom folder.');
 if (process.env.NEXT_PUBLIC_BASE_PATH) essay = essay.replace(/(href|src)="\/(?!\/)/g, `$1="${process.env.NEXT_PUBLIC_BASE_PATH}/`);
 let essayCount = 0;
 essay = essay.replace(/<math\b[^>]*>[\s\S]*?<\/math>/g, original => {
