@@ -6,8 +6,8 @@ export function RegionComparison(){
   <svg className="diagram" viewBox="0 0 800 270" role="img" aria-label="Year 2000. Manufacturing employment: North Hickory 43.0 percent, Raleigh-Cary 17.0 percent. BA share among people aged 18–64: North Hickory 15.6 percent, Raleigh-Cary 34.2 percent." style={{fontFamily:'Arial,sans-serif',fill:ink}}>
    {[{title:'Manufacturing share of employment',values:[43,17],top:20},{title:'BA share of population aged 18–64',values:[15.6,34.2],top:150}].map(({title,values,top})=><g key={title}>
     <text x={0} y={top} fontSize={21} fontWeight={600}>{title}</text>
-    {[0,25,50].map(v=><g key={v}><line x1={x(v)} x2={x(v)} y1={top+26} y2={top+90} stroke="#e2e7e6"/><text x={x(v)} y={top+115} fontSize={16} textAnchor="middle" fill={gray}>{v}%</text></g>)}
-    {values.map((v,i)=>{const y=top+42+i*40;return <g key={i}><text x={0} y={y+6} fontSize={19}>{['North Hickory, NC','Raleigh-Cary, NC'][i]}</text><line x1={x(0)} x2={x(v)} y1={y} y2={y} stroke="#b7cac4" strokeWidth={2}/><circle cx={x(v)} cy={y} r={6} fill={teal}/><text x={797} y={y+6} fontSize={21} textAnchor="end" style={{fontVariantNumeric:'tabular-nums'}}>{v.toFixed(1)}%</text></g>})}
+    {[0,25,50].map(v=><g key={v}>{v===0&&<line x1={x(v)} x2={x(v)} y1={top+26} y2={top+90} stroke="#d2dbd7"/>}<line x1={x(v)} x2={x(v)} y1={top+95} y2={top+100} stroke={gray}/><text x={x(v)} y={top+119} fontSize={16} textAnchor="middle" fill={gray}>{v}%</text></g>)}
+    {values.map((v,i)=>{const y=top+42+i*40;return <g key={i}><text x={0} y={y+6} fontSize={19}>{['North Hickory, NC','Raleigh-Cary, NC'][i]}</text><circle cx={x(v)} cy={y} r={6} fill={teal}/><text x={x(v)+14} y={y+6} fontSize={21} style={{fontVariantNumeric:'tabular-nums'}}>{v.toFixed(1)}%</text></g>})}
    </g>)}
   </svg>
   <table className="region-context" aria-label="Regional population and import exposure"><thead><tr><th scope="col"/><th scope="col">North Hickory</th><th scope="col">Raleigh-Cary</th></tr></thead><tbody><tr><th scope="row">Population in 2000 (thousands)</th><td>377.5</td><td>1,420.0</td></tr><tr><th scope="row">Import shock, 2000–12 (pp)</th><td>4.40</td><td>3.42</td></tr></tbody></table>

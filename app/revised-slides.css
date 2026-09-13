@@ -39,22 +39,22 @@
 }
 .slide-art.after-art .slide-terms > div {
   display: grid;
-  grid-template-columns: 13cqw minmax(0,1fr);
-  gap: 2.8cqw;
+  grid-template-columns: max-content minmax(0,1fr);
+  gap: 2cqw;
   align-items: baseline;
 }
-.slide-art.after-art .slide-terms dt { text-align: right; color: #21675f; }
+.slide-art.after-art .slide-terms dt { text-align: left; color: #21675f; }
 .slide-art.after-art .slide-terms dd { margin: 0; min-width: 0; }
 .slide-art.after-art .slide-terms.terms-columns {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.6cqw 4cqw;
+  grid-template-columns: max-content minmax(0, 1fr) max-content minmax(0, 1fr);
+  gap: 1.6cqw 2cqw;
 }
 .slide-art.after-art .slide-terms.terms-columns > div {
-  grid-template-columns: max-content minmax(0, 1fr);
-  gap: 1.6cqw;
+  grid-column: span 2;
+  grid-template-columns: subgrid;
   min-width: 0;
 }
-.slide-art.after-art .slide-terms.terms-columns dt { text-align: left; }
+.slide-art.after-art .slide-terms.terms-columns dd { grid-column: 2 / -1; }
 .slide-art.after-art .slide-terms.terms-columns > .term-full-width { grid-column: 1 / -1; }
 .slide-art.after-art .slide-facts,
 .slide-art.after-art .slide-conditions {
@@ -75,6 +75,7 @@
 .slide-art.after-art .slide-conditions strong { font-weight: 500; color: #61727a; }
 .slide-art.after-art .diagram { display: block; height: auto; aspect-ratio: auto; overflow: visible; }
 .slide-art.after-art .chart-context { font-size: 1.85cqw; line-height: 1.35; margin: 0 0 1.7cqw; color: #61727a; }
+.slide-art.after-art .chart-method { margin: 1.4cqw 0 0; }
 .slide-art.after-art.kind-equation .formula { margin: 1.4cqw 0 4cqw; }
 .slide-art.after-art.kind-equation .slide-conditions { margin: -1.5cqw 0 2.6cqw; }
 .slide-art.after-art.kind-regions .diagram { aspect-ratio: 800 / 270; }
@@ -97,12 +98,12 @@
 .slide-art.after-art.kind-insurance-linearization .formula { font-size: 3.2cqw; margin: .5cqw 0 1.5cqw; }
 .slide-art.after-art.kind-insurance-linearization .diagram { aspect-ratio: 800 / 255; max-height: none; }
 .slide-art.after-art.kind-insurance-linearization .slide-terms { font-size: 2cqw; gap: .65cqw; margin-top: 1.6cqw; }
-.slide-art.after-art.kind-insurance-linearization .slide-terms > div { grid-template-columns: 4cqw 1fr; gap: 2cqw; }
 .slide-art.after-art .insurance-budgets { table-layout: fixed; margin: .7cqw 0 1.5cqw; }
 .slide-art.after-art .insurance-budgets th:first-child { width: 44%; }
 .slide-art.after-art .insurance-budgets th,
 .slide-art.after-art .insurance-budgets td { padding: 2cqw 0; text-align: left; font-size: 2.5cqw; }
 .slide-art.after-art .insurance-budgets thead th { font-size: 2.05cqw; }
+.slide-art.after-art .insurance-budgets tbody :is(th, td) { border-bottom: 0; }
 .slide-art.after-art.kind-network .diagram { aspect-ratio: 800 / 250; height: 23cqw; margin: 0 0 2cqw; }
 .slide-art.after-art.kind-network .formula { font-size: 3.05cqw; margin-bottom: 2cqw; }
 .slide-art.after-art.kind-network .slide-terms { font-size: 2.1cqw; }

@@ -9,15 +9,15 @@ export function CarbonResponse(){
  const d=data.carbon,x=(v:number)=>75+v*90,y=(v:number)=>178-v*43;
  const line=(values:number[])=>values.map((v,i)=>`${i===0?'M':'L'}${x(i)},${y(v)}`).join(' ');
  const band=(low:number[],high:number[])=>line(high)+' '+low.map((_,j)=>{const i=low.length-1-j;return `L${x(i)},${y(low[i])}`}).join(' ')+' Z';
- const labels=[{text:'95% interval',v:(d.upper95[6]+d.upper67[6])/2,color:'#61727a'},{text:'67% interval',v:(d.upper67[6]+d.estimate[6])/2,color:teal},{text:'Estimate',v:d.estimate[6],color:teal}];
+ const labels=[{text:'95% confidence band',v:d.upper95[6],color:gray},{text:'67% confidence band',v:d.upper67[6],color:teal},{text:'Estimate',v:d.estimate[6],color:teal}];
  return <div><p className="chart-context">EU+ countries · Restricted local projections · Four lags</p><svg className="diagram carbon-response" viewBox="0 0 850 365" role="img" aria-label="GDP-level response to a forty-dollar carbon-tax increase over years zero to six. Both 67 and 95 percent confidence bands include zero throughout." style={{fontFamily:'Arial,sans-serif',fill:ink}}>
   <text x={75} y={18} fontSize={18}>GDP level · percentage points</text>
-  {[-3,-2,-1,0,1,2,3].map(v=><g key={v}><line x1={75} x2={615} y1={y(v)} y2={y(v)} stroke={v===0?gray:'#e4e9e7'}/><text x={58} y={y(v)+6} fontSize={17} textAnchor="end">{v}</text></g>)}
+  {[-3,-2,-1,0,1,2,3].map(v=><g key={v}>{v!==0&&<line x1={75} x2={615} y1={y(v)} y2={y(v)} stroke="#e4e9e7"/>}<text x={58} y={y(v)+6} fontSize={17} textAnchor="end">{v}</text></g>)}
   <path d={band(d.lower95,d.upper95)} fill="#dce9e5"/><path d={band(d.lower67,d.upper67)} fill="#a7c8bd"/>
   <line x1={75} x2={615} y1={y(0)} y2={y(0)} stroke={gray} strokeDasharray="5 4"/>
   <path d={line(d.estimate)} stroke={teal} strokeWidth={3} fill="none"/>
   {d.years.map(i=><g key={i}><circle cx={x(i)} cy={y(d.estimate[i])} r={3.5} fill={teal}/><text x={x(i)} y={330} fontSize={18} textAnchor="middle">{i}</text></g>)}
-  {labels.map(l=><g key={l.text}><line x1={619} x2={658} y1={y(l.v)} y2={y(l.v)} stroke={l.color}/><text x={668} y={y(l.v)+6} fontSize={18} fill={l.color}>{l.text}</text></g>)}
+  {labels.map(l=><g key={l.text}><line x1={615} x2={637} y1={y(l.v)} y2={y(l.v)} stroke={l.color}/><text x={647} y={y(l.v)+6} fontSize={18} fill={l.color}>{l.text}</text></g>)}
   <text x={345} y={359} textAnchor="middle" fontSize={18}>Years after implementation</text>
  </svg></div>;
 }
