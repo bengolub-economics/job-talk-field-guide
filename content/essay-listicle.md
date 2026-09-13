@@ -6,61 +6,61 @@ Distilled from Benjamin Golub’s [*How to give a better job talk*](https://beng
 
 **DO:** **Design for the persuadable voter.** Picture a smart economist who works far from your topic. Could they follow your contribution and tell someone else why it matters? That person is likely more important to your hiring prospects than the specialist you instinctively try to impress. [Source paragraph][do-01]
 
-**DON'T:** **Take attention for granted.** Your listeners are continually deciding whether they can follow and whether they care. If your rehearsal bores even you, take that as evidence that the audience will find something else to think about. [Source paragraph][dont-01]
+**DON'T:** **Take attention for granted.** Your listeners are continually deciding whether they can follow and whether they care. A rehearsal that bores even you is a warning that the audience will find something else to think about. [Source paragraph][dont-01]
 
 ## 2. Make the opening count
 
-**DO:** **Give people a reason to care at the beginning.** Tell them the question, why it matters in your field, and what you have contributed. They need a direction before they can appreciate the route. [Source paragraph][do-02]
+**DO:** **Give people a reason to care at the beginning.** Tell them the question, why it matters in your field, and what you have contributed. To calibrate the claim, give your advisor three short pitches: an overstatement, an understatement, and the version you think is right. Concrete alternatives make it easier to find a claim that is both confident and defensible. [Source paragraph][do-02]
 
-**DON'T:** **Guess how hard to sell the contribution.** Give your advisor three short pitches: an overstatement, an understatement, and the version you think is right. Concrete alternatives make it easier to find a claim that is both confident and defensible. [Source paragraph][dont-03]
+**DON'T:** **Guess how hard to sell the contribution.** Your own confidence or anxiety is a poor guide to your field’s norms. Guesswork can leave you overstating the result or understating what makes it worth hearing. [Source paragraph][dont-03]
 
 ## 3. Handle weaknesses with confidence
 
-**DO:** **Use a real weakness to show your judgment.** When a criticism identifies a genuine limitation, acknowledge it and explain what an improvement would require—and why it is difficult. You can show that you are a mature researcher even when your paper cannot settle the question. [Source paragraph][do-09]
+**DO:** **Use a real weakness to show your judgment.** Prepare strong answers to likely questions; ten smart friends can help identify the five or ten you most need to handle. When a criticism identifies a genuine limitation, acknowledge it and explain what an improvement would require—and why it is difficult. You can show that you are a mature researcher even when your paper cannot settle the question. [Source paragraph][do-09]
 
-**DON'T:** **Open with the objection you fear most.** Prepare strong answers to likely questions without putting your greatest anxiety at the center of the pitch. Ten smart friends can help you identify the five or ten questions you most need to handle. [Source paragraph][dont-02]
+**DON'T:** **Open with the objection you fear most.** An opening organized around your greatest anxiety puts the weakness at the center of the pitch, before the audience has learned what you accomplished. [Source paragraph][dont-02]
 
 ## 4. Make the explanation easy to enter
 
-**DO:** **Say the takeaway before showing the machinery.** Before a model, explain what it is trying to do and which features matter. Before an empirical result, say what it establishes in a simple English sentence. Do this throughout the talk, not just in the introduction. [Source paragraph][do-03]
+**DO:** **Say the takeaway before showing the machinery.** Before a model, explain what it is trying to do and which features matter. Start with the simple case and build toward the general one: a two-by-two game before an arbitrary strategy space and utility function. Before an empirical result, say what it establishes in a simple English sentence. Repeat this approach throughout the talk. [Source paragraph][do-03]
 
-**DON'T:** **Make the audience simplify your general model.** Start with the simple case and build toward the general one. A two-by-two game is a much better introduction to Nash equilibrium than an arbitrary strategy space and utility function. [Source paragraph][dont-05]
+**DON'T:** **Make the audience simplify your general model.** Starting with every moving part forces listeners to work out for themselves which ones matter. Mathematical generality does not make that task easy for someone seeing the model for the first time. [Source paragraph][dont-05]
 
 ## 5. Bring people back to the big picture
 
-**DO:** **Rehearse two ways of talking about your work.** Most of the talk will necessarily be technical and detailed. But plan passages in a big-picture register, with shorter words and an account of what you learned and why it matters. Practice switching between them. [Source paragraph][do-04]
+**DO:** **Rehearse two ways of talking about your work.** Most of the talk will necessarily be technical and detailed. But plan passages in a big-picture register, with shorter words and an account of what you learned and why it matters. At transitions, recap what you have established and what you want people to understand. Practice switching between the two registers. [Source paragraph][do-04]
 
-**DON'T:** **Mistake an outline for a useful recap.** Section names tell people little. Use the transition to say what you have established and what you want them to understand. Beamer’s defaults are not intellectual requirements. [Source paragraph][dont-06]
+**DON'T:** **Mistake an outline for a useful recap.** A list of section names tells people where you are in the talk, but little about what you have established. Beamer’s defaults are not intellectual requirements. [Source paragraph][dont-06]
 
 ## 6. Help people remember what they need
 
-**DO:** **Put definitions where people need them.** Repeat or display the meaning of a symbol when you use it. A definition seven slides ago is little help to someone who missed it or has forgotten it. [Source paragraph][do-05]
+**DO:** **Put definitions where people need them.** Repeat or display the meaning of a symbol when you use it. A definition seven slides ago is little help to someone who missed it or has forgotten it. Judge each detail by the understanding it produces. [Source paragraph][do-05]
 
-**DON'T:** **Confuse showing a slide with conveying its content.** Putting something on the screen does not mean people absorbed it. Judge a detail by the understanding it produces, not by whether you can say you included it. [Source paragraph][dont-04]
+**DON'T:** **Confuse showing a slide with conveying its content.** Putting something on the screen does not mean people absorbed it. A detail they missed contributes no understanding merely because you can say you included it. [Source paragraph][dont-04]
 
 ## 7. Protect time for the results and plan explicitly for contingencies
 
-**DO:** **Set deadlines for reaching the results.** In a long job talk, get to the substance of the main results by minute 35 and convey the critical substance by minute 60. Budget the preceding material to make those deadlines possible. [Source paragraph][do-07]
+**DO:** **Set deadlines for reaching the results.** In a long job talk, get to the substance of the main results by minute 35 and convey the critical substance by minute 60. Budget the preceding material to make those deadlines possible. If a technical question threatens that schedule, tell the questioner when you will address it and move toward the results. [Source paragraph][do-07]
 
-**DON'T:** **Let one technical question consume the introduction.** Some audience members will turn the setup into the whole seminar if you let them. Tell them when you will address the issue and move toward the results. [Source paragraph][dont-08]
+**DON'T:** **Let one technical question consume the introduction.** Some audience members will turn the setup into the whole seminar if you let them. A long detour can leave too little time for the results the audience came to hear. [Source paragraph][dont-08]
 
 ## 8. Rehearse for the talk you will actually give
 
-**DO:** **Practice the short version of each long section.** Write out what you will say if time is tight, then rehearse it aloud. Switching confidently to a prepared explanation works much better than announcing, “I really hoped to have more time.” [Source paragraph][do-08]
+**DO:** **Practice the short version of each long section.** Budget time and effort for presentation. Write out what you will say if time is tight, then rehearse it aloud. Switching confidently to a prepared explanation works much better than announcing, “I really hoped to have more time.” [Source paragraph][do-08]
 
-**DON'T:** **Treat presentation as an afterthought.** Clear exposition is a difficult craft. Budget time and effort for it instead of assuming that, once the substantive work is done, the talk will take care of itself. [Source paragraph][dont-10]
+**DON'T:** **Treat presentation as an afterthought.** Clear exposition is a difficult craft. Finishing the substantive work does not mean the talk will take care of itself. [Source paragraph][dont-10]
 
 ## 9. Make the visuals teach
 
-**DO:** **Teach the picture one piece at a time.** Put up the axes and explain them. Add a point or a line, then build from there. Give the audience a chance to understand the diagram that has become so familiar to you. [Source paragraph][do-10]
+**DO:** **Teach the picture one piece at a time.** Put up the axes and explain them. Add a point or a line, then build from there. For a table, try a visual that conveys the same information. Keep the full table when there is a serious intellectual reason to show it; check that judgment with your empirical advisor. [Source paragraph][do-10]
 
-**DON'T:** **Make people hunt through a wall of numbers.** Try a visual that conveys the information in the table. Keep the full table when there is a serious intellectual reason to show it; check that judgment with your empirical advisor. [Source paragraph][dont-07]
+**DON'T:** **Make people hunt through a wall of numbers.** A dense table leaves the audience searching for the comparison you want them to see. The relevant numbers can all be on the slide while the finding remains hard to grasp. [Source paragraph][dont-07]
 
 ## Marching Orders
 
-**DO:** **Build a core of about twenty slides.** Imagine preparing the best possible 25-minute conference talk on your paper: which details would you cut? Build those main slides first, with supporting material available if time permits. [Source paragraph][do-06]
+**DO:** **Build a core of about twenty slides.** Imagine preparing the best possible 25-minute conference talk on your paper: which details would you cut? Build those main slides first, with supporting material available if time permits. If a chatbot helps draft the slides, read its wording critically and make the final choices yourself. [Source paragraph][do-06]
 
-**DON'T:** **Outsource your taste to a chatbot.** Useful help with a visual does not imply good judgment about a slide title. Read its wording critically and make the final choice yourself. [Source paragraph][dont-09]
+**DON'T:** **Outsource your taste to a chatbot.** Useful help with a visual does not imply good judgment about a slide title. Accepting its wording uncritically gives it control over how you present your work. [Source paragraph][dont-09]
 
 <!-- Source links below use the section heading as a fallback and identify the supporting paragraph by its opening and closing words. -->
 

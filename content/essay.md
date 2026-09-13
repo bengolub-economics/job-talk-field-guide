@@ -2,6 +2,8 @@
 
 Benjamin Golub · September 11, 2026
 
+[Slides handout (PDF)](slides_handout.pdf){.handout-link}
+
 In these notes we'll cover:
 
 - Why your 25-minute conference talk might convey more insight than your 90-minute job talk, and how to avoid that.

@@ -28,6 +28,8 @@ The installed vinext beta exporter needs two adaptations for project-path hostin
 
 ### Keep the essay synchronized
 
+The essay header links to `public/slides_handout.pdf`. The essay renderer copies this file from `slides_handout.pdf` in the parent JM wisdom folder, so the PDF is included in the Pages export.
+
 The current manuscript is `job-talk-essay-revised.md` in the parent JM wisdom folder. The opening listicle is edited separately in `job-talk-dos-and-donts.md`. From that folder, run:
 
 ```sh
