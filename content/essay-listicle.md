@@ -38,7 +38,7 @@ Distilled from Benjamin Golub’s [*How to give a better job talk*](https://beng
 
 **DON'T:** **Confuse showing a slide with conveying its content.** Putting something on the screen does not mean people absorbed it. Judge a detail by the understanding it produces, not by whether you can say you included it. [Source paragraph][dont-04]
 
-## 7. Protect time for the results and be explicit and conscious about contingent planning
+## 7. Protect time for the results and plan explicitly for contingencies
 
 **DO:** **Set deadlines for reaching the results.** In a long job talk, get to the substance of the main results by minute 35 and convey the critical substance by minute 60. Budget the preceding material to make those deadlines possible. [Source paragraph][do-07]
 
@@ -54,7 +54,7 @@ Distilled from Benjamin Golub’s [*How to give a better job talk*](https://beng
 
 **DO:** **Teach the picture one piece at a time.** Put up the axes and explain them. Add a point or a line, then build from there. Give the audience a chance to understand the diagram that has become so familiar to you. [Source paragraph][do-10]
 
-**DON'T:** **Make people hunt through a wall of numbers.** Try a visual that conveys the information in the table. Keep the full table when there is a serious intellectual reason to show it, checked with your empirical advisor. [Source paragraph][dont-07]
+**DON'T:** **Make people hunt through a wall of numbers.** Try a visual that conveys the information in the table. Keep the full table when there is a serious intellectual reason to show it; check that judgment with your empirical advisor. [Source paragraph][dont-07]
 
 ## Marching Orders
 
@@ -83,4 +83,4 @@ Distilled from Benjamin Golub’s [*How to give a better job talk*](https://beng
 [dont-07]: https://bengolub-economics.github.io/job-talk-field-guide/essay.html#minimize-tables-with-lots-of-numbers:~:text=Give%20Claude%20your%20table%20and%20say%2C%20%E2%80%9CMake%20me%20some%20beautiful%20visuals%20in,this%20will%20improve%20your%20job%20placement%20by%20a%20detectable%20amount.
 [dont-08]: https://bengolub-economics.github.io/job-talk-field-guide/essay.html#set-deadlines-and-adjust-as-you-go:~:text=A%20question%20came%20up%20about%20what%20counts%20as%20an%20introduction.%20For%20a,the%20whole%20talk%20unless%20you%20stop%20them.%20Otherwise%20you%20lose.
 [dont-09]: https://bengolub-economics.github.io/job-talk-field-guide/essay.html#qa:~:text=For%20taste%2C%20unfortunately%2C%20they%E2%80%99re%20terrible.%20One%20of%20my%20slides%20was%20made%20in,better%20for%20me%2C%20though%20those%20capabilities%20change%20week%20to%20week.
-[dont-10]: https://bengolub-economics.github.io/job-talk-field-guide/essay.html#a-craft-worth-learning:~:text=Somebody%20cared%20about%20this.%20That%E2%80%99s%20what%20stands%20out%20in%20Julie%E2%80%99s%20slide%20examples%2C,getting%20good%20at%20as%20an%20afterthought%2C%20and%20it%E2%80%99ll%20be%20fine.%E2%80%9D
+[dont-10]: https://bengolub-economics.github.io/job-talk-field-guide/essay.html#a-craft-worth-learning:~:text=Somebody%20cared%20about%20this.%20That%E2%80%99s%20what%20stands%20out%20in%20Julie%E2%80%99s%20slide%20examples%2C,getting%20good%20at%2C%20as%20an%20afterthought%2C%20and%20it%E2%80%99ll%20be%20fine.%E2%80%9D

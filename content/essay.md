@@ -4,9 +4,9 @@ Benjamin Golub · September 11, 2026
 
 In these notes we'll cover:
 
-- Why might your 25-minute conference talk convey more insight than your 90-minute job talk, and how to avoid that.
-- How to use admitting a weakness to come across as a stronger economist.
-- Why can six crowded blackboards be a pleasure to follow while one crowded slide frustrates and loses the audience?
+- Why your 25-minute conference talk might convey more insight than your 90-minute job talk, and how to avoid that.
+- How admitting a weakness can help you come across as a stronger economist.
+- Why six crowded blackboards can be a pleasure to follow while one crowded slide frustrates and loses the audience.
 
 Last year, when we did practice job talks, we kept running into the same issues. I kept wanting to say the same things to all the students, until I thought, “Well, the fault lies with you, Ben, because you should have just told them that you really care about this.” These aren’t little idiosyncratic concerns of mine. I think they’re core skills of any communication, including and maybe especially nonacademic communication, and I want to be explicit about how much they matter.
 
@@ -37,33 +37,33 @@ $$
 
 $V_i$ is the value of following the talk; $R_i$ is the value of other uses of attention. An attention level of one means full attention to you. But something else in the modern world is pretty compelling: a family group chat, an argument on Twitter, their own career worries. Whatever is important to you, remember that other people have similarly compelling distractions. Holding their attention is not an easy problem.
 
-Whether they keep listening comes down to three questions. “Can I follow?” is the main one: if they can’t, they’re gone. “Do I care?” matters too. The subject needn’t have been important to them ex ante, but they have to care in some way while they’re listening, the way they do in a movie. The third question is what else they could be doing, which sets a benchmark for how good the answers the first two question have to be. When practicing aloud, you’ll sometimes feel uncomfortable because what you’re saying is boring even to you. That's your hint that it's probably way below your audience's outside option.
+Whether they keep listening comes down to three questions. “Can I follow?” is the main one: if they can’t, they’re gone. “Do I care?” matters too. The subject needn’t have been important to them ex ante, but they have to care in some way while they’re listening, the way they do in a movie. The third question is what else they could be doing, which sets a benchmark for how good the answers to the first two questions have to be. When practicing aloud, you’ll sometimes feel uncomfortable because what you’re saying is boring even to you. That's your hint that it's probably way below your audience's outside option.
 
 ### Persuade the colleagues outside your specialty {.paragraph-heading}
 
 Then there’s the question of the weights in the speaker's optimization function -- whom you’re trying to impress. The person who is most expert and intimidating is often not the voter you most need to persuade. To be giving a talk at a flyout, you generally already need champions in your field. The decisive votes usually belong to colleagues who are open to hiring you but would, all else equal, prefer someone closer to their own work. Your job is to make the quality and importance of your research outweigh that preference. In a large group, that might mean another person in the same field with very different interests; in a small group or business school, it often means someone in another field altogether. A labor candidate whose talk leaves theorists unable to explain why the work matters is in trouble, however enthusiastic the labor economists are. "Strong hire" cases rarely look like this.
 
-Design your talk for that persuadable voter. Don’t spend all your attention on the specialist who already loves your work, or waste it on the rare ideologue who has decided it cannot matter. The person you need is probably not your advisor, referee, or anyone else you instinctively write for. To picture them, choose a smart, hihgly academic friend who works far from you in economics. Could that person follow the argument, understand your contribution, and tell someone else why it matters? You need colleagues to recognize an excellent economist even when they would never have chosen your research question.
+Design your talk for that persuadable voter. Don’t spend all your attention on the specialist who already loves your work, or waste it on the rare ideologue who has decided it cannot matter. The person you need is probably not your advisor, referee, or anyone else you instinctively write for. To picture them, choose a smart, highly academic friend who works far from you in economics. Could that person follow the argument, understand your contribution, and tell someone else why it matters? You need colleagues to recognize an excellent economist even when they would never have chosen your research question.
 
 ### Be ready for the expert’s hard question {.paragraph-heading}
 
 A question came up here: does this mean making the presentation more general and less technical? To an extent, yes, but your talk will still need plenty of technical content. The challenge is to include it while also impressing this more distant person who gets a high weight.
 
-Indeed, the expert has to be impressed too. Well, often this is the case. There are two sorts of champions: one (the best kind) is already fully impressed, helps you give the best talk you can and asks only helpful questions. The other, harder, kind of champion wants to hire you but treats the talk to some extent as an exam, perhaps saving a hard question for the seminar. This is why it’s hard to get a good academic job. You have to achieve broad appeal and, at the key moment, answer that difficult question. You can do both, but you can see why it’s going to take all of your powers.
+Often, the expert has to be impressed too. There are two sorts of champions: one (the best kind) is already fully impressed, helps you give the best talk you can and asks only helpful questions. The other, harder, kind of champion wants to hire you but treats the talk to some extent as an exam, perhaps saving a hard question for the seminar. This is why it’s hard to get a good academic job. You have to achieve broad appeal and, at the key moment, answer that difficult question. You can do both, but you can see why it’s going to take all of your powers.
 
 ## Give the audience a direction
 
 There’s a beautiful document by my advisor Matt Jackson, [*Notes on Presenting a Paper*](https://web.stanford.edu/~jacksonm/present.pdf), which he wrote, I think, when people mostly still used transparencies. It’s still really good advice. I also got a lot out of Julie Fu’s [*How to Make Effective Slides*](https://fuzhiyu.me/blogs/slide_design_guide/slide_deck_design.pdf).
 
-I think approaching all the specific advice in their guides, and others, from this abstract perspective will help you use it. If you internalize the problem of chosen attention, you have a reason to use what people have learned about attention, visuals, and presentation.
+I think this abstract perspective will help you use the specific advice in their guides and others. If you internalize the problem of chosen attention, you have a reason to use what people have learned about attention, visuals, and presentation.
 
 Matt’s advice is that people have to know from the beginning the question, its importance within your field, and the contribution you’ve made.
 
-When I was on the market and was thinking about how to talk about that part, I worried so much about the strongest counterpoints to the pitch. If I said, “This is a solution concept worth studying,” I could immediately hear in my mind, “Oh, but what are people going to say about subgame perfection?” I was preoccupied with some detail I’d spent a lot of time trying to improve. But if you step back and ask, “Why do people do this kind of thing at all? And what did I do?”, you can usually give a much better account. If your academic work is of any quality, there are great answers to why the area is important, what you did about it, and why that matters in the area. Simplify and cut away the inessential, and you’ll have a pretty good pitch—which most people never say.
+When I was on the market and was thinking about how to talk about that part, I worried so much about the strongest counterpoints to the pitch. If I said, “This is a solution concept worth studying,” I could immediately hear in my mind, “Oh, but what are people going to say about subgame perfection?” I was preoccupied with some detail I’d spent a lot of time trying to improve. But if you step back and ask, “Why do people do this kind of thing at all? And what did I do?”, you can usually give a much better account. If your academic work is of any quality, there are great answers to why the area is important, what you did about it, and why that matters in the area. Simplify and cut away the inessential, and you’ll have a pretty good pitch—which most people never give.
 
 ### Explain your field to establish your authority {.paragraph-heading}
 
-To your audience, you’re an authority on your field; most of them aren’t in your exact area. If you say, “People care about this for this general reason. What we generally know is this, but we don’t know this other thing, and that’s what I make progress on,” you accomplish two things. First, you give useful information that most people forget to say in simple terms. Second, it is a cheat code for projecting considerable authority. As a competent job market candidate, you have a lot of expertise relative to the average economist on your subject area (not your paper per se), and you get to carry the whole weight of your subfield and talk about it. You establish authority at an instinctive level without having to announce your own expertise. You’re just giving some background, the way a graduate course does. (Incidentally, this makes it clear that you're qualified to teach a graduate course.)
+To your audience, you’re an authority on your field; most of them aren’t in your exact area. If you say, “People care about this for this general reason. What we generally know is this, but we don’t know this other thing, and that’s what I make progress on,” you accomplish two things. First, you give useful information that most people forget to say in simple terms. Second, it is a cheat code for projecting considerable authority. As a competent job market candidate, you have a lot of expertise in your subject area (not your paper per se), relative to the average economist, and you get to carry the whole weight of your subfield and talk about it. You establish authority at an instinctive level without having to announce your own expertise. You’re just giving some background, the way a graduate course does. (Incidentally, this makes it clear that you're qualified to teach a graduate course.)
 
 Discuss the literature enough to show that this is a real topic people study and to situate what you did. Say what you add in words someone outside your field could repeat. “We didn’t know this part before” is a useful starting point.
 
@@ -113,7 +113,7 @@ If you do this all the time, you lose credibility, because you have to do someth
 
 ### Know what to ask your advisor {.paragraph-heading}
 
-This brings up the question of what you should listen to your advisor about. On intellectual matters and the politics of your field, your advisor is a genius and an expert. Ask them a lot of questions. You’ll learn so much, and it’s one of the things people don’t ask enough.
+This brings up the question of what you should listen to your advisor about. On intellectual matters and the politics of your field, your advisor is a genius and an expert. Ask them a lot of questions. You’ll learn so much, and people don’t ask enough of these questions.
 
 On exposition, recognize that most economists don’t care enough about it. A lot of us got jobs when getting hired was easier and communication mattered less, so senior people will say, “Just focus on that next result. The talk will work itself out.” If your advisor isn’t emphasizing presentation heavily, listen to others (like me) who do. At the margin, it’s so important.
 
@@ -143,7 +143,7 @@ I want to be explicit about this: you should be talking in two different registe
 
 You might say, “For the people who are only paying attention occasionally: we’ve just finished the structural model, whose whole point was to bring behavioral consumers into an otherwise standard model of the electricity market. The only thing we’ll use from it is this one estimating equation for electricity demand. Now I’m going to take that equation to the data, but the main challenge is that this moment isn’t observed. I have to back it out of certain other data.”
 
-That’s a fictional paper, but you could follow the account with no further explanation. Five stops is a pretty good benchmark: split the talk into five parts and return to this level at each stop, perhaps for two minutes. Even experts will find it helpful to regroup about what you really want to say.
+That’s a fictional paper, but you could follow the account with no further explanation. Five stops is a pretty good benchmark: split the talk into five parts and return to this level at each stop, perhaps for two minutes. Even experts will find it helpful to regroup around what you really want to say.
 
 I also think speaking confidently, in short, simple words and at the level of an NPR interview, is correlated with being a better economist. If you ask Jesse Shapiro about his latest paper, it won’t sound like the typical job talk. Jesse has the freedom to say what he thinks matters without fearing that saying it simply will expose him to criticism or offend someone. He just says things as he thinks they are.
 
@@ -183,7 +183,7 @@ If you know someone—perhaps an interviewer—and it feels comfortable, say, �
 
 Job talks are, I think, 75 minutes at the median now. Some business school groups have gone to 60, and people with many job talks will have at least one that short. Some still have 90-minute talks, but plan for 75: questions make 90 feel like 75.
 
-As a correlation, really good talks have about three minutes per slide. An animation build doesn’t count as a new slide; I mean distinct visual displays. That gives you 30 real slides in a good 90-minute talk, but only about 20 for the core material, because you can’t fully guarantee you’ll get through more than 20.
+Really good talks tend to allow about three minutes per slide. An animation build doesn’t count as a new slide; I mean distinct visual displays. That gives you 30 real slides in a good 90-minute talk, but only about 20 for the core material, because you can’t count on getting through more than 20.
 
 This may initially make you feel really bad. The difficult thing about this sermon is that, once you take the constraints seriously, you are much poorer than you thought. You thought you had all this space to convey all this material, and I’m telling you that, given actual audience attention, the channel is much narrower and noisier than you hoped. I’ve taken away the feeling that you can convey a lot of what you wanted to. But you never really had it in the first place.
 
@@ -207,7 +207,7 @@ Finish the introduction by 10 minutes, ideally. If it isn’t finished by 15, I 
 
 A question came up about what counts as an introduction. For a theorist, the model should start by minute 15. The introduction should be something anybody can listen to, usually without symbols; two to four slides is a good length. When people ask, “Do you mean this technical thing or this?”, say, “I will be delighted to talk about that in the results section.” Certain people will extend your introduction into the whole talk unless you stop them. Otherwise you lose.
 
-Finish the background and get to the substance of the main results by minute 35. Missing that landmark is very correlated with bad talks. By 60, you should have conveyed the critical substance.
+Finish the background and get to the substance of the main results by minute 35. Missing that landmark is strongly correlated with bad talks. By 60, you should have conveyed the critical substance.
 
 ![Timing landmarks: finish the introduction around 10 minutes; 15 minutes is an emergency; discuss main results by 30–35 minutes; convey the essential contribution by 60 minutes.](</Users/benjamingolub/Documents/ChatGPT/JM wisdom/output/talk/images/slide-15.png>)
 
@@ -217,7 +217,7 @@ Finish the background and get to the substance of the main results by minute 35.
 
 In many papers, you can’t fully explain everything leading up to the results in that time. That’s why people are still discussing an assumption or a literature relationship at minute 40. Collapse away detail, even important assumptions or model elements: “Let me give you the broad outlines of my structural model. It also contains a dynamic element that’s pretty complicated. For now, all I’m going to tell you is that this part takes these prices as input and outputs the total amount of electricity consumed. We’ll talk about it after I show you the main result.”
 
-That’s perfectly fine. Once you explain what you’re doing, many people appreciate that boxing. They want to know what matters about it before they ask questions about it. Some feel that if they haven’t been complete, they haven’t said anything. But people can’t understand every detail in a job talk; the whole craft is choosing what to say in less detail. It shows confidence to say, “This is what’s really important. This is what I’m going to black-box and expand later.”
+That’s perfectly fine. Once you explain what you’re doing, many people appreciate that kind of black-boxing. They want to know what matters about it before they ask questions about it. Some feel that if they haven’t been complete, they haven’t said anything. But people can’t understand every detail in a job talk; the whole craft is choosing what to say in less detail. It shows confidence to say, “This is what’s really important. This is what I’m going to black-box and expand later.”
 
 Answer questions when you can, defer extended debates, and reserve time to return. If you promise to come back to a detail, keep the promise.
 
@@ -227,23 +227,23 @@ If the important ideas fit into a 25-minute NBER session, surely they fit into a
 
 Suppose you planned 10 minutes on assumptions and 12 on data details, but had a long argument about an assumption with an important audience member. That’s great, but now there’s less time for data details. To reach the main results by minute 35, use the collapsed version: “I cleaned the data using a demanding procedure based on state-of-the-art machine learning, similar to X’s paper, but with some important advances. I can talk about that later.”
 
-Keep looking at the clock and making those decisions. Done well, nobody knows you were pressed for time. There’s no dishonor in spending less time on something. The only dishonor is being at minute 55 when it’s common knowledge that you’re nowhere near where you hoped to be. Take the pain in smaller doses earlier, and you’ll be much better off.
+Keep looking at the clock and making those decisions. If you do this well, nobody knows you were pressed for time. There’s no dishonor in spending less time on something. The only dishonor is being at minute 55 when it’s common knowledge that you’re nowhere near where you hoped to be. Take the pain in smaller doses earlier, and you’ll be much better off.
 
 ### Practice the shorter versions aloud {.paragraph-heading}
 
-Write out the collapsed sections and practice them aloud in a shorter talk: “If time permits, I’ll do the detailed version of this piece.” This is the one talk you’ll know well enough to make those choices. When needed, think, “Oh, I’m doing version B.” Otherwise you’ll involuntarily say, “I really hoped to have more time to talk about this.” Don’t. “I’ll explain this part at a high level” sounds confident. “Ah, I have to skip past these two slides” sounds compromising. Skip them as if that was always your intention, with no stress visible.
+Write out the collapsed sections and practice them aloud in a shorter talk: “If time permits, I’ll do the detailed version of this piece.” This is the one talk you’ll know well enough to make those choices. When needed, think, “Oh, I’m doing version B.” Otherwise you’ll involuntarily say, “I really hoped to have more time to talk about this.” Don’t. “I’ll explain this part at a high level” sounds confident. “Ah, I have to skip past these two slides” sounds apologetic. Skip them as if that was always your intention, with no stress visible.
 
 Remember that you are the steward of a very precious asset: the time of an audience at a place where you hope to get a job. If you’re not careful, someone will get in the way of using it as you’d hoped, and by the end of the talk you’ll feel like you squandered the resource. By making a clear plan for how you will budget it all along the way, you’ll avoid that terrible feeling.
 
 ## Choose detail that carries insight
 
-People often act as if everything entered into evidence by being put on a slide has been absorbed. In practice talks, I’d ask, “Did you really expect that when you showed that slide earlier, I fully absorbed its content?” The speaker would sheepishly admit they couldn’t think that. Track how much understanding you get out of what you tell people. That will force you to choose detail that carries insight.
+People often act as if everything entered into evidence by being put on a slide has been absorbed. In practice talks, I’d ask, “Did you really expect that when you showed that slide earlier, I fully absorbed its content?” The speaker would sheepishly admit they couldn’t reasonably expect that. Track how much understanding you get out of what you tell people. That will force you to choose detail that carries insight.
 
 Your talk is not your paper. Strip away a lot and focus on a few load-bearing details. It’s often acceptable to say, “I’m not going to show you the full assumption. I’m going to show you the assumption in a simplified case.”
 
 People are much better at building from simple to complex than at specializing a general model. We think, “I’ll tell you a model with many moving parts, and you can simplify it yourself.” That’s mathematically equivalent to giving the simple version. But that’s not how people work. To teach Nash equilibrium, you show a two-by-two game first, then say, “You could actually have any number of strategies.” You don’t start with a general strategy space and utility function. We know this with our psychologist hats on, but in our talks we keep getting it wrong.
 
-Build up from the simple version and you can say the same precise thing to the experts, while everyone else gets some way toward it. Start with the complex version and you’re accessible only to experts who can understand it all.
+Build up from the simple version and you can say the same precise thing to the experts, while everyone else gets some way toward understanding it. Start with the complex version and you’re accessible only to experts who can understand it all.
 
 ### Simplify the display while keeping the insight {.paragraph-heading}
 
@@ -253,7 +253,7 @@ Julie Fu has a good finance example. The original equation is already pretty goo
 
 *An equation before and after simplification, from Julie Fu’s slide-design deck.*
 
-That’s completely acceptable. When you look at a detailed slide, imagine covering a long word or notationally heavy expression. If that wouldn’t lose much of what you want to say, do it—even with a box. If the expert asks, “But what’s in that box? That really matters,” uncover it and be happy to explain.
+That’s completely acceptable. When you look at a detailed slide, imagine covering a long word or notationally heavy expression. If that wouldn’t lose much of the meaning, do it—even with a box. If the expert asks, “But what’s in that box? That really matters,” uncover it and be happy to explain.
 
 Visually overwhelming slides signal that people should stop listening. I don’t even feel bad about it: if someone has a poorly designed, overwhelming slide, I feel like they’ve violated the social norm and should be punished. So I look at my phone.
 
@@ -281,7 +281,7 @@ It unfolds as an elaborate animation: something is presented, detail is given, t
 
 As an equation is explained, some detail goes away and other parts are emphasized, with text describing the emphasis. When the speaker discusses an assumption about the shocks, those shocks are highlighted in the equation. For the “deaf” audience member, the visual tracks your voiceover. Not every slide should have this much detail, but if you’re spending three or four minutes on it, you can fill it up. You just have to fill it up slowly.
 
-The big-picture story stays in view. On separate slides, by the third thing someone might have forgotten the data, or want to look back at the time period. Density is a choice: you wouldn’t put the whole talk on one slide, but keeping key information visible helps people work through a detail.
+The big-picture story stays in view. With separate slides, by the third one someone might have forgotten the data or want to look back at the time period. Density is a choice: you wouldn’t put the whole talk on one slide, but keeping key information visible helps people work through a detail.
 
 ![An intermediate build of the Treasury-market model slide, with market clearing and the price response highlighted beneath the portfolio-choice equation.](</Users/benjamingolub/Documents/ChatGPT/JM wisdom/output/talk/images/slide-28.png>)
 
@@ -297,7 +297,7 @@ I hope to see very few tables in your practice talks. Nobody wants to look at ta
 
 Put up a big table and say, “Let me point out this coefficient,” and your presentation looks dated. There’s economic growth: we’re better at what we do now. Making a good visual used to be difficult; now it’s literally one prompt. Why are you not typing that prompt?
 
-Give Claude your table and say, “Make me some beautiful visuals in the style of Paul Goldsmith-Pinkham that will convey all the same information, but with beautiful, memorable visuals.” Unless your empirical advisor says there’s a serious intellectual threat to your paper without showing the whole table, don’t show it. I promise this will improve your job placement by a detectable amount.
+Give Claude your table and say, “Make me some beautiful visuals in the style of Paul Goldsmith-Pinkham that will convey all the same information in a memorable way.” Unless your empirical advisor says there’s a serious intellectual threat to your paper without showing the whole table, don’t show it. I promise this will improve your job placement by a detectable amount.
 
 ### Ask what the table is meant to convey {.paragraph-heading}
 
@@ -307,7 +307,7 @@ At least as a thought experiment, ask a chatbot to convey an ugly table in the s
 
 ## A craft worth learning
 
-Somebody cared about this. That’s what stands out in Julie’s slide examples, and it’s the thought I want to leave you with. A lot of people treat exposition as something to do after the substantive work. What they’re really saying is, “Let me do this extremely difficult craft that people spend years getting good at as an afterthought, and it’ll be fine.”
+Somebody cared about this. That’s what stands out in Julie’s slide examples, and it’s the thought I want to leave you with. A lot of people treat exposition as something to do after the substantive work. What they’re really saying is, “Let me treat this extremely difficult craft, which people spend years getting good at, as an afterthought, and it’ll be fine.”
 
 You wouldn’t do that if you were trying to make a chair or sew a blanket; you’d recognize that it’s hard and that you have to make mistakes. Presentation is hard too. Smart people try hard and still don’t do well, or take a while to do well. If you respect it as a craft with its own constraints and difficulties, learn about it, study the greats, and try to be more like them, you’ll improve. Most of us aren’t Olympic athletes on the Pareto frontier, where improving one thing means sacrificing another; we’re couch potatoes for whom almost any serious athletic effort would help. If you’re starting from a low point, your derivative will be huge.
 
