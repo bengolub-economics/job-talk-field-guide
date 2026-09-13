@@ -46,6 +46,7 @@ for number, section in enumerate(sections, 1):
 {body_html}</section>''')
 
 toc = ''.join(f'<li><a href="#resource-{n}">{html.escape(author)}</a></li>' for n, author in labels)
+resource_number = {author: n for n, author in labels}
 essay = (ROOT / 'content/essay.html').read_text()
 css = re.search(r'<style>([\s\S]*?)</style>', essay).group(1)
 css += '''
@@ -93,9 +94,9 @@ page = f'''<!doctype html>
 </header>
 <p class="resource-intro">Advice from economists on explaining a model, presenting evidence, designing slides, and making good use of seminar time. All ten guides are freely available.</p>
 <div class="reading-path">
-<p><strong>Theory:</strong> start with <a href="#resource-1">Jackson</a> and <a href="#resource-2">Li</a>.</p>
-<p><strong>Empirical work:</strong> start with <a href="#resource-3">Shapiro</a> and <a href="#resource-4">La Ferrara</a>.</p>
-<p><strong>Building slides:</strong> use <a href="#resource-5">Goldsmith-Pinkham's examples and editable source</a>.</p>
+<p><strong>Theory:</strong> start with <a href="#resource-{resource_number['Matthew O. Jackson']}">Jackson</a> and <a href="#resource-{resource_number['Shengwu Li']}">Li</a>.</p>
+<p><strong>Empirical work:</strong> start with <a href="#resource-{resource_number['Jesse M. Shapiro']}">Shapiro</a> and <a href="#resource-{resource_number['Eliana La Ferrara']}">La Ferrara</a>.</p>
+<p><strong>Building slides:</strong> use <a href="#resource-{resource_number['Paul Goldsmith-Pinkham']}">Goldsmith-Pinkham's examples and editable source</a>.</p>
 </div>
 <nav class="resource-index" aria-label="The ten resources"><ol>{toc}</ol></nav>
 <div id="resources">{''.join(rendered)}</div>
