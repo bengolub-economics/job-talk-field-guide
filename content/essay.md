@@ -2,6 +2,12 @@
 
 Benjamin Golub · September 11, 2026
 
+In these notes we'll cover:
+
+- Why might your 25-minute conference talk convey more insight than your 90-minute job talk, and how to avoid that.
+- How to use admitting a weakness to come across as a stronger economist.
+- Why can six crowded blackboards be a pleasure to follow while one crowded slide frustrates and loses the audience?
+
 Last year, when we did practice job talks, we kept running into the same issues. I kept wanting to say the same things to all the students, until I thought, “Well, the fault lies with you, Ben, because you should have just told them that you really care about this.” These aren’t little idiosyncratic concerns of mine. I think they’re core skills of any communication, including and maybe especially nonacademic communication, and I want to be explicit about how much they matter.
 
 I used to give a lot of specific advice, but over time I’ve abstracted it into principles that apply quite broadly. In some sense, the whole argument is here at the beginning: I’ll tell you my secret, then flesh out the implications that people tend to miss.
