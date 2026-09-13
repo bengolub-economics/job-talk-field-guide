@@ -435,7 +435,7 @@
   {
     "id": "keep-the-uncertainty",
     "number": "05",
-    "title": "Draw the uncertainty with the estimate.",
+    "title": "Visualize estimates and uncertainty whenever possible.",
     "mode": "Table search",
     "scale": "slide",
     "dek": "Display uncertainty alongside the estimates you discuss. A listener should be able to see both the estimated magnitude and how precisely it is measured.",
