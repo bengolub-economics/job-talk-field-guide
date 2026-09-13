@@ -1,6 +1,6 @@
 {
   "../../../Users/benjamingolub/Documents/ChatGPT/JM wisdom/talk-gallery/node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js": {
-    "file": "job-talk-field-guide/_next/static/chunks/app-route-prefetch-policy-pu5lpNti.js",
+    "file": "job-talk-field-guide/_next/static/chunks/app-route-prefetch-policy-B4ecO9zI.js",
     "name": "app-route-prefetch-policy",
     "src": "../../../Users/benjamingolub/Documents/ChatGPT/JM wisdom/talk-gallery/node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
     "isDynamicEntry": true,
@@ -9,7 +9,7 @@
     ]
   },
   "../../../Users/benjamingolub/Documents/ChatGPT/JM wisdom/talk-gallery/node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "job-talk-field-guide/_next/static/chunks/layout-segment-context-ClRn1Qjn.js",
+    "file": "job-talk-field-guide/_next/static/chunks/layout-segment-context-DsnOnade.js",
     "name": "layout-segment-context",
     "src": "../../../Users/benjamingolub/Documents/ChatGPT/JM wisdom/talk-gallery/node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -40,8 +40,8 @@
     "file": "job-talk-field-guide/_next/static/chunks/rolldown-runtime-DKindhIo.js",
     "name": "rolldown-runtime"
   },
-  "_select-77wnnDM3.js": {
-    "file": "job-talk-field-guide/_next/static/chunks/select-77wnnDM3.js",
+  "_select-DktY_K_j.js": {
+    "file": "job-talk-field-guide/_next/static/chunks/select-DktY_K_j.js",
     "name": "select",
     "imports": [
       "_rolldown-runtime-DKindhIo.js",
@@ -49,29 +49,29 @@
     ]
   },
   "components/case-detail.tsx": {
-    "file": "job-talk-field-guide/_next/static/chunks/case-detail-DZIGnuMI.js",
+    "file": "job-talk-field-guide/_next/static/chunks/case-detail-O5nZT-9r.js",
     "name": "case-detail",
     "src": "components/case-detail.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-DKindhIo.js",
-      "_select-77wnnDM3.js",
+      "_select-DktY_K_j.js",
       "_framework-jMw_Iro_.js"
     ]
   },
   "components/gallery.tsx": {
-    "file": "job-talk-field-guide/_next/static/chunks/gallery-dz5MeSgC.js",
+    "file": "job-talk-field-guide/_next/static/chunks/gallery-DPTib0-f.js",
     "name": "gallery",
     "src": "components/gallery.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-DKindhIo.js",
-      "_select-77wnnDM3.js",
+      "_select-DktY_K_j.js",
       "_framework-jMw_Iro_.js"
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "job-talk-field-guide/_next/static/chunks/index-Cdd0n_AA.js",
+    "file": "job-talk-field-guide/_next/static/chunks/index-BO1sTNYm.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
