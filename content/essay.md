@@ -277,7 +277,7 @@ If you haven’t done theater, leaving silences can feel artificial. But it can 
 
 ### Let the emphasis change as the slide unfolds {.paragraph-heading}
 
-Let me show you one more example from Julie’s advice: a slide from *Anatomy of the Treasury Market*, by Chaudhary and coauthors. This isn’t Julie’s paper, but the slide shows what good talks look like.
+Let me show you one more example from Julie’s advice: a slide from *Anatomy of the Treasury Market*, by Manav Chaudhary, Julie Zhiyu Fu, and Haonan Zhou. The slide shows what good talks look like.
 
 It unfolds as an elaborate animation: something is presented, detail is given, then some is collapsed and removed. This used to take a lot of coding; now chatbots can do it efficiently. There’s no feeling that everything we’ve ever seen has to stay up there.
 
@@ -287,7 +287,7 @@ The big-picture story stays in view. With separate slides, by the third one some
 
 ![An intermediate build of the Treasury-market model slide, with market clearing and the price response highlighted beneath the portfolio-choice equation.](</Users/benjamingolub/Documents/ChatGPT/JM wisdom/output/talk/images/slide-28.png>)
 
-*The slide builds up detail while keeping the data and the model in view. From Chaudhary and coauthors, as presented in Julie Fu’s deck.*
+*The slide builds up detail while keeping the data and the model in view. From Manav Chaudhary, Julie Zhiyu Fu, and Haonan Zhou, as presented in Julie Fu’s deck.*
 
 ![The same model slide after explanatory details have been removed, leaving the data, portfolio choice, demand shifters, and connection from quantities to prices.](</Users/benjamingolub/Documents/ChatGPT/JM wisdom/output/talk/images/slide-30.png>)
 
